@@ -1,0 +1,655 @@
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\02112010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\02112010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\02112010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\02112010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\02112010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27112010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27112010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27112010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27112010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27112010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.3\06122010\06122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.3\06122010\06122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.3\06122010\06122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.3\06122010\06122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.3\06122010\06122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\06122010\06122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\06122010\06122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\06122010\06122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\06122010\06122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\06122010\06122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\06122010\06122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\06122010\06122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\06122010\06122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\06122010\06122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\06122010\06122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\10122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\10122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\10122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\10122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\10122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+G:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+G:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+G:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+G:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+G:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\LAB\TRANSVALVENONLINE_V_1.4\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\LAB\TRANSVALVENONLINE_V_1.4\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\LAB\TRANSVALVENONLINE_V_1.4\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\LAB\TRANSVALVENONLINE_V_1.4\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\LAB\TRANSVALVENONLINE_V_1.4\TRANSVALVENONLINE_V_1.4\10122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\10122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\10122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\10122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\10122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\10122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\13122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\13122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\13122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\13122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\PROYECTOS ACTUALES\13122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\14122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\14122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\14122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\14122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\14122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\LAB\14122010\14122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\LAB\14122010\14122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\LAB\14122010\14122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\LAB\14122010\14122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\LAB\14122010\14122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Documents and Settings\Juan\Escritorio\15122010\15122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Documents and Settings\Juan\Escritorio\15122010\15122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Documents and Settings\Juan\Escritorio\15122010\15122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Juan\Escritorio\15122010\15122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Documents and Settings\Juan\Escritorio\15122010\15122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\LAB\15122010\15122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\LAB\15122010\15122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\LAB\15122010\15122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\LAB\15122010\15122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\LAB\15122010\15122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\16122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\16122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\16122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\16122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\16122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\23122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\23122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\23122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\23122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\23122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\24122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\24122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\24122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\24122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\24122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24122010new\24122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24122010new\24122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24122010new\24122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24122010new\24122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24122010new\24122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\28122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\28122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\28122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\28122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\28122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Documents and Settings\Juan\Escritorio\28122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Documents and Settings\Juan\Escritorio\28122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Documents and Settings\Juan\Escritorio\28122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Juan\Escritorio\28122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Documents and Settings\Juan\Escritorio\28122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\30122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\30122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\30122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\30122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\30122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TEMP\30122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TEMP\30122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TEMP\30122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TEMP\30122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TEMP\30122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010-ultimo\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010-ultimo\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010-ultimo\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010-ultimo\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TEMP\31122010-ultimo\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Documents and Settings\Juan\Escritorio\03012011\03012011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Documents and Settings\Juan\Escritorio\03012011\03012011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Documents and Settings\Juan\Escritorio\03012011\03012011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Juan\Escritorio\03012011\03012011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Documents and Settings\Juan\Escritorio\03012011\03012011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\04012011\03012011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\04012011\03012011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\04012011\03012011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\04012011\03012011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\04012011\03012011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\13012011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\13012011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\13012011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\13012011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\13012011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\17012011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\17012011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\17012011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\17012011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\17012011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\21012011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\21012011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\21012011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\21012011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\21012011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\31012011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\31012011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\31012011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\31012011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\31012011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\01022011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\01022011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\01022011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\01022011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\01022011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\02022011\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\02022011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\02022011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\02022011\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\02022011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\03032011\BusinessObjects\bin\Debug\BusinessObjects.dll
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\03032011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\03032011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\03032011\BusinessObjects\obj\Debug\BusinessObjects.dll
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\03032011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\13032011\BusinessObjects\bin\Debug\BusinessObjects.dll
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\13032011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\13032011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\13032011\BusinessObjects\obj\Debug\BusinessObjects.dll
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\13032011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\24032011\BusinessObjects\bin\Debug\BusinessObjects.dll
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\24032011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\24032011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\24032011\BusinessObjects\obj\Debug\BusinessObjects.dll
+Y:\DIFFERENT SOFTWARE\Compañias\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.7\24032011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\TRASNVALVENONLINE\TRASNVALVENONLINE\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\TRASNVALVENONLINE\TRASNVALVENONLINE\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\TRASNVALVENONLINE\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\TRASNVALVENONLINE\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\TRASNVALVENONLINE\TRASNVALVENONLINE\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\FUENTE 2\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\FUENTE 2\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\FUENTE 2\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\FUENTE 2\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\FUENTE 2\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\PROYECTO TVV\FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\PROYECTO TVV\FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\PROYECTO TVV\FUENTE FINAL\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\PROYECTO TVV\FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\PROYECTO TVV\FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 2.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 2.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 2.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 2.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 2.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 2.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 2.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 2.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 2.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 2.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 3.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 3.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 3.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 3.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 3.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\copia FUENTE FINAL 3.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\copia FUENTE FINAL 3.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\copia FUENTE FINAL 3.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\copia FUENTE FINAL 3.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\copia FUENTE FINAL 3.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 4.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 4.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 4.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 4.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 4.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 5.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 6.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 6.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 6.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 6.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 6.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 7.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.1.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.1.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.1.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.1.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.1.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.2.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.2.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.2.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.2.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.2.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.3.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.0\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.0\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.0\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.0\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.0\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\copia FUENTE FINAL 8.4.1\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.5\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.5\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.5\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.5\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.5\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.6\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.6\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.6\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.6\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.6\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.7\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.7\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.7\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.7\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.7\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.8\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.8\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.8\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.8\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 8.8\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 9\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\copia FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.pdb
+F:\Documents and Settings\Juan\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\Documents and Settings\Juan\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.dll
+F:\Documents and Settings\Juan\Escritorio\Copia de Copia de FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 9\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 9\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 9\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 11\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 11\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 11\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 11\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 11\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 15\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 15\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 15\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 15\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 15\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 16\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 16\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 16\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 16\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 16\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 18\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 18\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 18\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 18\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 18\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 21\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 21\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 21\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 21\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 21\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 212008\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 212008\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 212008\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 212008\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 212008\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 2008\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 2008\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\Copia de COPIA FUENTE FINAL 2008\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 06102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 06102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 06102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 06102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 06102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 07102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 07102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 07102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 07102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 07102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 07102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 07102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 07102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 07102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 07102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 13102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 16102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 16102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 16102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 16102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 16102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 17102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 17102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 17102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 17102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 17102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 19102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 20102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 21102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 21102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 21102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 21102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\COPIA FUENTE FINAL 21102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+I:\COPIA FUENTE FINAL 31102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+I:\COPIA FUENTE FINAL 31102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+I:\COPIA FUENTE FINAL 31102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+I:\COPIA FUENTE FINAL 31102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+I:\COPIA FUENTE FINAL 31102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 31102011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 31102011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 31102011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 31102011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 31102011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+E:\Users\Juan\Desktop\COPIA FUENTE FINAL 02112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+E:\Users\Juan\Desktop\COPIA FUENTE FINAL 02112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+E:\Users\Juan\Desktop\COPIA FUENTE FINAL 02112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+E:\Users\Juan\Desktop\COPIA FUENTE FINAL 02112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+E:\Users\Juan\Desktop\COPIA FUENTE FINAL 02112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 04112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 09112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 09112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 09112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 09112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\COPIA FUENTE FINAL 09112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 09112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 09112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 09112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 09112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 09112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 21112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 21112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 21112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 21112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 21112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\Copia de FUENTE FINAL 21112011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\Copia de FUENTE FINAL 21112011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\Copia de FUENTE FINAL 21112011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\Copia de FUENTE FINAL 21112011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\Copia de FUENTE FINAL 21112011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 06122011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 06122011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 06122011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 06122011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 06122011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 13122011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 13122011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 13122011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 13122011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 13122011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14122011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14122011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14122011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14122011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 14122011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 24122011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 24122011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 24122011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 24122011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 24122011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\FUENTE FINAL 24122011\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\FUENTE FINAL 24122011\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\FUENTE FINAL 24122011\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\FUENTE FINAL 24122011\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\FUENTE FINAL 24122011\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 11012012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 11012012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 11012012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 11012012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 11012012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 16012012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 16012012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 16012012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 16012012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 16012012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 17012012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 17012012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 17012012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 17012012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 17012012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 20012012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 20012012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 20012012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 20012012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 20012012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 20012012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 20012012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 20012012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 20012012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 20012012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 02022012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 02022012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 02022012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 02022012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL 02022012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 02022012\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 02022012\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 02022012\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 02022012\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL 02022012\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL  2\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL  2\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL  2\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL  2\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\FUENTE FINAL  2\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\Copia de FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Laptop\Desktop\FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Laptop\Desktop\FUENTE FINAL\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Laptop\Desktop\FUENTE FINAL\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Laptop\Desktop\FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Laptop\Desktop\FUENTE FINAL\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\obj\Debug\BusinessObjects.pdb

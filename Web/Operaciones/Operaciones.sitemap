@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Operaciones" url="~/Operaciones/Default.aspx">
+    <siteMapNode title="Saldo" roles="SALDOS">
+      <siteMapNode title="Consultar" url="~/Operaciones/Saldo/Consultar.aspx" roles="SALDOS" />
+    </siteMapNode>
+  <!--  <siteMapNode title="Dividendos" roles="DIVIDENDOS">
+      <siteMapNode title="Consultar" url="~/Operaciones/Clientes/Dividendos.aspx" roles="DIVIDENDOS" />
+    </siteMapNode>-->
+    <siteMapNode title="Beneficios" roles="BENEFICIOS">
+      <siteMapNode title="Consultar" url="~/Operaciones/Clientes/Beneficios.aspx" roles="BENEFICIOS" />
+    </siteMapNode>
+  <!--  <siteMapNode title="Referidos" roles="REFERIDOS">
+      <siteMapNode title="Consultar/Agregar" url="~/Operaciones/Clientes/CrearReferidos.aspx" roles="REFERIDOS"   />
+    </siteMapNode>-->
+    <siteMapNode title="Tickets" roles="SERVICIOS">
+      <siteMapNode title="Crear" url="~/Operaciones/Clientes/CrearSolicitud.aspx" roles="SERVICIOS"   />
+    </siteMapNode>
+   <!-- <siteMapNode title="Estados de Cuenta" roles="ESTADOSDECUENTA">
+      <siteMapNode title="Cargar" url="~/Operaciones/Clientes/EstadosCuentas.aspx" roles="ESTADOSDECUENTA"   />
+    </siteMapNode>-->
+  </siteMapNode>
+  
+</siteMap>

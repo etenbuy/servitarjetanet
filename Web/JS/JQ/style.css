@@ -1,0 +1,40 @@
+/* 
+Document   : style.css
+Created on : 20/08/2008, 03:01:20 PM
+Author     : Administrador
+Description:
+Purpose of the stylesheet follows.
+*/
+
+*{
+  margin:0;
+  padding:0;
+}
+html,body{
+  height:100%;
+}
+body{
+  padding:30px;
+  font:13px/15px 'helvetica neue',arial,helvetica,sans-serif;
+  color:#343434;
+}
+h1{
+  padding:10px;
+}
+#chat{
+  padding:25px;
+  font-family:Monaco,Courier,monospace;
+  font-size:12px;margin-bottom:15px;
+  -webkit-border-radius:9px;
+  -moz-border-radius:9px;
+  background-color:#1F1100;
+  border:0;
+  color:#E7ECF1;
+  overflow:auto;
+  width:400px;
+  height:380px;
+}
+.footer{
+  margin-top:50px;
+  font-style:italic;
+}

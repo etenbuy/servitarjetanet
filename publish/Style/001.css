@@ -1,0 +1,547 @@
+﻿*
+{
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+
+html
+{
+	background: #000000;
+}
+
+body
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size: medium;
+	line-height: 1.6em;
+	text-align: left;
+}
+
+
+#container
+{
+	width: 100%;
+	font-size: 95%;
+	text-align: left;
+}
+
+
+
+#header
+{
+	width: 100%;
+	height: 90px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(    '../Images/HeaderBg.jpg' );
+}
+
+#logo
+{
+	float: left;
+	display: block;
+	width: 200px;
+	height: 90px;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	text-decoration: none;
+}
+
+#logo img
+{
+	border-style: none;
+	display: block;
+	margin-top: 15px;
+
+}
+
+#header p
+{
+	font-family: Arial;
+	position: absolute;
+	top: 30px;
+	left: 250px;
+}
+
+#header #logo a
+{
+	text-decoration: none;
+	border-bottom: 0px;
+}
+
+
+#header .TopMenu
+{
+	float: right;
+	color: #000000;
+	font-size: 12px;
+	padding-right: 30px;
+}
+
+#header .TopMenu a
+{
+	color: white;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#header .TopMenu. TopMenu a:hover
+{
+	color: #000000;
+}
+
+/* --- [ menus ] ----- */
+
+#menu
+{
+	width: 200px;
+
+	text-align:center;
+}
+.left-menu-header
+{
+		color: #ffffff;
+	background: url('../Images/MenuItemBg.gif' );
+	height: 32px;
+	padding-top: 4px;
+	text-align: center;
+
+}
+.left-menu-content
+{	color: #ffffff;
+	padding-left: 4px;
+	margin:0 auto;
+
+}
+
+/* --- [ misc ] ----- */
+
+#main-body
+{
+	width: 100%;
+}
+
+#content
+{
+	padding: 5px 10px 0px 10px;
+	font-size: 85%;
+	line-height: 18px;
+	background: #fff;
+	min-height: 400px;
+}
+
+#content-header
+{
+	padding-left: 10px;
+	padding-top: 5px;
+	background: #000000;
+	height: 32px;
+	color: #ffffff;
+}
+
+#content-header a
+{
+	color: #ffffff;
+}
+
+#content-header a:link
+{
+	color: #ffffff;
+}
+
+#performance
+{
+	color: #888;
+	padding: 15px;
+	text-indent: 15px;
+	font-size: 9pt;
+}
+
+.containerseparator
+{
+	width: 100%;
+	height: 1px;
+	background: #ffff00;
+}
+
+/* main page display patterns */
+
+div.patternhead
+{
+	width: 100%;
+	height: 20px;
+	margin-top: 25px;
+	background-color: #ff9A00;
+	text-indent: 5px;
+	font-weight: bold;
+	border-bottom: solid 1px #999;
+	border-left: solid 1px #999;
+}
+
+p.patterndesc
+{
+	margin-left: 15px;
+}
+
+/* --- [ miscellaneous html ] ------ */
+
+td
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: bold;
+}
+
+h1
+{
+	margin: 1em 0 1em 0;
+	font-size: 14pt;
+	color: #222;
+}
+
+h2
+{
+	margin: 0.3em 0 0.8em 0;
+	border-bottom: 1px dotted #999;
+	color: #072;
+	font-size: 13pt;
+}
+
+h3
+{
+	margin: 0 0 0.1em 0;
+	font-size: 9pt;
+	color: #072;
+}
+
+
+
+
+hr
+{
+	border: 0;
+	border-top: 1px solid #ccc;
+	height: 0;
+	background: #ccc;
+	width: 91%;
+}
+
+/* ---[ links ]------------------------------- */
+
+a:link, a:visited
+{
+	color: #DFC00F;
+	text-decoration: none;
+	border-bottom: 1px solid #000000; /*	border-bottom: 1px solid #a00;      text-decoration: underline;*/
+}
+
+a:hover
+{
+	color: #DFC00F;
+	border-color: #00bb00;
+}
+
+/* ---[ back link ]---------------------------- */
+
+#back
+{
+	height: 22px;
+	float: right;
+}
+
+/* --- [ DropDownList ] ------------- */
+
+.DropDownList
+{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.OrientacionVertical
+{
+	layout-flow: vertical-ideographic;
+}
+
+/* --- [ GridGeneral ] ------------- */
+
+.Formulario
+{
+	border: 1px solid #e2e2e2;
+}
+.Formulario th
+{
+	border-bottom: 1px solid #e2e2e2;
+	background: #000000;
+	text-align: left;
+	color: #ffffff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.Formulario td
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #e2e2e2;
+	color:#555555;
+}
+.Formulario-Clear
+{	border: none;
+}
+.Formulario-Clear th
+{
+	color:#000000;
+	background: none;
+	text-align:center;
+	padding: 0;
+	border: none;
+}
+
+.Formulario-Clear td
+{
+	padding: 0;
+	border: none;
+}
+.GridGeneral th
+{
+	color: #ffffff;
+	background: #a7a7a7;
+	background: #000000;
+}
+.GridGeneral tr a
+{
+	text-decoration: none;
+	color: Teal;
+}
+
+.GridGeneral th a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+.GridGeneral tr
+{
+}
+.GridGeneral td
+{
+}
+
+
+.GridGeneral tr:hover
+{
+	background-color: #f1f1f1;
+}
+
+.GridGeneral .AlternatingRowStyle
+{
+	background-color: #f0ffff;
+}
+
+
+/* --- [ GridGeneral2 ] ------------- */
+.GridGeneral2
+{
+	border: solid 1px #CDC900;
+}
+.GridGeneral2 th
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #000000;
+	color: #ffffff;
+}
+.GridGeneral2 tr a
+{
+	text-decoration: none;
+	color: Teal;
+}
+
+.GridGeneral2 th a
+{
+	text-decoration: none;
+	color: #333333;
+}
+
+.GridGeneral2 td
+{
+}
+
+
+
+
+
+/* --- [ TablaGeneral ] ------------- */
+
+
+.TablaGeneral th
+{
+	color: #999999;
+	background: #a7a7a7;
+	background: #000000;
+}
+
+/* --- [ Grid Envase ] ------------- */
+
+
+.GridEnvase th
+{
+	color: #999999;
+	background: #a7a7a7;
+	background: #ffffff;
+}
+.GridEnvase
+{
+	border: solid 1px #CDBF00;
+	background: #99ff99;
+}
+.GridCartera
+{
+	border: solid 1px #CDBF00;
+	background: #333333;
+}
+/* --- [ Moneda005 ] ------------- */
+
+
+.Moneda005 td
+{
+	background: #ffdd99;
+}
+
+/* --- [ Moneda010 ] ------------- */
+.Moneda010 td
+{
+	background: #d4d4d4;
+}
+/* --- [ Moneda050 ] ------------- */
+.Moneda050 td
+{
+	background: #b8b8b8;
+}
+/* --- [ Moneda1 ] ------------- */
+.Moneda1 td
+{
+	background: #ffff00;
+}
+
+/* --- [ Cartera ] ------------- */
+.Cartera th
+{
+	font-size: 8pt;
+}
+.Cartera td
+{
+	background: #ffffff;
+}
+
+
+/* --- [ Pagina AdministrarUsuarios.ASPX ] ------------- */
+
+.TablaGeneral2
+{
+	border: solid 1px #00cc00;
+}
+.TablaGeneral2 th
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #000000;
+	color: #ffffff;
+}
+
+
+
+/* --- [ POP UP ] ----- */
+
+.PopUp
+{
+	font-family: lucida grande,arial,helvetica,sans-serif;
+
+	background-color: #fff;
+	border: solid 2px #000;
+	padding: 4px;
+	width: 900px;
+	height: 400px;
+	overflow: auto;
+}
+.PopUp .Header
+{
+	font-weight: bolder;
+	padding: 4px;
+	background: #000000;
+	color: #ffffff;
+}
+
+.PopUp .Header a
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: Berlin Sans FB Demi;
+	font-size: 20px;
+}
+
+.PopUp .Header a:hover
+{
+	font-size: 30px;
+}
+
+.biblia
+{
+
+	border-width: 1px;
+	border-spacing: 1px;
+	border-style: solid;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+	font-size:10px;
+}
+.biblia th {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: gray;
+	background-color: white;
+
+}
+.biblia td {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: gray;
+	background-color: white;
+
+}
+
+
+.biblia tr:hover  {
+	
+
+	
+}
+.biblia tr:hover td input   {
+	
+	font-size:14px;
+	background:#bbff66;
+	
+}
+.biblia input:focus  {
+  border-color: Yellow;
+  padding:4px;
+	
+	
+}
+.biblia input.text:focus  {
+
+	font-size:14px;
+	
+	
+}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Configuracion" url="~/Configuracion/Default.aspx" >
+    <siteMapNode title="Usuarios" roles="CONFIGURACION_USUARIOS" >
+      <siteMapNode title="Crear" url="~/Configuracion/Usuarios/Crear.aspx" roles="CONFIGURACION_USUARIOS" />
+      <siteMapNode title="Editar" url="~/Configuracion/Usuarios/Editar.aspx" roles="CONFIGURACION_USUARIOS" />
+    </siteMapNode>
+    <siteMapNode title="Clientes" roles="CONFIGURACION_CLIENTES" >
+      <siteMapNode title="Crear" url="~/Configuracion/Clientes/Crear.aspx" roles="CONFIGURACION_CLIENTES" />
+      <siteMapNode title="Editar" url="~/Configuracion/Clientes/Editar.aspx" roles="CONFIGURACION_CLIENTES" />
+    </siteMapNode>
+  <!--  <siteMapNode title="Dividendos" roles="CONFIGURACION_DIVIDENDOS" >
+      <siteMapNode title="Crear" url="~/Configuracion/Dividendos/Crear.aspx" roles="CONFIGURACION_DIVIDENDOS" />
+    </siteMapNode>-->
+  </siteMapNode>
+</siteMap>

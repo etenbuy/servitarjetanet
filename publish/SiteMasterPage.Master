@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMasterPage.master.cs Inherits="Web.SiteMasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SERVITARJETA.NET</title>
+    <link href="Style/001.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+      
+</head>
+<body onload="scroll();return true;">
+
+    <script src="<%=ResolveUrl("~/js/Validador.js")%>" type="text/javascript"></script>
+
+    <script src="<%=ResolveUrl("~/js/Utilidad.js")%>" type="text/javascript"></script>
+
+    <div id="container">
+        <form id="form1" runat="server">
+        <%-- Header --%>
+        <div id="header">
+            <div id="logo">
+                <asp:HyperLink ID="HyperLinkLogo" runat="Server" ImageUrl="~/Images/logo.png" NavigateUrl="~/Inicio.aspx"></asp:HyperLink>
+            </div>
+            <p>
+                <span style="color: #FFFFFF; font-size: 34px">SERVITARJETA.</span> <span style="font-size: 34px;
+                    color: #DFC00F">NET</span> <span style="color: #DFC00F; font-size: 12px">Sistema</span>
+                <span style="color: #FFFFFF; font-size: 12px">Web Version 2.0</span>
+            </p>
+            <div class="TopMenu" align="right">
+                <br />
+               
+                <asp:LinkButton ID="lbtnLoginLogout" runat="server" TabIndex="-1"></asp:LinkButton>
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="containerseparator">
+        </div>
+        <%-- Body --%>
+        <div id="main-body">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <%-- Menu --%>
+                    <td valign="top" align="left" id="menu" style="border-right: solid 2px #000000;">
+                        <%if (Request.IsAuthenticated)
+                          {%>
+                        <asp:Accordion ID="accMenu" runat="server" HeaderCssClass="left-menu-header" ContentCssClass="left-menu-content">
+                            
+                            
+                            <Panes>
+                                <asp:AccordionPane ID="AccordionPane5" runat="server">
+                                    <Header>
+                                        Operaciones</Header>
+                                    <Content>
+                                        <asp:TreeView ID="trvMC" runat="server" DataSourceID="smdsMC" ImageSet="Arrows">
+                                        </asp:TreeView>
+                                    </Content>
+                                </asp:AccordionPane>
+                            </Panes>
+                           
+                            
+                            <Panes>
+                                <asp:AccordionPane ID="AccordionPane2" runat="server">
+                                    <Header>
+                                        Configuración</Header>
+                                    <Content>
+                                        <asp:TreeView ID="trvConfiguracion" runat="server" DataSourceID="smdsConfiguracion"
+                                            ImageSet="Arrows">
+                                        </asp:TreeView>
+                                    </Content>
+                                </asp:AccordionPane>
+                            </Panes>
+                        </asp:Accordion>
+                        <%} %>
+                        <div id="performance">
+                            <% =PageRenderTime %>
+                        </div>
+                    </td>
+                    <%-- Content --%>
+                    <td valign="top" align="left">
+                        <%-- Ajax Script Manager --%>
+                        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                        
+                        </asp:ToolkitScriptManager>
+                        <%-- Ajax Update Progess Panel --%>
+                        <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="100">
+                            <ProgressTemplate>
+                                <div class="updateprogress">
+                                    <asp:Image ID="ImageProgress" runat="server" ImageUrl="~/Images/Site/indicator.gif"
+                                        ImageAlign="AbsMiddle" />&nbsp;&nbsp;&nbsp;Procesando...
+                                </div>
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+                        <div id="content-header">
+                            <asp:SiteMapPath ID="smpModulo" runat="server">
+                            </asp:SiteMapPath>
+                        </div>
+                        <%-- Content --%>
+                        <div id="content">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+           
+            <asp:SiteMapDataSource ID="smdsMC" SiteMapProvider="Operaciones" runat="server" ShowStartingNode="false" />
+
+          
+            <asp:SiteMapDataSource ID="smdsConfiguracion" SiteMapProvider="Configuracion" runat="server" ShowStartingNode="false" />
+        </div>
+        <div class="containerseparator">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
