@@ -8,38 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web.Operaciones.Saldo
-{
+namespace Web.Operaciones.Saldo {
     
     
     public partial class Consultar {
-        
-        /// <summary>
-        /// lbSaldo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbSaldo;
-        
-        /// <summary>
-        /// dvDisponible control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView dvDisponible;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// txtCalFechaDesde control.

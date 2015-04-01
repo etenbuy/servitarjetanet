@@ -8,13 +8,6 @@
     <h2>
         Saldos y Movimientos</h2>
     <div>
-        <asp:Label ID="lbSaldo" runat="server" Text="Saldo"></asp:Label>
-        <br />
-        <br />
-        <asp:DetailsView ID="dvDisponible" runat="server"  Height="50px" Width="1121px">
-        </asp:DetailsView>
-        <br />
-        <asp:Label ID="Label1" runat="server" Text="Movimientos"></asp:Label>
         
          <br />
         <br />
@@ -45,18 +38,12 @@
          ondatabound="gvDividendos_DataBound" Width="1136px">
         <RowStyle HorizontalAlign="Center" />
         <Columns>
-            <asp:BoundField DataField="Cliente" HeaderText="Fecha" SortExpression="Cliente"/>
-            <asp:BoundField DataField="Fecha" HeaderText="Descripcion" SortExpression="Fecha"/>
-            <asp:BoundField DataField="Monto" HeaderText="Monto" HeaderStyle-HorizontalAlign="Right"
-                ItemStyle-HorizontalAlign="Right" SortExpression="Monto" >
-<HeaderStyle HorizontalAlign="Right"></HeaderStyle>
-
-<ItemStyle HorizontalAlign="Right"></ItemStyle>
-            </asp:BoundField>
-                <asp:BoundField DataField="Saldo" HeaderText="Saldo" HeaderStyle-HorizontalAlign="Right"
-                ItemStyle-HorizontalAlign="Right" SortExpression="Saldo" >
-            
-
+            <asp:BoundField DataField="Numero" HeaderText="Numero" SortExpression="Numero"/>           
+            <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"/>
+             <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha"/>
+            <asp:BoundField DataField="Monto" HeaderText="Monto" SortExpression="Monto"/>
+                 <asp:BoundField DataField="Pagado" HeaderText="Pagado" HeaderStyle-HorizontalAlign="Right"
+                ItemStyle-HorizontalAlign="Right" SortExpression="Pagado" >
             </asp:BoundField>
 
             <asp:TemplateField>
