@@ -31,11 +31,11 @@
                                 Usuario:
                             </td>
                             <td>
-                                <%--<asp:TextBox ID="txtUsuario" runat="server" TextMode="SingleLine" TabIndex="1"
-                                    Width="200"></asp:TextBox>--%>
-                                <asp:DropDownList ID="ddlUsuario" runat="server"  TabIndex="1"
+                                <asp:TextBox ID="txtUsuario" runat="server" TextMode="SingleLine" TabIndex="1"
+                                    Width="200"></asp:TextBox>
+                             <!--   <asp:DropDownList ID="ddlUsuario" runat="server"  TabIndex="1"
                                     Width="200">
-                                </asp:DropDownList>
+                                </asp:DropDownList>-->
                             </td>
                         </tr>
                         <tr>
@@ -59,10 +59,93 @@
                     </table>
                 </td>
             </tr>
+            
         </table>
     </asp:Panel>
     <br />
     <br />
     <br />
     <br />
+    
+       <asp:Panel ID="Panel2" DefaultButton="btnLogin" runat="server">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td width="10">
+
+                </td>
+                <asp:Label ID="Label1" ForeColor="#FE7000" runat="server" Text="ENVIO DE FACTURAS Y RECIBOS"></asp:Label>
+            </tr>
+        <div>
+        <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+            <table class="Formulario" cellpadding="0" cellspacing="0">
+               
+               
+                <tr>
+                    <th>
+                        Monto:
+                    </th>
+                   
+                    <td>
+                    
+                         <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="true" Width="500" 
+                             THeight="400px" />
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                
+                 <tr>
+                    <th>
+                        Nota:
+                    </th>
+                   
+                    <td>
+                    
+                         <asp:TextBox runat="server" ID="txtNota"  AutoPostBack="true" Width="500px" 
+                             TextMode="MultiLine" Height="121px" />
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>
+                        Adjuntar Factura:
+                    </th>
+                   
+                    <td>
+                    <asp:FileUpload ID="FileUploadFactura" runat="server"  AutoPostBack="true" />
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>
+                        Adjuntar Recibo:
+                    </th>
+                   
+                    <td>
+                    <asp:FileUpload ID="FileUploadRecibo" runat="server"  AutoPostBack="true" />
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                
+               
+                <tr>
+                    <td colspan="3">
+                        <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click"
+                            ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" />
+                       
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+            </tr>
+            
+        </table>
+    </asp:Panel>
 </asp:Content>

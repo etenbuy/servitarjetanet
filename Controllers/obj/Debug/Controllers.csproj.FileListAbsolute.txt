@@ -1321,3 +1321,12 @@ C:\Users\bakiet\Desktop\ServiTarjeta\Controllers\bin\Debug\DataObjects.pdb
 C:\Users\bakiet\Desktop\ServiTarjeta\Controllers\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bakiet\Desktop\ServiTarjeta\Controllers\obj\Debug\Controllers.dll
 C:\Users\bakiet\Desktop\ServiTarjeta\Controllers\obj\Debug\Controllers.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\bin\Debug\Controllers.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\bin\Debug\Controllers.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\bin\Debug\DataObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\obj\Debug\Controllers.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Controllers\obj\Debug\Controllers.pdb

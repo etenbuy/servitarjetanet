@@ -38,7 +38,7 @@ namespace Web.Operaciones.Clientes
 
             Solicitud solicitud = new Solicitud();
 
-            solicitud.SolicitudTipoID = int.Parse(ddlServicio.SelectedValue);
+            //solicitud.SolicitudTipoID = int.Parse(ddlServicio.SelectedValue);
 
             solicitud.Nota = txtNota.Text;
 

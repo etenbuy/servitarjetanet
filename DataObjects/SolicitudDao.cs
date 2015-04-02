@@ -34,7 +34,7 @@ namespace DataObjects
             if (solicitud.SolicitudTipoID != null)
             {
                 prn = new SqlParameter("@SolicitudTipoID", SqlDbType.Int);
-                prn.Value = solicitud.SolicitudTipoID;
+                prn.Value = 1;
                 parameters.Add(prn);
             }
             

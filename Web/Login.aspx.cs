@@ -39,13 +39,15 @@ namespace Web
         {
             
         
-            string usuario = ddlUsuario.Text;
+            //string usuario = ddlUsuario.Text;
+
+            string usuario = txtUsuario.Text;
 
             string contrasena = txtContrasena.Text;
 
             Controllers.Configuracion.CustomMembershipProvider controller = new Controllers.Configuracion.CustomMembershipProvider();
 
-            if (controller.ValidateUser(usuario, contrasena))
+           if (controller.ValidateUser(usuario, contrasena))
             {
                 Session["usuario"] = Membership.GetUser(usuario);
 
@@ -59,6 +61,11 @@ namespace Web
                 this.LiteralError.Text = "Usuario o Password Incorrectos.";
 
             }
+
+        }
+
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
 
         }
     }

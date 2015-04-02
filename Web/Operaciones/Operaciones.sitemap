@@ -13,8 +13,8 @@
   <!--  <siteMapNode title="Referidos" roles="REFERIDOS">
       <siteMapNode title="Consultar/Agregar" url="~/Operaciones/Clientes/CrearReferidos.aspx" roles="REFERIDOS"   />
     </siteMapNode>-->
-    <siteMapNode title="Tickets" roles="SERVICIOS">
-      <siteMapNode title="Crear" url="~/Operaciones/Clientes/CrearSolicitud.aspx" roles="SERVICIOS"   />
+    <siteMapNode title="Subir Facturas" roles="SERVICIOS">
+      <siteMapNode title="Adjuntar" url="~/Operaciones/Clientes/CrearSolicitud.aspx" roles="SERVICIOS"   />
     </siteMapNode>
    <!-- <siteMapNode title="Estados de Cuenta" roles="ESTADOSDECUENTA">
       <siteMapNode title="Cargar" url="~/Operaciones/Clientes/EstadosCuentas.aspx" roles="ESTADOSDECUENTA"   />
