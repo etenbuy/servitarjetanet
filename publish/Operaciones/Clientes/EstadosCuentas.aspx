@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/Operaciones/Operaciones.master" AutoEventWireup="true"
-    CodeBehind="EstadosCuentas.aspx.cs" Inherits="Web.Operaciones.Clientes.EstadosCuentas" Title="SERVITARJETA 2.0" %>
+    CodeBehind="EstadosCuentas.aspx.cs" Inherits="Web.Operaciones.Clientes.EstadosCuentas" Title="SERVITARJETA" %>
 
 <%@ Register Src="~/ExtraControls/CartaPorteUI.ascx" TagName="CartaPorteUI" TagPrefix="uc1" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>

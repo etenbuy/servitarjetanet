@@ -107,6 +107,13 @@
     <Compile Include="Configuracion\Configuracion.master.designer.cs">
       <DependentUpon>Configuracion.master</DependentUpon>
     </Compile>
+    <Compile Include="Configuracion\Pagos\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Pagos\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Operaciones\Saldo\Consultar.aspx.cs">
       <DependentUpon>Consultar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -381,6 +388,7 @@
     <Content Include="Configuracion\Clientes\Crear.aspx" />
     <Content Include="Configuracion\Clientes\Editar.aspx" />
     <Content Include="Configuracion\Clientes\EditarClientes.aspx" />
+    <Content Include="Configuracion\Pagos\Editar.aspx" />
     <Content Include="Operaciones\Saldo\Consultar.aspx" />
     <Content Include="Configuracion\Dividendos\Crear.aspx" />
     <Content Include="Configuracion\Dividendos\Editar.aspx" />

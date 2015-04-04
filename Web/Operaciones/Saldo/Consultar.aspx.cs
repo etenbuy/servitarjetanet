@@ -23,9 +23,17 @@ namespace Web.Operaciones.Saldo
 
             if (!Page.IsPostBack)
             {
-               
-               
+
+                BuildSolicitudes();
             }
+        }
+
+        private void BuildSolicitudes()
+        {
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+
+            gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient("juan.delgado");
+            gvSolicitudes.DataBind();
         }
 
         protected void txtCalFechaDesde_SelectionChanged(object sender, EventArgs e)
@@ -39,20 +47,36 @@ namespace Web.Operaciones.Saldo
 
         }
 
-        protected void gvDividendos_Sorting(object sender, GridViewSortEventArgs e)
+        protected void gvSolicitudes_Sorting(object sender, GridViewSortEventArgs e)
         {
 
           
 
         }
 
-        protected void gvDividendos_DataBound(object sender, EventArgs e)
+        protected void gvSolicitudes_DataBound(object sender, EventArgs e)
         {
 
+         /*   if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                monto += string.IsNullOrEmpty(((HiddenField)e.Row.FindControl("hfMonto")).Value.ToString()) ? 0 : decimal.Parse(((HiddenField)e.Row.FindControl("hfMonto")).Value.ToString());
+                dividendo += string.IsNullOrEmpty(((HiddenField)e.Row.FindControl("hfDividendo")).Value.ToString()) ? 0 : decimal.Parse(((HiddenField)e.Row.FindControl("hfDividendo")).Value.ToString());
 
+            }
+            if (e.Row.RowType == DataControlRowType.Footer)
+            {
+                //e.Row.Cells[2].HorizontalAlign = HorizontalAlign.Right;
+                //e.Row.Cells[3].HorizontalAlign = HorizontalAlign.Right;
+
+                e.Row.Cells[4].Text = monto.ToString("###,###,###,###.00");
+                e.Row.Cells[5].Text = dividendo.ToString("###,###,###,###.00");
+
+                e.Row.Font.Bold = true;
+            }
+            */
         }
 
-        protected void gvDividendos_RowDataBound(object sender, GridViewRowEventArgs e)
+        protected void gvSolicitudes_RowDataBound(object sender, GridViewRowEventArgs e)
         {
 
 

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Operaciones/Operaciones.master" AutoEventWireup="true"
-    CodeBehind="CrearReferidos.aspx.cs" Inherits="Web.Operaciones.Clientes.CrearReferidos" Title="SERVITARJETA 2.0" %>
+    CodeBehind="CrearReferidos.aspx.cs" Inherits="Web.Operaciones.Clientes.CrearReferidos" Title="SERVITARJETA" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">

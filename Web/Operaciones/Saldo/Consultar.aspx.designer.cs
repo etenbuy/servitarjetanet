@@ -14,42 +14,6 @@ namespace Web.Operaciones.Saldo {
     public partial class Consultar {
         
         /// <summary>
-        /// txtCalFechaDesde control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCalFechaDesde;
-        
-        /// <summary>
-        /// calendarFechaDesde control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender calendarFechaDesde;
-        
-        /// <summary>
-        /// txtCalFechaHasta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCalFechaHasta;
-        
-        /// <summary>
-        /// calendarFechaHasta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender calendarFechaHasta;
-        
-        /// <summary>
         /// lblMensaje control.
         /// </summary>
         /// <remarks>
@@ -59,21 +23,21 @@ namespace Web.Operaciones.Saldo {
         protected global::System.Web.UI.WebControls.Label lblMensaje;
         
         /// <summary>
-        /// lblTotalDividendos control.
+        /// lblTotalSolicitudes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTotalDividendos;
+        protected global::System.Web.UI.WebControls.Label lblTotalSolicitudes;
         
         /// <summary>
-        /// gvDividendos control.
+        /// gvSolicitudes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvDividendos;
+        protected global::System.Web.UI.WebControls.GridView gvSolicitudes;
     }
 }

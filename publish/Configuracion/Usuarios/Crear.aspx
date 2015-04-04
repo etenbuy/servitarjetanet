@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true"
-    CodeBehind="Crear.aspx.cs" Inherits="Web.Configuracion.Usuarios.Crear" Title="SERVITARJETA 2.0" %>
+    CodeBehind="Crear.aspx.cs" Inherits="Web.Configuracion.Usuarios.Crear" Title="SERVITARJETA" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
     <h2>

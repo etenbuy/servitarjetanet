@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/SiteMasterPage.Master" AutoEventWireup="true" CodeBehind="Disculpe.aspx.cs" Inherits="Web.Disculpe" Title="SERVITARJETA 2.0" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/SiteMasterPage.Master" AutoEventWireup="true" CodeBehind="Disculpe.aspx.cs" Inherits="Web.Disculpe" Title="SERVITARJETA" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

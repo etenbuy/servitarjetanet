@@ -9,8 +9,8 @@
       <siteMapNode title="Crear" url="~/Configuracion/Clientes/Crear.aspx" roles="CONFIGURACION_CLIENTES" />
       <siteMapNode title="Editar" url="~/Configuracion/Clientes/Editar.aspx" roles="CONFIGURACION_CLIENTES" />
     </siteMapNode>
-    <siteMapNode title="Dividendos" roles="CONFIGURACION_DIVIDENDOS" >
+  <!--  <siteMapNode title="Dividendos" roles="CONFIGURACION_DIVIDENDOS" >
       <siteMapNode title="Crear" url="~/Configuracion/Dividendos/Crear.aspx" roles="CONFIGURACION_DIVIDENDOS" />
-    </siteMapNode>
+    </siteMapNode>-->
   </siteMapNode>
 </siteMap>

@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true" CodeBehind="Crear.aspx.cs" Inherits="Web.Configuracion.Clientes.Crear" Title="SERVITARJETA 2.0" %>
+<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true" CodeBehind="Crear.aspx.cs" Inherits="Web.Configuracion.Clientes.Crear" Title="SERVITARJETA" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">

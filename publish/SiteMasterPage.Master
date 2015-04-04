@@ -25,9 +25,9 @@
                 <asp:HyperLink ID="HyperLinkLogo" runat="Server" ImageUrl="~/Images/logo.png" NavigateUrl="~/Inicio.aspx"></asp:HyperLink>
             </div>
             <p>
-                <span style="color: #FFFFFF; font-size: 34px">SERVITARJETA.</span> <span style="font-size: 34px;
-                    color: #DFC00F">NET</span> <span style="color: #DFC00F; font-size: 12px">Sistema</span>
-                <span style="color: #FFFFFF; font-size: 12px">Web Version 2.0</span>
+                <span style="color: #5882FA; font-size: 12px">Sistema</span> <span style="color: #0040FF; font-size: 34px">SERVITARJETA.</span> <span style="font-size: 34px;
+                    color: #5882FA">NET</span> 
+              
             </p>
             <div class="TopMenu" align="right">
                 <br />
@@ -44,7 +44,7 @@
             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                     <%-- Menu --%>
-                    <td valign="top" align="left" id="menu" style="border-right: solid 2px #000000;">
+                    <td valign="top" align="left" id="menu" style="border-right: solid 2px #0040FF;">
                         <%if (Request.IsAuthenticated)
                           {%>
                         <asp:Accordion ID="accMenu" runat="server" HeaderCssClass="left-menu-header" ContentCssClass="left-menu-content">

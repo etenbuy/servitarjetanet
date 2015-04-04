@@ -1918,3 +1918,14 @@ C:\Users\bakiet\Desktop\ServiTarjeta\Web\bin\Controllers.pdb
 C:\Users\bakiet\Desktop\ServiTarjeta\Web\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bakiet\Desktop\ServiTarjeta\Web\obj\Debug\Web.dll
 C:\Users\bakiet\Desktop\ServiTarjeta\Web\obj\Debug\Web.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\Web.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\Web.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\Controllers.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\DataObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\DataObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\bin\Controllers.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\obj\Debug\Web.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\Web\obj\Debug\Web.pdb

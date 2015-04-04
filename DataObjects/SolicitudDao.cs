@@ -25,6 +25,13 @@ namespace DataObjects
             prn.Value = Login;
             parameters.Add(prn);
 
+            if (solicitud.Monto != null)
+            {
+                prn = new SqlParameter("@Monto", SqlDbType.Decimal);
+                prn.Value = solicitud.Monto;
+                parameters.Add(prn);
+            }
+
             if (solicitud.Nota != null)
             {
                 prn = new SqlParameter("@Nota", SqlDbType.VarChar, 500);
@@ -34,14 +41,21 @@ namespace DataObjects
             if (solicitud.SolicitudTipoID != null)
             {
                 prn = new SqlParameter("@SolicitudTipoID", SqlDbType.Int);
-                prn.Value = 1;
+                prn.Value = solicitud.StatusSolicitudID;
                 parameters.Add(prn);
             }
             
             if (Login != null)
             {
                 prn = new SqlParameter("@ClienteID", SqlDbType.Int);
-                prn.Value = 1;
+                prn.Value = solicitud.ClienteID;
+                parameters.Add(prn);
+            }
+
+            if (solicitud.Factura != null)
+            {
+                prn = new SqlParameter("@Factura", SqlDbType.VarChar, 500);
+                prn.Value = solicitud.Factura;
                 parameters.Add(prn);
             }
 
@@ -55,22 +69,24 @@ namespace DataObjects
 
         #region LECTURA
 
-        public static IList<Referido> GetReferidosByClient(int clientid)
+        public static IList<Solicitud> GetSolicitudesByClient(string LoginCreado)
         {
 
 
-            IList<Referido> list = new List<Referido>();
+            IList<Solicitud> list = new List<Solicitud>();
 
             string var1 = string.Empty;
             var1 = var1 + "SELECT ClienteID, " + "\n";
-            var1 = var1 + "       ReferidoID, " + "\n";
-            var1 = var1 + "       Descripcion, " + "\n";
-            var1 = var1 + "       Telefono, " + "\n";
-            var1 = var1 + "       Email, " + "\n";
-            var1 = var1 + "       RIF, " + "\n";
-            var1 = var1 + "       Direccion " + "\n";
-            var1 = var1 + "FROM   Referido " + "\n";
-            var1 = var1 + "WHERE  ClienteID =" + clientid + " " + "\n";
+            var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       SolicitudID " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
 
 
             DataTable dt = Db.GetDataTable(var1);
@@ -78,20 +94,230 @@ namespace DataObjects
             foreach (DataRow row in dt.Rows)
             {
 
-                Referido referido = new Referido();
-                referido.ClienteID = int.Parse(row["ClienteID"].ToString());
-                referido.ReferidoID = int.Parse(row["ClienteID"].ToString());
-                referido.Direccion = row["Direccion"].ToString();
-                referido.Email = row["Email"].ToString();
-                referido.Telefono = row["Telefono"].ToString();
-                referido.Descripcion = row["Descripcion"].ToString();
+                Solicitud solicitud = new Solicitud();
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Nota = row["Nota"].ToString();
 
-                list.Add(referido);
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+                if (solicitud.StatusSolicitudID == 1)
+                {
+                    solicitud.Estado = "Solicitado";
+                }
+                if (solicitud.StatusSolicitudID == 2)
+                {
+                    solicitud.Estado = "En Proceso";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "Aprobado";
+                }
+                if (solicitud.StatusSolicitudID == 4)
+                {
+                    solicitud.Estado = "Terminado";
+                }
+                if (solicitud.StatusSolicitudID == 5)
+                {
+                    solicitud.Estado = "No Aprobado";
+                }
+
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
+
+
+                list.Add(solicitud);
 
             }
             
             return list;
         }
+
+        public static DaoResult ActualizarSolicitud(Solicitud solicitud)
+        {
+            IList<SqlParameter> parameters = new List<SqlParameter>();
+
+
+            SqlParameter prn = new SqlParameter("@MontoPagado", SqlDbType.Decimal);
+            prn.Value = solicitud.Monto_Pagado;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@SolicitudID", SqlDbType.Int);
+            prn.Value = solicitud.SolicitudID;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@StatusSolicitudID", SqlDbType.Int);
+            prn.Value = solicitud.StatusSolicitudID;
+            parameters.Add(prn);
+
+           
+            DaoResult result = Db.Insert(parameters, "Solicitud_UPDATE", false, false);
+            return result;
+        }
+
+        public static IList<Solicitud> GetSolicitudesByClientSolicitudID(int SolicitudID)
+        {
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT ClienteID, " + "\n";
+            var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       SolicitudID " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  SolicitudID =" + SolicitudID + " " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                Solicitud solicitud = new Solicitud();
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Nota = row["Nota"].ToString();
+
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+                if (solicitud.StatusSolicitudID == 1)
+                {
+                    solicitud.Estado = "Solicitado";
+                }
+                if (solicitud.StatusSolicitudID == 2)
+                {
+                    solicitud.Estado = "En Proceso";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "Aprobado";
+                }
+                if (solicitud.StatusSolicitudID == 4)
+                {
+                    solicitud.Estado = "Terminado";
+                }
+                if (solicitud.StatusSolicitudID == 5)
+                {
+                    solicitud.Estado = "No Aprobado";
+                }
+
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
+
+
+                list.Add(solicitud);
+
+            }
+
+            return list;
+        }
+
+        public static IList<Solicitud> GetSolicitudesAlMesByClient(string LoginCreado)
+        {
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT ClienteID, " + "\n";
+            var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       SolicitudID " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  datepart(mm, FechaCreado) =datepart(mm,'" + DateTime.Now.ToString("MM/dd/yyyy") + "') " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                Solicitud solicitud = new Solicitud();
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Nota = row["Nota"].ToString();
+
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+                if (solicitud.StatusSolicitudID == 1)
+                {
+                    solicitud.Estado = "Solicitado";
+                }
+                if (solicitud.StatusSolicitudID == 2)
+                {
+                    solicitud.Estado = "En Proceso";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "Aprobado";
+                }
+                if (solicitud.StatusSolicitudID == 4)
+                {
+                    solicitud.Estado = "Terminado";
+                }
+                if (solicitud.StatusSolicitudID == 5)
+                {
+                    solicitud.Estado = "No Aprobado";
+                }
+
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
+
+
+                list.Add(solicitud);
+
+            }
+
+            return list;
+        }
+
+        public static Solicitud GetIDClient(string LoginCreado)
+        {
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT ClienteID " + "\n";          
+            var1 = var1 + "FROM   Cliente " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            Solicitud solicitud = new Solicitud();
+            foreach (DataRow row in dt.Rows)
+            {
+
+               
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+
+            }
+
+            return solicitud;
+        }
+
 
         public static IList<int> GetClientesID()
         {

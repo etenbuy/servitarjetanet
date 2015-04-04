@@ -22,7 +22,7 @@ namespace Controllers
             if (daoResult.ErrorCount == 0)
             {
                 MailController mail = new MailController();
-                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.SolicitudTipoID);
+                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto);
                 resultado.Mensaje = "Correcto: La Solicitud se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;
             }
@@ -35,6 +35,54 @@ namespace Controllers
             return resultado;
 
         }
+
+        public IList<Solicitud> Solicitudes_Get_ByClient(string LoginCreado)
+        {
+            return SolicitudDao.GetSolicitudesByClient(LoginCreado);
+
+        }
+
+        public ControllerResult ActualizarSolicitud(Solicitud solicitud, string login)
+        {
+            ControllerResult resultado = new ControllerResult(login);
+
+
+            DaoResult daoResult = SolicitudDao.ActualizarSolicitud(solicitud);
+
+            if (daoResult.ErrorCount == 0)
+            {
+                resultado.Mensaje = "Correcto: El Pago de registro satisfactoriamente.";
+                resultado.Resultado = Result.Successful;
+            }
+            else
+            {
+                resultado.Mensaje = daoResult.ErrorMessage;
+                resultado.Resultado = Result.Error;
+            }
+
+            return resultado;
+        }
+
+        
+
+        public IList<Solicitud> Solicitudes_Get_ByClientSolicitudID(int solicitudID)
+        {
+            return SolicitudDao.GetSolicitudesByClientSolicitudID(solicitudID);
+
+        }
+
+        public IList<Solicitud> SolicitudesAlMes_Get_ByClient(string LoginCreado)
+        {
+            return SolicitudDao.GetSolicitudesAlMesByClient(LoginCreado);
+
+        }
+
+        public Solicitud Get_IDClient(string LoginCreado)
+        {
+            return SolicitudDao.GetIDClient(LoginCreado);
+
+        }
+
 
     }
 }

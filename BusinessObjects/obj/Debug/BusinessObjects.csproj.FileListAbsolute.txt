@@ -653,3 +653,8 @@ C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\bin\Debug\BusinessObjects.p
 C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\obj\Debug\BusinessObjects.dll
 C:\Users\bakiet\Desktop\ServiTarjeta\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bakiet\Desktop\ServiTarjeta.net\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\BusinessObjects\obj\Debug\BusinessObjects.pdb

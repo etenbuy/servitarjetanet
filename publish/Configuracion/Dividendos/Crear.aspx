@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true" CodeBehind="Crear.aspx.cs" Inherits="Web.Configuracion.Dividendos.Crear" Title="SERVITARJETA 2.0" %>
+<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true" CodeBehind="Crear.aspx.cs" Inherits="Web.Configuracion.Dividendos.Crear" Title="SERVITARJETA" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
@@ -97,9 +97,9 @@
             <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha"/>
             <asp:BoundField DataField="Tdc" HeaderText="TDC" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="TDC" />
-            <asp:BoundField DataField="Monto" HeaderText="Monto" HeaderStyle-HorizontalAlign="Right"
+            <asp:BoundField DataField="Monto" HeaderText="Monto Consumo" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Monto" />
-                <asp:BoundField DataField="Dividendo_Obtenido" HeaderText="Dividendo" HeaderStyle-HorizontalAlign="Right"
+                <asp:BoundField DataField="Dividendo_Obtenido" HeaderText="Dividendo Adquirido" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Dividendo" />
             
                 

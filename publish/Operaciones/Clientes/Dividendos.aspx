@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Operaciones/Operaciones.master" AutoEventWireup="true"
     CodeBehind="Dividendos.aspx.cs" Inherits="Web.Operaciones.Clientes.Dividendos"
-    Title="SERVITARJETA 2.0" %>
+    Title="SERVITARJETA" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 

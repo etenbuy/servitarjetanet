@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MetroCambio/MetroCambio.master" AutoEventWireup="true"
-    CodeBehind="Reporte.aspx.cs" Inherits="Web.MetroCambio.Reportes.Reporte" Title="SERVITARJETA 2.0" %>
+    CodeBehind="Reporte.aspx.cs" Inherits="Web.MetroCambio.Reportes.Reporte" Title="SERVITARJETA" %>
 
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
     Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
