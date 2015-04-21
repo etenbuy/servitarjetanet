@@ -4,14 +4,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div align="center">
     <h1>
-         Iniciar sesión</h1>
+          <label style="color:#134e9d; font-size:larger;"> INGRESE AL SISTEMA</label></h1>
     <br />
     <p>
-        Por favor ingrese con las credenciales suministradas por el administrador.</p>
+      <label style="color:#134e9d; font-size:larger;">  Por favor ingrese con las credenciales suministradas por el administrador.</label>  </p>
     <%-- panel allows default button to be set --%>
+    
     <asp:Panel ID="Panel1" DefaultButton="btnLogin" runat="server">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <table width="" cellpadding="0" cellspacing="0" border="0">
             <tr>
                 <td width="10">
 
@@ -20,15 +22,14 @@
                     <font color="red" face="Arial">
                         <asp:Literal runat="server" ID="LiteralError"></asp:Literal></font>
                     <br />
-                    <table bgcolor="#74C4E9" width="340" border="0" cellpadding="0" cellspacing="0">
+                    <table bgcolor="#fff" width="340" border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                            <td height="22" bgcolor="#0040FF" style="color: #ffffff; padding-left:10px;" align="left" colspan="2">
-                                Iniciar sesión en el sistema
-                            </td>
+                            <td height="22" bgcolor="White"style="color: #134e9d; padding-left:10px;" align="" colspan="2">
+                               &nbsp;</td>
                         </tr>
                         <tr>
                             <td align="right" height="32">
-                                Usuario:
+                              <label style="color:#134e9d; font-size:larger;">Usuario:</label>  
                             </td>
                             <td>
                                 <asp:TextBox ID="txtUsuario" runat="server" TextMode="SingleLine" TabIndex="1"
@@ -40,7 +41,7 @@
                         </tr>
                         <tr>
                             <td align="right">
-                                Contraseña:
+                               <label style="color:#134e9d; font-size:larger;">Contraseña:</label>    
                             </td>
                             <td>
                                 <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password" TabIndex="2"
@@ -52,7 +53,9 @@
                                 &nbsp;
                             </td>
                             <td height="40" valign="middle">
-                                <asp:Button ID="btnLogin" runat="server" Text="Iniciar sesión" onclick="btnLogin_Click" 
+                                <asp:Button ID="btnLogin" runat="server" Text="Iniciar sesión" 
+                                    onclick="btnLogin_Click" BackColor="#134E9D" BorderStyle="None" 
+                                    Font-Bold="True" ForeColor="White" 
                                     ></asp:Button>
                             </td>
                         </tr>
@@ -73,13 +76,28 @@
                 <td width="10">
 
                 </td>
-                <asp:Label ID="Label1" ForeColor="#FE7000" runat="server" Text="ENVIO DE FACTURAS Y RECIBOS"></asp:Label>
+                <asp:Label ID="Label1" ForeColor="#134e9d" runat="server" Text="ENVIO DE FACTURAS Y RECIBOS"></asp:Label>
             </tr>
         <div>
-        <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+        <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
             <table class="Formulario" cellpadding="0" cellspacing="0">
                
-               
+                <tr>
+                    <th>
+                        Correo Electrónico:
+                    </th>
+                   
+                    <td>
+                    
+                         <asp:TextBox runat="server" ID="txtCorreo"  AutoPostBack="false" Width="500" 
+                             THeight="400px" />
+                    </td>
+                    <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" Text="Requerido!" runat="server"
+                        ValidationGroup="Submit" ErrorMessage="Requerido!" ControlToValidate="txtCorreo"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                
                 <tr>
                     <th>
                         Monto:
@@ -87,7 +105,7 @@
                    
                     <td>
                     
-                         <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="true" Width="500" 
+                         <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="false" Width="500" 
                              THeight="400px" />
                     </td>
                     <td>
@@ -115,7 +133,7 @@
                     </th>
                    
                     <td>
-                    <asp:FileUpload ID="FileUploadFactura" runat="server"  AutoPostBack="true" />
+                    <asp:FileUpload ID="FileUploadFactura" runat="server"  AutoPostBack="false" />
                     </td>
                     <td>
                     </td>
@@ -127,7 +145,7 @@
                     </th>
                    
                     <td>
-                    <asp:FileUpload ID="FileUploadRecibo" runat="server"  AutoPostBack="true" />
+                    <asp:FileUpload ID="FileUploadRecibo" runat="server"  AutoPostBack="false" />
                     </td>
                     <td>
                     </td>
@@ -137,7 +155,9 @@
                 <tr>
                     <td colspan="3">
                         <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click"
-                            ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" />
+                            ValidationGroup="Submit" 
+                            OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" 
+                            BackColor="#134E9D" BorderStyle="None" Font-Bold="True" ForeColor="White" />
                        
                     </td>
                 </tr>
@@ -148,4 +168,5 @@
             
         </table>
     </asp:Panel>
+    </div>
 </asp:Content>

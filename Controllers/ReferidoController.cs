@@ -20,7 +20,7 @@ namespace Controllers
             if (daoResult.ErrorCount == 0)
             {
                 MailController mail = new MailController();
-                mail.SendMail("Referido ServiTarjeta", resultado.Login, "Nombre: " + referido.Descripcion + " Telefono: " + referido.Telefono + " Correo: " + referido.Email, 10,0);
+                //mail.SendMail("Referido ServiTarjeta", resultado.Login, "Nombre: " + referido.Descripcion + " Telefono: " + referido.Telefono + " Correo: " + referido.Email, 10,0);
 
                 resultado.Mensaje = "Correcto: El Referido se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;

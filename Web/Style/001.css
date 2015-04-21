@@ -34,6 +34,7 @@ body
 	height: 90px;
 	margin: 0 auto;
 	padding: 0;
+	
 	background: url(    '../Images/HeaderBg.jpg' );
 }
 
@@ -75,14 +76,14 @@ body
 #header .TopMenu
 {
 	float: right;
-	color: #000000;
+	color: #134e9d;
 	font-size: 12px;
 	padding-right: 30px;
 }
 
 #header .TopMenu a
 {
-	color: white;
+	color: #f08013;
 	font-weight: bold;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -90,7 +91,7 @@ body
 
 #header .TopMenu. TopMenu a:hover
 {
-	color: #000000;
+	color: #134e9d;
 }
 
 /* --- [ menus ] ----- */
@@ -103,8 +104,9 @@ body
 }
 .left-menu-header
 {
-		color: #0040FF;
-	background: url('../Images/MenuItemBg.gif' );
+		color: #fff;
+		background-color:#134e9d;
+	/*background: url('../Images/MenuItemBg.gif' );*/
 	height: 32px;
 	padding-top: 4px;
 	text-align: center;
@@ -130,8 +132,8 @@ body
 	padding: 5px 10px 0px 10px;
 	font-size: 85%;
 	line-height: 18px;
-	background: #fff;
-	min-height: 400px;
+	min-height: 700px;
+	background: url('../Images/FONDO.png' )
 }
 
 #content-header
@@ -140,17 +142,17 @@ body
 	padding-top: 5px;
 	background: #fff;
 	height: 32px;
-	color: #ffffff;
+	color: #134e9d;
 }
 
 #content-header a
 {
-	color: #ffffff;
+	color: #134e9d;
 }
 
 #content-header a:link
 {
-	color: #ffffff;
+	color: #134e9d;
 }
 
 #performance
@@ -192,6 +194,13 @@ p.patterndesc
 td
 {
 	font-family: Arial, Helvetica, sans-serif;
+	
+	
+
+}
+tbody.td
+{
+	font-size:larger;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -203,14 +212,14 @@ h1
 {
 	margin: 1em 0 1em 0;
 	font-size: 14pt;
-	color: #222;
+	color: #134e9d;
 }
 
 h2
 {
 	margin: 0.3em 0 0.8em 0;
 	border-bottom: 1px dotted #999;
-	color: #072;
+	color: #134e9d;
 	font-size: 13pt;
 }
 
@@ -245,15 +254,15 @@ hr
 
 a:link, a:visited
 {
-	color: #DFC00F;
+	color: #f08013;
 	text-decoration: none;
-	border-bottom: 1px solid #000000; /*	border-bottom: 1px solid #a00;      text-decoration: underline;*/
+	border-bottom: 1px solid #134e9d; /*	border-bottom: 1px solid #a00;      text-decoration: underline;*/
 }
 
 a:hover
 {
-	color: #DFC00F;
-	border-color: #00bb00;
+	color: #f08013;
+	border-color: #134e9d;
 }
 
 /* ---[ back link ]---------------------------- */
@@ -282,13 +291,14 @@ a:hover
 .Formulario
 {
 	border: 1px solid #e2e2e2;
+	background: #fff;
 }
 .Formulario th
 {
 	border-bottom: 1px solid #e2e2e2;
-	background: #000000;
+	background: #fff;
 	text-align: left;
-	color: #ffffff;
+	color: #134e9d;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 10px;

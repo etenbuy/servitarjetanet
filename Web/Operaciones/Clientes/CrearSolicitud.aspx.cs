@@ -12,6 +12,8 @@ using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
 using BusinessObjects;
 using System.Collections.Generic;
+using System.IO;
+using Controllers;
 
 namespace Web.Operaciones.Clientes
 {
@@ -104,6 +106,8 @@ namespace Web.Operaciones.Clientes
 
         }
 
+      
+
         protected void btnCrear_Click(object sender, EventArgs e)
         {
 
@@ -123,9 +127,47 @@ namespace Web.Operaciones.Clientes
 
             solicitud.Nota = txtNota.Text;
 
-            Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName);
+            string fullPath = "";
+            string fullPathrecibo = "";
+            solicitud.Factura = "";
+
+            if (FileUploadFactura.HasFile)
+            {
+                fullPath = Path.Combine(Server.MapPath("~/files"), FileUploadFactura.FileName);
+                FileUploadFactura.SaveAs(fullPath);
+            }
+             if (FileUploadRecibo.HasFile)
+            {
+                fullPathrecibo = Path.Combine(Server.MapPath("~/files"), FileUploadRecibo.FileName);
+                FileUploadRecibo.SaveAs(fullPathrecibo);
+            }
+
+             if (FileUploadFactura.FileName == null)
+             {
+                 solicitud.Factura_1 = "";
+                
+             }
+             else
+             {
+                 solicitud.Factura_1 = FileUploadFactura.FileName;
+             }
+             if (FileUploadRecibo.FileName == null)
+             {
+                 solicitud.Recibo_1 = "";
+                 
+             }
+             else
+             {
+                 solicitud.Recibo_1 = FileUploadRecibo.FileName;
+             }
+
+
+             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,fullPath, fullPathrecibo);
+           
 
             if (result.Resultado == Controllers.Result.Successful)
+
+
 
                 txtNota.Text = string.Empty;
                 txtMonto.Text = string.Empty;
@@ -135,6 +177,12 @@ namespace Web.Operaciones.Clientes
 
 
         }
+
+      
+
+        
+
+       
         protected void btnCrear2_Click(object sender, EventArgs e)
         {
 
@@ -154,7 +202,39 @@ namespace Web.Operaciones.Clientes
 
             solicitud.Nota = txtNota2.Text;
 
-            Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName);
+            string fullPath2 = "";
+            string fullPathrecibo2 = "";
+            solicitud.Factura = "";
+
+            if (FileUploadFactura2.HasFile)
+            {
+                fullPath2 = Path.Combine(Server.MapPath("~/files"), FileUploadFactura2.FileName);
+                FileUploadFactura2.SaveAs(fullPath2);
+            }
+            if (FileUploadRecibo2.HasFile)
+            {
+                fullPathrecibo2 = Path.Combine(Server.MapPath("~/files"), FileUploadRecibo2.FileName);
+                FileUploadRecibo2.SaveAs(fullPathrecibo2);
+            }
+            if (FileUploadFactura2.FileName == null)
+            {
+                solicitud.Factura_2 = "";
+            }
+            else
+            {
+                solicitud.Factura_2 = FileUploadFactura2.FileName;
+            }
+            if (FileUploadRecibo2.FileName == null)
+            {
+                solicitud.Recibo_2 = "";
+
+            }
+            else
+            {
+                solicitud.Recibo_2 = FileUploadRecibo2.FileName;
+            }
+
+            Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName, fullPath2, fullPathrecibo2);
 
             if (result.Resultado == Controllers.Result.Successful)
 

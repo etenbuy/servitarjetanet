@@ -22,6 +22,12 @@ namespace Controllers
 
         }
 
+        public Cliente Get_IdMailClient(string mail)
+        {
+            return ClienteDao.Get_IdMailClient(mail);
+
+        }
+
         public Cliente ObtenerCliente(int clienteid)
         {
 

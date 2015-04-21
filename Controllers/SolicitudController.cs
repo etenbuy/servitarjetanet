@@ -12,7 +12,7 @@ namespace Controllers
     public class SolicitudController 
     {
         
-        public ControllerResult CrearSolicitud(Solicitud solicitud, string login)
+        public ControllerResult CrearSolicitud(Solicitud solicitud, string login,string filepath, string fullPathrecibo)
         {
             ControllerResult resultado = new ControllerResult(login);
 
@@ -22,7 +22,7 @@ namespace Controllers
             if (daoResult.ErrorCount == 0)
             {
                 MailController mail = new MailController();
-                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto);
+                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto, filepath, fullPathrecibo);
                 resultado.Mensaje = "Correcto: La Solicitud se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;
             }

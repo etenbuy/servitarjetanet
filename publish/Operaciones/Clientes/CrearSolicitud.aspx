@@ -4,7 +4,7 @@
 <%@ Register Src="~/ExtraControls/CartaPorteUI.ascx" TagName="CartaPorteUI" TagPrefix="uc1" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
-
+    <div align="center">
 <script type="text/javascript">
 function toggleAlert() {
 toggleDisabled(document.getElementById("content"));
@@ -26,18 +26,18 @@ toggleDisabled(el.childNodes[x]);
     <h2>
         ENVIO DE FACTURAS Y RECIBOS Primer Ticket Mensual</h2>
   <asp:Panel ID="primer_ticket" runat="server">
-    <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+    <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
         <table class="Formulario" cellpadding="0" cellspacing="0">
            
            
             <tr>
                 <th>
-                    Monto:
+                    Monto de su Factura:
                 </th>
                
-                <td colspan="2">
+                <td>
                 
-                     <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="true" Width="500" 
+                     <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="false" Width="500" 
                          THeight="400px" />
                 </td>
                 <td>
@@ -50,9 +50,9 @@ toggleDisabled(el.childNodes[x]);
                     Nota:
                 </th>
                
-                <td colspan="2">
+                <td>
                 
-                     <asp:TextBox runat="server" ID="txtNota"  AutoPostBack="true" Width="500px" 
+                     <asp:TextBox runat="server" ID="txtNota"  AutoPostBack="false" Width="500px" 
                          TextMode="MultiLine" Height="121px" />
                 </td>
                 <td>
@@ -64,7 +64,7 @@ toggleDisabled(el.childNodes[x]);
                     Adjuntar Factura:
                 </th>
                
-                <td colspan="2">
+                <td>
                 <asp:FileUpload ID="FileUploadFactura" runat="server"  AutoPostBack="true" />
                 </td>
                 <td>
@@ -76,7 +76,7 @@ toggleDisabled(el.childNodes[x]);
                     Adjuntar Recibo:
                 </th>
                
-                <td colspan="2">
+                <td>
                 <asp:FileUpload ID="FileUploadRecibo" runat="server"  AutoPostBack="true" />
                 </td>
                 <td>
@@ -85,19 +85,12 @@ toggleDisabled(el.childNodes[x]);
             
            
             <tr>
-                <td colspan="4">
+                <td colspan="3">
                     <asp:Button ID="btnCrear" runat="server" Text="Guardar" OnClick="btnCrear_Click"
                         ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" />
-                    <asp:Button ID="btnEliminar" runat="server" Visible="false" Text="Eliminar" OnClick="btnEliminar_Click"
-                        OnClientClick="if (!Page_ClientValidate()) return false; if (!confirm('¿Esta seguro de eliminar esta solicitud?')) return false;"
-                        ValidationGroup="Submit" />
                 </td>
             </tr>
 
-      <tr>
-      
-    </tr>
-    
         </table>
   
     </asp:panel>
@@ -105,18 +98,18 @@ toggleDisabled(el.childNodes[x]);
         ENVIO DE FACTURAS Y RECIBOS Segundo Ticket Mensual</h2>
     
      <asp:panel ID="segundo_ticket" runat="server">
-    <asp:Label ID="Label1" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+    <asp:Label ID="lblMensaje2" ForeColor="#F80404" runat="server" Text=""></asp:Label>
         <table class="Formulario" cellpadding="0" cellspacing="0">
            
            
             <tr>
                 <th>
-                    Monto:
+                    Monto de su Factura:
                 </th>
                
-                <td colspan="2">
+                <td>
                 
-                     <asp:TextBox runat="server" ID="TextBox1"  AutoPostBack="true" Width="500" 
+                     <asp:TextBox runat="server" ID="txtMonto2"  AutoPostBack="false" Width="500" 
                          THeight="400px" />
                 </td>
                 <td>
@@ -129,9 +122,9 @@ toggleDisabled(el.childNodes[x]);
                     Nota:
                 </th>
                
-                <td colspan="2">
+                <td>
                 
-                     <asp:TextBox runat="server" ID="TextBox2"  AutoPostBack="true" Width="500px" 
+                     <asp:TextBox runat="server" ID="txtNota2"  AutoPostBack="false" Width="500px" 
                          TextMode="MultiLine" Height="121px" />
                 </td>
                 <td>
@@ -143,7 +136,7 @@ toggleDisabled(el.childNodes[x]);
                     Adjuntar Factura:
                 </th>
                
-                <td colspan="2">
+                <td>
                 <asp:FileUpload ID="FileUploadFactura2" runat="server"  AutoPostBack="true" />
                 </td>
                 <td>
@@ -155,7 +148,7 @@ toggleDisabled(el.childNodes[x]);
                     Adjuntar Recibo:
                 </th>
                
-                <td colspan="2">
+                <td>
                 <asp:FileUpload ID="FileUploadRecibo2" runat="server"  AutoPostBack="true" />
                 </td>
                 <td>
@@ -164,12 +157,9 @@ toggleDisabled(el.childNodes[x]);
             
            
             <tr>
-                <td colspan="4">
-                    <asp:Button ID="Button1" runat="server" Text="Guardar" OnClick="btnCrear_Click"
+                <td colspan="3">
+                    <asp:Button ID="Button1" runat="server" Text="Guardar" OnClick="btnCrear2_Click"
                         ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" />
-                    <asp:Button ID="Button2" runat="server" Visible="false" Text="Eliminar" OnClick="btnEliminar_Click"
-                        OnClientClick="if (!Page_ClientValidate()) return false; if (!confirm('¿Esta seguro de eliminar esta solicitud?')) return false;"
-                        ValidationGroup="Submit" />
                 </td>
             </tr>
 

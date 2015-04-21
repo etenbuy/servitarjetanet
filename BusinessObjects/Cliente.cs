@@ -18,6 +18,8 @@ namespace BusinessObjects
 
         public string Email { get; set; }
 
+        public string LoginCreado { get; set; }
+
         public string RIF { get; set; }
 
         public Cliente()
@@ -32,6 +34,8 @@ namespace BusinessObjects
         public string Abreviado { get; set; }
 
         public int PuntoID { get; set; }
+
+        public int PaisID { get; set; }
 
         public int RutaID { get; set; }
     }

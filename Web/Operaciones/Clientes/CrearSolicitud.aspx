@@ -4,7 +4,7 @@
 <%@ Register Src="~/ExtraControls/CartaPorteUI.ascx" TagName="CartaPorteUI" TagPrefix="uc1" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
-
+    <div align="center">
 <script type="text/javascript">
 function toggleAlert() {
 toggleDisabled(document.getElementById("content"));
@@ -26,7 +26,7 @@ toggleDisabled(el.childNodes[x]);
     <h2>
         ENVIO DE FACTURAS Y RECIBOS Primer Ticket Mensual</h2>
   <asp:Panel ID="primer_ticket" runat="server">
-    <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+    <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
         <table class="Formulario" cellpadding="0" cellspacing="0">
            
            
@@ -98,7 +98,7 @@ toggleDisabled(el.childNodes[x]);
         ENVIO DE FACTURAS Y RECIBOS Segundo Ticket Mensual</h2>
     
      <asp:panel ID="segundo_ticket" runat="server">
-    <asp:Label ID="lblMensaje2" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+    <asp:Label ID="lblMensaje2" ForeColor="#F80404" runat="server" Text=""></asp:Label>
         <table class="Formulario" cellpadding="0" cellspacing="0">
            
            

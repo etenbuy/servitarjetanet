@@ -52,12 +52,31 @@ namespace DataObjects
                 parameters.Add(prn);
             }
 
-            if (solicitud.Factura != null)
-            {
+            
                 prn = new SqlParameter("@Factura", SqlDbType.VarChar, 500);
                 prn.Value = solicitud.Factura;
                 parameters.Add(prn);
-            }
+            
+
+            
+                prn = new SqlParameter("@Factura_1", SqlDbType.VarChar, 50);
+                prn.Value = solicitud.Factura_1;
+                parameters.Add(prn);
+            
+                prn = new SqlParameter("@Factura_2", SqlDbType.VarChar, 50);
+                prn.Value = solicitud.Factura_2;
+                parameters.Add(prn);
+            
+
+            
+                prn = new SqlParameter("@Recibo_1", SqlDbType.VarChar, 50);
+                prn.Value = solicitud.Recibo_1;
+                parameters.Add(prn);
+            
+                prn = new SqlParameter("@Recibo_2", SqlDbType.VarChar, 50);
+                prn.Value = solicitud.Recibo_2;
+                parameters.Add(prn);
+            
 
 
             DaoResult result = Db.Insert(parameters, "Solicitud_INSERT", false,false);
@@ -317,6 +336,8 @@ namespace DataObjects
 
             return solicitud;
         }
+
+       
 
 
         public static IList<int> GetClientesID()

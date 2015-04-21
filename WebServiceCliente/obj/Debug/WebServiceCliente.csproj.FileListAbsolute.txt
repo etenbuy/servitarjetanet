@@ -1,0 +1,11 @@
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\WebServiceCliente.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\WebServiceCliente.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\BusinessObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\Controllers.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\DataObjects.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\BusinessObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\DataObjects.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\bin\Controllers.pdb
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\obj\Debug\WebServiceCliente.dll
+C:\Users\bakiet\Desktop\ServiTarjeta.net\WebServiceCliente\obj\Debug\WebServiceCliente.pdb

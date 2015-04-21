@@ -29,8 +29,14 @@ namespace BusinessObjects
         public decimal Monto { get; set; }
 
         public decimal Monto_Pagado { get; set; }
-        
-       
+
+        public string Factura_1 { get; set; }
+
+        public string Factura_2 { get; set; }
+
+        public string Recibo_1 { get; set; }
+
+        public string Recibo_2 { get; set; }
 
     }
 }

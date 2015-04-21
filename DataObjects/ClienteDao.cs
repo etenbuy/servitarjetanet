@@ -25,6 +25,10 @@ namespace DataObjects
             prn.Value = cliente.Descripcion;
             parameters.Add(prn);
 
+            prn = new SqlParameter("@LoginCreado", SqlDbType.VarChar, 500);
+            prn.Value = cliente.LoginCreado;
+            parameters.Add(prn);
+
             if (cliente.Direccion != null)
             {
                 prn = new SqlParameter("@Direccion", SqlDbType.VarChar, 500);
@@ -264,6 +268,31 @@ namespace DataObjects
 
 
         }
+
+        public static Cliente Get_IdMailClient(string mail)
+        {
+
+            Cliente cliente = new Cliente();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT ClienteID,LoginCreado " + "\n";
+            var1 = var1 + "FROM   Cliente " + "\n";
+            var1 = var1 + "WHERE  Email ='" + mail + "' " + "\n";
+
+
+            DataRow row = Db.GetDataRow(var1);
+
+            if (row != null)
+            {
+
+                cliente.ClienteID = int.Parse(row["ClienteID"].ToString());
+                cliente.LoginCreado = row["LoginCreado"].ToString();
+                return cliente;
+            }
+
+            return cliente;
+        }
+
         public static Cliente ObtenerCliente(string descripcion)
         {
             IList<SqlParameter> parameters = new List<SqlParameter>();

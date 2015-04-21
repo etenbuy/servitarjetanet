@@ -6,10 +6,9 @@
             
              <h1>Disculpe...</h1>          
     <div>
-        <img src="Images/error.jpg" alt="Disculpe"/> 
-            <div >
+        &nbsp;<div >
                 <p>
-                    La página que ha solicitado no se encuentra                     disponible en estos momentos, esto pudo ser 
+                    La página que ha solicitado no se encuentra                      disponible en estos momentos, esto pudo ser 
                     ocasionado por problemas con su conexión a 
                     Internet.</p>
                  <p>
