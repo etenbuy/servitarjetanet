@@ -2,67 +2,102 @@
     CodeBehind="Login.aspx.cs" Inherits="Web.Login" Title="SERVITARJETA - Iniciar sesión" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .style1
+        {
+            width: 125px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div align="center">
-    <h1>
-          <label style="color:#134e9d; font-size:larger;"> INGRESE AL SISTEMA</label></h1>
     <br />
-    <p>
-      <label style="color:#134e9d; font-size:larger;">  Por favor ingrese con las credenciales suministradas por el administrador.</label>  </p>
-    <%-- panel allows default button to be set --%>
-    
+   
     <asp:Panel ID="Panel1" DefaultButton="btnLogin" runat="server">
         <table width="" cellpadding="0" cellspacing="0" border="0">
             <tr>
-                <td width="10">
 
-                </td>
                 <td>
                     <font color="red" face="Arial">
                         <asp:Literal runat="server" ID="LiteralError"></asp:Literal></font>
                     <br />
-                    <table bgcolor="#fff" width="340" border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td height="22" bgcolor="White"style="color: #134e9d; padding-left:10px;" align="" colspan="2">
-                               &nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td align="right" height="32">
-                              <label style="color:#134e9d; font-size:larger;">Usuario:</label>  
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtUsuario" runat="server" TextMode="SingleLine" TabIndex="1"
-                                    Width="200"></asp:TextBox>
-                             <!--   <asp:DropDownList ID="ddlUsuario" runat="server"  TabIndex="1"
-                                    Width="200">
-                                </asp:DropDownList>-->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">
-                               <label style="color:#134e9d; font-size:larger;">Contraseña:</label>    
-                            </td>
-                            <td>
-                                <asp:TextBox ID="txtContrasena" runat="server" TextMode="Password" TabIndex="2"
-                                    Width="200"></asp:TextBox>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="40">
-                                &nbsp;
-                            </td>
-                            <td height="40" valign="middle">
-                                <asp:Button ID="btnLogin" runat="server" Text="Iniciar sesión" 
-                                    onclick="btnLogin_Click" BackColor="#134E9D" BorderStyle="None" 
-                                    Font-Bold="True" ForeColor="White" 
-                                    ></asp:Button>
-                            </td>
-                        </tr>
-                    </table>
+                    <table id="login" cellspacing="4" bgcolor="#fff" width="440" border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                            <td align="" bgcolor="#ececec" colspan="2" height="22" 
+                                                style="color: #134e9d; text-align:left; color:#2E2E2E; font-weight:bold; font-size:smaller; padding-left:10px;">
+                                                SI AUN NO HAZ RECIBIDO TU CLAVE TEMPORAL Y USUARIO EN TU EMAIL, COMUNICATE CON 
+                                                TU EJECUTIVO DE CUENTA O LINEA DE ATENCION AL CLIENTE</td>
+                                        </tr>
+                    
                 </td>
             </tr>
             
+            <tr>
+                <td align="" bgcolor="#134e9d" colspan="2" height="22" 
+                    style="color: #134e9d; text-align:center; color:#fff; font-weight:bold; font-size:medium; padding-left:10px;">
+                    Usuarios Afiliados</td>
+            </tr>
+            <tr>
+                <td align="" bgcolor="#ececec" colspan="2" height="22" 
+                    style="color: #134e9d; text-align:center; color:#134e9d; font-weight:bold; font-size:smaller; padding-left:10px;">
+                    Si Ud.ya esta afiliado a este servicio,<br />
+                    Ingrese su Usuario y Clave y presione Iniciar sesion</td>
+            </tr>
+            <tr bgcolor="#ececec">
+                <td align="right" class="style1" height="32">
+                    <label style="color:#134e9d; font-size:larger;">
+                    Usuario:</label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtUsuario" runat="server" TabIndex="1" TextMode="SingleLine" 
+                        Width="200"></asp:TextBox>
+                    <!--   <asp:DropDownList ID="ddlUsuario" runat="server"  TabIndex="1"
+                                    Width="200">
+                                </asp:DropDownList>-->
+                </td>
+            </tr>
+            <tr bgcolor="#ececec">
+                <td align="right" class="style1">
+                    <label style="color:#134e9d; font-size:larger;">
+                    Contraseña:</label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtContrasena" runat="server" TabIndex="2" TextMode="Password" 
+                        Width="200"></asp:TextBox>
+                </td>
+            </tr>
+            <tr bgcolor="#ececec">
+                <td class="style1" height="40">
+                    &nbsp;
+                </td>
+                <td align="center" height="40" valign="middle">
+                    <asp:Button ID="btnLogin" runat="server" BackColor="#134E9D" BorderStyle="None"
+                        Font-Bold="True" ForeColor="White" onclick="btnLogin_Click" 
+                        Text="Iniciar Sesion" />
+                </td>
+            </tr>
+            <tr bgcolor="#ececec">
+                <td align="right" class="style1">
+                    <label style="color:#134e9d; font-size:small;">
+                    Si olvido su clave o usuario</label>
+                </td>
+                <td align="center" height="40" valign="middle">
+                    <asp:Button ID="btnpassreturn" runat="server" BackColor="#134E9D" 
+                        BorderStyle="None" Font-Bold="True" ForeColor="White" 
+                        onclick="btnpassreturn_Click" Text="Haga click aqui" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="22">
+                    <img alt="security" height="32" src="Images/I.png" />
+                </td>
+            </tr>
+            <tr>
+                <td align="" bgcolor="#ececec" colspan="2" height="22" 
+                    style="color: #134e9d; text-align:left; color:#134e9d; font-weight:bold; font-size:x-small; padding-left:10px;">
+                    -Compruebe estar conectado(a) a la direccion http://servitarjeta.net, el cual es el unico<br />
+                     sitio legitimo de acceso a la plataforma de gestion de solicitud de reembolsos</td>
+            </tr>
         </table>
     </asp:Panel>
     <br />
@@ -70,103 +105,5 @@
     <br />
     <br />
     
-       <asp:Panel ID="Panel2" DefaultButton="btnLogin" runat="server">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-                <td width="10">
-
-                </td>
-                <asp:Label ID="Label1" ForeColor="#134e9d" runat="server" Text="ENVIO DE FACTURAS Y RECIBOS"></asp:Label>
-            </tr>
-        <div>
-        <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
-            <table class="Formulario" cellpadding="0" cellspacing="0">
-               
-                <tr>
-                    <th>
-                        Correo Electrónico:
-                    </th>
-                   
-                    <td>
-                    
-                         <asp:TextBox runat="server" ID="txtCorreo"  AutoPostBack="false" Width="500" 
-                             THeight="400px" />
-                    </td>
-                    <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" Text="Requerido!" runat="server"
-                        ValidationGroup="Submit" ErrorMessage="Requerido!" ControlToValidate="txtCorreo"></asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th>
-                        Monto:
-                    </th>
-                   
-                    <td>
-                    
-                         <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="false" Width="500" 
-                             THeight="400px" />
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                
-                
-                 <tr>
-                    <th>
-                        Nota:
-                    </th>
-                   
-                    <td>
-                    
-                         <asp:TextBox runat="server" ID="txtNota"  AutoPostBack="true" Width="500px" 
-                             TextMode="MultiLine" Height="121px" />
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th>
-                        Adjuntar Factura:
-                    </th>
-                   
-                    <td>
-                    <asp:FileUpload ID="FileUploadFactura" runat="server"  AutoPostBack="false" />
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th>
-                        Adjuntar Recibo:
-                    </th>
-                   
-                    <td>
-                    <asp:FileUpload ID="FileUploadRecibo" runat="server"  AutoPostBack="false" />
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                
-               
-                <tr>
-                    <td colspan="3">
-                        <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click"
-                            ValidationGroup="Submit" 
-                            OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" 
-                            BackColor="#134E9D" BorderStyle="None" Font-Bold="True" ForeColor="White" />
-                       
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-            </tr>
-            
-        </table>
-    </asp:Panel>
     </div>
 </asp:Content>

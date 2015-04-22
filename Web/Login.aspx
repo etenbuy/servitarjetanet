@@ -21,14 +21,8 @@
                     <font color="red" face="Arial">
                         <asp:Literal runat="server" ID="LiteralError"></asp:Literal></font>
                     <br />
-                    <table id="login" cellspacing="4" bgcolor="#fff" width="440" border="0" cellpadding="0" cellspacing="0">
-                                  <tr>
-                                            <td align="" bgcolor="#ececec" colspan="2" height="22" 
-                                                style="color: #134e9d; text-align:left; color:#2E2E2E; font-weight:bold; font-size:smaller; padding-left:10px;">
-                                                SI AUN NO HAZ RECIBIDO TU CLAVE TEMPORAL Y USUARIO EN TU EMAIL, COMUNICATE CON 
-                                                TU EJECUTIVO DE CUENTA O LINEA DE ATENCION AL CLIENTE</td>
-                                        </tr>
-                    
+           <table id="login" cellspacing="0" bgcolor="#fff" width="440" border="0" cellpadding="0" >
+
                 </td>
             </tr>
             
@@ -71,7 +65,7 @@
                     &nbsp;
                 </td>
                 <td align="center" height="40" valign="middle">
-                    <asp:Button ID="btnLogin" runat="server" BackColor="#134E9D" BorderStyle="None" 
+                    <asp:Button ID="btnLogin" runat="server" BackColor="#134E9D" BorderStyle="None"
                         Font-Bold="True" ForeColor="White" onclick="btnLogin_Click" 
                         Text="Iniciar Sesion" />
                 </td>

@@ -41,9 +41,7 @@ body
 #logo
 {
 	float: left;
-	display: block;
-	width: 200px;
-	height: 90px;
+	display: block;	
 	margin: 0;
 	padding: 0;
 	border-width: 0;
@@ -52,6 +50,8 @@ body
 
 #logo img
 {
+    width: 191px;
+	height: 73px;
 	border-style: none;
 	display: block;
 	margin-top: 15px;
@@ -99,7 +99,7 @@ body
 #menu
 {
 	width: 200px;
-
+    background-color:#134e9d;
 	text-align:center;
 }
 .left-menu-header
@@ -110,13 +110,45 @@ body
 	height: 32px;
 	padding-top: 4px;
 	text-align: center;
-
+	font-weight:bolder;
+	 text-transform: uppercase;  
 
 }
 .left-menu-content
-{	color: #000;
+{	color: #fff; 	
 	padding-left: 4px;
 	margin:0 auto;
+
+
+}
+#login tr
+{ padding: 0px;
+   margin: 0px;
+}
+
+#support
+{
+    color:#fff;
+    font-weight:bold;
+}
+#support2
+{
+    color:#fff;
+    font-weight:normal;
+}
+#sond
+{
+    bottom:0;
+    position:absolute;
+}
+.left-menu-content span
+{	
+	font-weight:bold;
+
+}
+.left-menu-content a
+{	
+	font-weight:normal;
 
 }
 
@@ -133,7 +165,7 @@ body
 	font-size: 85%;
 	line-height: 18px;
 	min-height: 700px;
-	background: url('../Images/FONDO.png' )
+	/* ---background: url('../Images/FONDO.png' )----- */
 }
 
 #content-header
@@ -161,6 +193,7 @@ body
 	padding: 15px;
 	text-indent: 15px;
 	font-size: 9pt;
+	position:relative;
 }
 
 .containerseparator
@@ -254,7 +287,7 @@ hr
 
 a:link, a:visited
 {
-	color: #f08013;
+	color: #fff;
 	text-decoration: none;
 	border-bottom: 1px solid #134e9d; /*	border-bottom: 1px solid #a00;      text-decoration: underline;*/
 }
@@ -281,10 +314,7 @@ a:hover
 	padding-bottom: 1px;
 }
 
-.OrientacionVertical
-{
-	layout-flow: vertical-ideographic;
-}
+
 
 /* --- [ GridGeneral ] ------------- */
 

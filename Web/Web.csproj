@@ -114,6 +114,13 @@
     <Compile Include="Configuracion\Pagos\Editar.aspx.designer.cs">
       <DependentUpon>Editar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Configuracion\Usuarios\EditarClave.aspx.cs">
+      <DependentUpon>EditarClave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Usuarios\EditarClave.aspx.designer.cs">
+      <DependentUpon>EditarClave.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Rembolso.aspx.cs">
       <DependentUpon>Rembolso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -413,6 +420,7 @@
     <Content Include="Configuracion\Clientes\Editar.aspx" />
     <Content Include="Configuracion\Clientes\EditarClientes.aspx" />
     <Content Include="Configuracion\Pagos\Editar.aspx" />
+    <Content Include="Configuracion\Usuarios\EditarClave.aspx" />
     <Content Include="Images\i-advertencia.png" />
     <Content Include="Images\I.png" />
     <Content Include="Images\Logo.png" />

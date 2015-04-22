@@ -78,8 +78,9 @@
                         </asp:Accordion>
                         <%} %>
                         <div id="performance">
-                            <% =PageRenderTime %>
+                           <!-- <% =PageRenderTime %>-->
                         </div>
+                        <center><div id="sond"><div id="support" >Soporte en linea:</div><br/><div id="support2"> Si desea informacion <br/>alguna, puedes comunicarte<br/> al(+58)212-261 88 93</div></div></center>
                     </td>
                     <%-- Content --%>
                     <td valign="top" align="left">
@@ -107,16 +108,28 @@
                         </div>
                     </td>
                 </tr>
+                
             </table>
-           
+            
             <asp:SiteMapDataSource ID="smdsMC" SiteMapProvider="Operaciones" runat="server" ShowStartingNode="false" />
 
           
             <asp:SiteMapDataSource ID="smdsConfiguracion" SiteMapProvider="Configuracion" runat="server" ShowStartingNode="false" />
+           
         </div>
         <div class="containerseparator">
         </div>
         </form>
+        <center>
+        <dl>
+        <dt>
+        <a href="Terminos.aspx" style="color:Blue">Términos y Condiciones</a>
+        </dt>
+        <dt>
+        <a href="Seguridad.aspx" style="color:Blue">Seguridad</a>
+        </dt>
+        </dl>
+        </center>
     </div>
 </body>
 </html>

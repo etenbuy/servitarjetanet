@@ -5,8 +5,8 @@
 
  <div align="center">
 
-    <h2>
-        Saldos y Movimientos</h2>
+    <h1>
+        Saldos y Movimientos</h1>
     <div>
         
         <br />

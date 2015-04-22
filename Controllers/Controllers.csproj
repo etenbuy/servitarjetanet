@@ -71,6 +71,20 @@
       <Name>DataObjects</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Controllers.dll" />
+    <Content Include="bin\Debug\Controllers.pdb" />
+    <Content Include="obj\Debug\Controllers.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Controllers.dll" />
+    <Content Include="obj\Debug\Controllers.pdb" />
+    <Content Include="obj\Debug\Refactor\Controllers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

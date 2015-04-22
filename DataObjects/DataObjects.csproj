@@ -65,6 +65,20 @@
       <Name>BusinessObjects</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\DataObjects.dll" />
+    <Content Include="bin\Debug\DataObjects.pdb" />
+    <Content Include="obj\Debug\DataObjects.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\DataObjects.dll" />
+    <Content Include="obj\Debug\DataObjects.pdb" />
+    <Content Include="obj\Debug\Refactor\DataObjects.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
