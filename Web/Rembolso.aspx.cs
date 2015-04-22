@@ -199,7 +199,7 @@ namespace Web
         protected void txtMonto_TextChanged(object sender, EventArgs e)
         {
             string monto = txtMonto.Text;
-            monto = ;
+            monto = "";
         }
 
     }

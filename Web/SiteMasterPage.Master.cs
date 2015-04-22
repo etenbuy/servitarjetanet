@@ -71,13 +71,13 @@ namespace Web
 
             if (Request.IsAuthenticated)
             {
-                lbtnLoginLogout.Text =  ((MembershipUser)Session["usuario"]).UserName + ", (Cerrar sesión)";
+                lbtnLoginLogout.Text =  ((MembershipUser)Session["usuario"]).UserName + ", Salir)";
                 lbtnLoginLogout.PostBackUrl = ResolveUrl("~/Logout.aspx");
 
             }
             else
             {
-                lbtnLoginLogout.Text = "Iniciar sesión";
+                lbtnLoginLogout.Text = "Salir";
                 lbtnLoginLogout.PostBackUrl = ResolveUrl("~/Login.aspx");
             }
  

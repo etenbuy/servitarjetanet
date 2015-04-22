@@ -354,7 +354,6 @@
     <Content Include="ExtraControls\CartaPorteUI.ascx" />
     <Content Include="Images\HeaderBg.jpg" />
     <Content Include="Images\Iconos\Advertencia20x20.png" />
-    <Content Include="Images\Logo.png" />
     <Content Include="Images\MenuItemBg.gif" />
     <Content Include="Images\Piezas\Cartera.png" />
     <Content Include="Inicio2.aspx" />
@@ -414,6 +413,9 @@
     <Content Include="Configuracion\Clientes\Editar.aspx" />
     <Content Include="Configuracion\Clientes\EditarClientes.aspx" />
     <Content Include="Configuracion\Pagos\Editar.aspx" />
+    <Content Include="Images\i-advertencia.png" />
+    <Content Include="Images\I.png" />
+    <Content Include="Images\Logo.png" />
     <Content Include="Rembolso.aspx" />
     <Content Include="Seguridad.aspx" />
     <Content Include="Terminos.aspx" />

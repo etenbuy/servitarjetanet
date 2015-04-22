@@ -78,8 +78,9 @@
                         </asp:Accordion>
                         <%} %>
                         <div id="performance">
-                            <% =PageRenderTime %>
+                           <!-- <% =PageRenderTime %>-->
                         </div>
+                        <center><div id="sond"><div id="support" >Soporte en linea:</div><br/><div id="support2"> Si desea informacion <br/>alguna, puedes comunicarte<br/> al(+58)212-261 88 93</div></div></center>
                     </td>
                     <%-- Content --%>
                     <td valign="top" align="left">
