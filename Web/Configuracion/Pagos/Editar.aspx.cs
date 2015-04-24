@@ -128,9 +128,9 @@ namespace Web.Configuracion.Pagos
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
-
+            
             Solicitud solicitud = new Solicitud();
-            solicitud.FechaPagado = txtFechaPago.Text;
+            solicitud.FechaPagado = DateTime.ParseExact(txtFechaPago.Text, "dd/MM/yyyy",null);
             solicitud.Ntdc = txtTDC.Text;
             solicitud.Ndeposito = txtdeposito.Text;
             solicitud.Monto_Factura = decimal.Parse(txtMontoFactura.Text);

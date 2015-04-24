@@ -326,11 +326,16 @@ a:hover
 	border: 1px solid #e2e2e2;
 	background: #fff;
 }
+.detalles a
+{
+	font-size:large;
+}
+
 .Formulario a
 {
-	border: 1px solid #e2e2e2;
-	
+	border: 1px solid #e2e2e2;	
 	color:#134e9d;
+	font-size:large;
 }
 .Formulario th
 {
@@ -342,6 +347,7 @@ a:hover
 	padding-bottom: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
+
 }
 .Formulario td
 {
@@ -351,6 +357,7 @@ a:hover
 	padding-right: 10px;
 	border-bottom: 1px solid #e2e2e2;
 	color:#555555;
+	font-size:large;
 }
 .Formulario-Clear
 {	border: none;

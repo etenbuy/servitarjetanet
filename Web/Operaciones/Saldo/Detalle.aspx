@@ -4,13 +4,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
  <div align="center">
     <h1>
-        Saldos y Movimientos</h1>
+        Detalle</h1>
     <div>
         <br />
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
         <div style="float:left;">
-        <asp:DetailsView ID="dtvDetalle" runat="server"
-            AutoGenerateRows="False">
+        <asp:DetailsView ID="dtvDetalle" runat="server" CssClass="detalles"
+            AutoGenerateRows="False" BorderStyle="None" GridLines="None">
           <Fields>
            <asp:BoundField DataField="SolicitudID" HeaderText="Solicitud" SortExpression="SolicitudID"/>
             <asp:BoundField DataField="Numero_Factura" HeaderText="Nº Factura" SortExpression="Numero_Factura"/>            
@@ -20,8 +20,8 @@
         </asp:DetailsView>
         </div>
         <div style="float:right;">
-        <asp:DetailsView ID="dtvDetalle2" runat="server" 
-            AutoGenerateRows="False">
+        <asp:DetailsView ID="dtvDetalle2" runat="server" CssClass="detalles"
+            AutoGenerateRows="False" BorderStyle="None" GridLines="None">
           <Fields>
            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha Solicitud" SortExpression="Fecha_Creado"/>
             <asp:BoundField DataField="Monto_Factura" HeaderText="Monto Factura" SortExpression="Monto_Factura"/>            

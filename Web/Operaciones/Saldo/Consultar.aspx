@@ -24,12 +24,11 @@
             DataNavigateUrlFields="SolicitudID"
             DataNavigateUrlFormatString="Detalle.aspx?ID={0}"
             DataTextField="SolicitudID"
-            HeaderText="Solicitud"
+            HeaderText="Nº Solicitud"
             SortExpression="SolicitudID" />
-            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha" SortExpression="Fecha"/>
+            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha Solicitud" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
             <asp:BoundField DataField="Numero_Factura" HeaderText="Nº Factura" SortExpression="Numero_Factura"/>
-            <asp:BoundField DataField="Monto" HeaderText="Factura" SortExpression="Monto"/>
-            <asp:BoundField DataField="Monto_Factura" HeaderText="Monto Factura" SortExpression="Monto"/>        
+            <asp:BoundField DataField="Monto" HeaderText="Monto Factura" SortExpression="Monto"/>        
             <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Pagar" SortExpression="Pagado" />
             <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"/>          
         </Columns>

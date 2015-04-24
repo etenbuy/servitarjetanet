@@ -20,7 +20,7 @@ namespace BusinessObjects
 
         public string Factura { get; set; }
 
-        public string FechaCreado { get; set; }
+        public DateTime FechaCreado { get; set; }
 
         public string Estado { get; set; }
 
@@ -42,7 +42,7 @@ namespace BusinessObjects
 
 
 
-        public string FechaPagado { get; set; }
+        public DateTime FechaPagado { get; set; }
 
         public string Ntdc { get; set; }
 
