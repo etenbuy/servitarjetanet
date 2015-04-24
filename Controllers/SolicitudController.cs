@@ -42,6 +42,12 @@ namespace Controllers
 
         }
 
+        public IList<Solicitud> Solicitudes_Get_ByID(string SolicitudID)
+        {
+            return SolicitudDao.GetSolicitudesByID(SolicitudID);
+
+        }
+
         public ControllerResult ActualizarSolicitud(Solicitud solicitud, string login)
         {
             ControllerResult resultado = new ControllerResult(login);

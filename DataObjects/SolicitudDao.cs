@@ -97,11 +97,16 @@ namespace DataObjects
             string var1 = string.Empty;
             var1 = var1 + "SELECT ClienteID, " + "\n";
             var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       Fecha_Pagado, " + "\n";
             var1 = var1 + "       LoginCreado, " + "\n";
             var1 = var1 + "       Nota, " + "\n";
             var1 = var1 + "       SolicitudTipoID, " + "\n";
             var1 = var1 + "       Monto, " + "\n";
             var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Ntdc, " + "\n";
+            var1 = var1 + "       Ndeposito, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
             var1 = var1 + "       StatusSolicitudID, " + "\n";
             var1 = var1 + "       SolicitudID " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
@@ -116,32 +121,27 @@ namespace DataObjects
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
                 solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.FechaPagado = row["Fecha_Pagado"].ToString();
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
                 solicitud.Nota = row["Nota"].ToString();
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Ntdc = row["Ntdc"].ToString();
+                solicitud.Ndeposito = row["Ndeposito"].ToString();
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
 
 
                 solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
                 solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
                 if (solicitud.StatusSolicitudID == 1)
-                {
-                    solicitud.Estado = "Solicitado";
-                }
-                if (solicitud.StatusSolicitudID == 2)
                 {
                     solicitud.Estado = "En Proceso";
                 }
-                if (solicitud.StatusSolicitudID == 3)
+                if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Aprobado";
+                    solicitud.Estado = "Procesado";
                 }
-                if (solicitud.StatusSolicitudID == 4)
-                {
-                    solicitud.Estado = "Terminado";
-                }
-                if (solicitud.StatusSolicitudID == 5)
-                {
-                    solicitud.Estado = "No Aprobado";
-                }
+               
 
                 solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                 solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
@@ -155,6 +155,73 @@ namespace DataObjects
             return list;
         }
 
+        public static IList<Solicitud> GetSolicitudesByID(string SolicitudID)
+        {
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT ClienteID, " + "\n";
+            var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       Fecha_Pagado, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Ntdc, " + "\n";
+            var1 = var1 + "       Ndeposito, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
+            var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       SolicitudID " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  SolicitudID ='" + SolicitudID + "' " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                Solicitud solicitud = new Solicitud();
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.FechaPagado = row["Fecha_Pagado"].ToString();
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Nota = row["Nota"].ToString();
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Ntdc = row["Ntdc"].ToString();
+                solicitud.Ndeposito = row["Ndeposito"].ToString();
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
+
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
+                if (solicitud.StatusSolicitudID == 1)
+                {
+                    solicitud.Estado = "En Proceso";
+                }
+                if (solicitud.StatusSolicitudID == 2)
+                {
+                    solicitud.Estado = "Procesado";
+                }
+
+
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
+
+
+                list.Add(solicitud);
+
+            }
+
+            return list;
+        }
+
         public static DaoResult ActualizarSolicitud(Solicitud solicitud)
         {
             IList<SqlParameter> parameters = new List<SqlParameter>();
@@ -162,6 +229,26 @@ namespace DataObjects
 
             SqlParameter prn = new SqlParameter("@MontoPagado", SqlDbType.Decimal);
             prn.Value = solicitud.Monto_Pagado;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@MontoFactura", SqlDbType.Decimal);
+            prn.Value = solicitud.Monto_Factura;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@FechaPagado", SqlDbType.Date);
+            prn.Value = solicitud.FechaPagado;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@Ntdc", SqlDbType.VarChar, 30);
+            prn.Value = solicitud.Ntdc;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@Ndeposito", SqlDbType.VarChar,30);
+            prn.Value = solicitud.Ndeposito;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@Numero_Factura", SqlDbType.VarChar, 30);
+            prn.Value = solicitud.Numero_Factura;
             parameters.Add(prn);
 
             prn = new SqlParameter("@SolicitudID", SqlDbType.Int);
@@ -186,11 +273,16 @@ namespace DataObjects
             string var1 = string.Empty;
             var1 = var1 + "SELECT ClienteID, " + "\n";
             var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       Fecha_Pagado, " + "\n";
             var1 = var1 + "       LoginCreado, " + "\n";
             var1 = var1 + "       Nota, " + "\n";
             var1 = var1 + "       SolicitudTipoID, " + "\n";
             var1 = var1 + "       Monto, " + "\n";
             var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Ntdc, " + "\n";
+            var1 = var1 + "       Ndeposito, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
             var1 = var1 + "       StatusSolicitudID, " + "\n";
             var1 = var1 + "       SolicitudID " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
@@ -201,36 +293,30 @@ namespace DataObjects
 
             foreach (DataRow row in dt.Rows)
             {
-
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
                 solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.FechaPagado = row["Fecha_Pagado"].ToString();
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
                 solicitud.Nota = row["Nota"].ToString();
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Ntdc = row["Ntdc"].ToString();
+                solicitud.Ndeposito = row["Ndeposito"].ToString();
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
 
 
                 solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
                 solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
                 if (solicitud.StatusSolicitudID == 1)
-                {
-                    solicitud.Estado = "Solicitado";
-                }
-                if (solicitud.StatusSolicitudID == 2)
                 {
                     solicitud.Estado = "En Proceso";
                 }
-                if (solicitud.StatusSolicitudID == 3)
+                if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Aprobado";
+                    solicitud.Estado = "Procesado";
                 }
-                if (solicitud.StatusSolicitudID == 4)
-                {
-                    solicitud.Estado = "Terminado";
-                }
-                if (solicitud.StatusSolicitudID == 5)
-                {
-                    solicitud.Estado = "No Aprobado";
-                }
+
 
                 solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                 solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
@@ -253,11 +339,16 @@ namespace DataObjects
             string var1 = string.Empty;
             var1 = var1 + "SELECT ClienteID, " + "\n";
             var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       Fecha_Pagado, " + "\n";
             var1 = var1 + "       LoginCreado, " + "\n";
             var1 = var1 + "       Nota, " + "\n";
             var1 = var1 + "       SolicitudTipoID, " + "\n";
             var1 = var1 + "       Monto, " + "\n";
             var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Ntdc, " + "\n";
+            var1 = var1 + "       Ndeposito, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
             var1 = var1 + "       StatusSolicitudID, " + "\n";
             var1 = var1 + "       SolicitudID " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
@@ -273,32 +364,27 @@ namespace DataObjects
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
                 solicitud.FechaCreado = row["FechaCreado"].ToString();
+                solicitud.FechaPagado = row["Fecha_Pagado"].ToString();
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
                 solicitud.Nota = row["Nota"].ToString();
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Ntdc = row["Ntdc"].ToString();
+                solicitud.Ndeposito = row["Ndeposito"].ToString();
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
 
 
                 solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
                 solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
                 if (solicitud.StatusSolicitudID == 1)
-                {
-                    solicitud.Estado = "Solicitado";
-                }
-                if (solicitud.StatusSolicitudID == 2)
                 {
                     solicitud.Estado = "En Proceso";
                 }
-                if (solicitud.StatusSolicitudID == 3)
+                if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Aprobado";
+                    solicitud.Estado = "Procesado";
                 }
-                if (solicitud.StatusSolicitudID == 4)
-                {
-                    solicitud.Estado = "Terminado";
-                }
-                if (solicitud.StatusSolicitudID == 5)
-                {
-                    solicitud.Estado = "No Aprobado";
-                }
+
 
                 solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                 solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());

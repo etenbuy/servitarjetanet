@@ -1940,3 +1940,14 @@ C:\Users\giner\Documents\GitHub\servitarjetanet\Web\bin\Controllers.pdb
 C:\Users\giner\Documents\GitHub\servitarjetanet\Web\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\giner\Documents\GitHub\servitarjetanet\Web\obj\Debug\Web.dll
 C:\Users\giner\Documents\GitHub\servitarjetanet\Web\obj\Debug\Web.pdb
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\Web.dll
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\Web.pdb
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\BusinessObjects.dll
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\Controllers.dll
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\DataObjects.dll
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\BusinessObjects.pdb
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\DataObjects.pdb
+C:\Users\giner\Desktop\servitarjetanet\Web\bin\Controllers.pdb
+C:\Users\giner\Desktop\servitarjetanet\Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\giner\Desktop\servitarjetanet\Web\obj\Debug\Web.dll
+C:\Users\giner\Desktop\servitarjetanet\Web\obj\Debug\Web.pdb

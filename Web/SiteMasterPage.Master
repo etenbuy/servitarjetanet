@@ -121,14 +121,14 @@
         </div>
         </form>
         <center>
-        <dl>
-        <dt>
-        <a href="Terminos.aspx" style="color:Blue">Términos y Condiciones</a>
-        </dt>
-        <dt>
-        <a href="Seguridad.aspx" style="color:Blue">Seguridad</a>
-        </dt>
-        </dl>
+        <ul>
+        <li>
+        <div><a href="Terminos.aspx" style="color:Blue">Términos y Condiciones</a></div>
+        </li>
+        <li>
+        <div><a href="Seguridad.aspx" style="color:Blue">Seguridad</a></div>
+        </li>
+        </ul>
         </center>
     </div>
 </body>

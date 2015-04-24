@@ -130,7 +130,10 @@ namespace Web.Configuracion.Pagos
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
             Solicitud solicitud = new Solicitud();
-
+            solicitud.FechaPagado = txtFechaPago.Text;
+            solicitud.Ntdc = txtTDC.Text;
+            solicitud.Ndeposito = txtdeposito.Text;
+            solicitud.Monto_Factura = decimal.Parse(txtMontoFactura.Text);
             solicitud.Monto_Pagado = decimal.Parse(txtMontoPagado.Text);
             solicitud.SolicitudID = int.Parse(txtSolicitudID.Text);
             solicitud.StatusSolicitudID = int.Parse(ddlEstado.SelectedValue);

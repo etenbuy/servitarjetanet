@@ -38,5 +38,16 @@ namespace BusinessObjects
 
         public string Recibo_2 { get; set; }
 
+        public decimal Monto_Factura { get; set; }
+
+
+
+        public string FechaPagado { get; set; }
+
+        public string Ntdc { get; set; }
+
+        public string Ndeposito { get; set; }
+
+        public string Numero_Factura { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-ï»¿<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true" CodeBehind="Editar.aspx.cs" Inherits="Web.Configuracion.Pagos.Editar" Title="SERVITARJETA" %>
+<%@ Page Language="C#" MasterPageFile="~/Configuracion/Configuracion.master" AutoEventWireup="true" CodeBehind="Editar.aspx.cs" Inherits="Web.Configuracion.Pagos.Editar" Title="SERVITARJETA" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
@@ -38,6 +38,7 @@
             </tr>
             <tr>
                 <th>
+                    Nº
                     Factura:
                 </th>
                 <td colspan="2">
@@ -66,6 +67,43 @@
                 </td>
              
             </tr>
+            <tr>
+                <th>
+                    Fecha de Pago:
+                </th>
+                <td colspan="2">
+                 <asp:TextBox ID="txtFechaPago" runat="server" MaxLength="10"></asp:TextBox>                   
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" Text="Requerido!" runat="server"
+                        ValidationGroup="Submit" ErrorMessage="Requerido!" ControlToValidate="txtFechapago"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Nº TDC o Cuenta Bancaria:
+                </th>
+                <td colspan="2">
+                    <asp:TextBox ID="txtTDC" runat="server" MaxLength="10"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" Text="Requerido!" runat="server"
+                        ValidationGroup="Submit" ErrorMessage="Requerido!" ControlToValidate="txtTDC"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Nº Deposito:
+                </th>
+                <td colspan="2">
+                    <asp:TextBox ID="txtdeposito" runat="server" MaxLength="10"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" Text="Requerido!" runat="server"
+                        ValidationGroup="Submit" ErrorMessage="Requerido!" ControlToValidate="txtdeposito"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
                 <th>
                     Monto Pagado:
                 </th>
@@ -80,8 +118,8 @@
 
             <tr>
                 <td colspan="4">
-                    <asp:Button ID="btnCrear" runat="server" Text="Guardar" OnClick="btnGuardar_Click"
-                        ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('Â¿Esta seguro de crear este Pago?')) return false;" />
+                    <asp:Button ID="btnCrear" runat="server" Text="Enviar" OnClick="btnGuardar_Click"
+                        ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear este Pago?')) return false;" />
                     
                 </td>
             </tr>

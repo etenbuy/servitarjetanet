@@ -109,10 +109,9 @@ body
 	/*background: url('../Images/MenuItemBg.gif' );*/
 	height: 32px;
 	padding-top: 4px;
-	padding-left:10px;
-	text-align: left;
+	text-align: center;
 	font-weight:bolder;
-	 
+	 text-transform: uppercase;  
 
 }
 .left-menu-content
@@ -315,7 +314,10 @@ a:hover
 	padding-bottom: 1px;
 }
 
-
+.OrientacionVertical
+{
+	layout-flow: vertical-ideographic;
+}
 
 /* --- [ GridGeneral ] ------------- */
 
@@ -323,6 +325,12 @@ a:hover
 {
 	border: 1px solid #e2e2e2;
 	background: #fff;
+}
+.Formulario a
+{
+	border: 1px solid #e2e2e2;
+	
+	color:#134e9d;
 }
 .Formulario th
 {
@@ -334,7 +342,6 @@ a:hover
 	padding-bottom: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size:large;
 }
 .Formulario td
 {
@@ -344,7 +351,6 @@ a:hover
 	padding-right: 10px;
 	border-bottom: 1px solid #e2e2e2;
 	color:#555555;
-	font-size:large;
 }
 .Formulario-Clear
 {	border: none;

@@ -1034,3 +1034,10 @@ C:\Users\giner\Documents\GitHub\servitarjetanet\DataObjects\bin\Debug\BusinessOb
 C:\Users\giner\Documents\GitHub\servitarjetanet\DataObjects\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\giner\Documents\GitHub\servitarjetanet\DataObjects\obj\Debug\DataObjects.dll
 C:\Users\giner\Documents\GitHub\servitarjetanet\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\giner\Desktop\servitarjetanet\DataObjects\obj\Debug\DataObjects.pdb

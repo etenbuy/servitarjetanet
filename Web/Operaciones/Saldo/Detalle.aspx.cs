@@ -15,7 +15,7 @@ using System.Collections.Generic;
 
 namespace Web.Operaciones.Saldo
 {
-    public partial class Consultar : PageBase
+    public partial class Detalle : PageBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,8 +32,11 @@ namespace Web.Operaciones.Saldo
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-            gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(UsuarioAutenticado.UserName);
-            gvSolicitudes.DataBind();
+            dtvDetalle.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
+            dtvDetalle.DataBind();
+
+            dtvDetalle2.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
+            dtvDetalle2.DataBind();
         }
 
         protected void txtCalFechaDesde_SelectionChanged(object sender, EventArgs e)
