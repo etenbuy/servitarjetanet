@@ -1348,3 +1348,12 @@ C:\Users\giner\Desktop\servitarjetanet\Controllers\bin\Debug\DataObjects.pdb
 C:\Users\giner\Desktop\servitarjetanet\Controllers\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\giner\Desktop\servitarjetanet\Controllers\obj\Debug\Controllers.dll
 C:\Users\giner\Desktop\servitarjetanet\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\bin\Debug\Controllers.dll
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\obj\Debug\Controllers.dll
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Controllers\obj\Debug\Controllers.pdb

@@ -5,8 +5,8 @@
 
  <div align="center">
 
-    <h2>
-        Saldos y Movimientos</h2>
+    <h1>
+        Saldos y Movimientos</h1>
     <div>
         
         <br />
@@ -19,16 +19,24 @@
          ondatabound="gvSolicitudes_DataBound" Width="1136px">
         <RowStyle HorizontalAlign="Center" />
         <Columns>
-            <asp:BoundField DataField="SolicitudID" HeaderText="Numero" SortExpression="SolicitudID"/>           
-            <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"/>
-             <asp:BoundField DataField="FechaCreado" HeaderText="Fecha" SortExpression="Fecha"/>
-            <asp:BoundField DataField="Monto" HeaderText="Monto" SortExpression="Monto"/>
-                 <asp:BoundField DataField="Monto_Pagado" HeaderText="Pagado" HeaderStyle-HorizontalAlign="Right"
-                ItemStyle-HorizontalAlign="Right" SortExpression="Pagado" >
-            </asp:BoundField>            
+       
+            <asp:HyperLinkField
+            DataNavigateUrlFields="SolicitudID"
+            DataNavigateUrlFormatString="Detalle.aspx?ID={0}"
+            DataTextField="SolicitudID"
+            HeaderText="Nº Solicitud"
+            SortExpression="SolicitudID" />
+            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha Solicitud" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
+            <asp:BoundField DataField="Numero_Factura" HeaderText="Nº Factura" SortExpression="Numero_Factura"/>
+            <asp:BoundField DataField="Monto" HeaderText="Monto Factura" SortExpression="Monto"/>        
+            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Pagar" SortExpression="Pagado" />
+            <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"/>          
         </Columns>
 
     </asp:GridView>
+        <asp:LinkButton ID="kbkPrint" runat="server" onclick="kbkPrint_Click">IMPRIMIR</asp:LinkButton>
+       
+  
     </div>
 
   

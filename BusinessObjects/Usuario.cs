@@ -8,6 +8,8 @@ namespace BusinessObjects
 {
     public class Usuario 
     {
+        public string password { get; set; }
+
         public string PrimerNombre { get; set; }
 
         public string SegundoNombre { get; set; }

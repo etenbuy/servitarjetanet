@@ -32,7 +32,7 @@ namespace Web
 
             foreach (ListItem role in cblModulos.Items)
             {
-                if (role.Text == "BENEFICIOS" || role.Text == "ESTADOSDECUENTA" || role.Text == "SALDOS" || role.Text == "SERVICIOS")
+                if (role.Text == "BENEFICIOS" || role.Text == "ESTADOSDECUENTA" || role.Text == "SALDOS" || role.Text == "SERVICIOS" || role.Text == "CONFIGURACION_USUARIOS_CLIENTE")
                 {
                     roles.Add(role.Value);
                 }
@@ -47,14 +47,14 @@ namespace Web
             Controllers.ClienteController controllerCliente = new Controllers.ClienteController();
 
             Cliente cliente = new Cliente();
-            cliente.LoginCreado = usuario;
+            cliente.LoginCreado = mail;
             cliente.Descripcion = nombre;
             cliente.Telefono = "";
             cliente.Direccion = "";
             cliente.Email = mail;
             cliente.RIF = "";
             cliente.PaisID = paisID;
-            Controllers.ControllerResult result2 = controllerCliente.CrearCliente(cliente, "juan.delgado");
+            Controllers.ControllerResult result2 = controllerCliente.CrearCliente(cliente, mail);
 
         }
     }

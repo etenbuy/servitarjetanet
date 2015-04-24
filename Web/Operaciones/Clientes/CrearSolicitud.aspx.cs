@@ -37,7 +37,7 @@ namespace Web.Operaciones.Clientes
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-            IList<Solicitud> solicitudes = controller.SolicitudesAlMes_Get_ByClient("juan.delgado");
+            IList<Solicitud> solicitudes = controller.SolicitudesAlMes_Get_ByClient(UsuarioAutenticado.UserName);
 
             if (solicitudes.Count == 1)
             {

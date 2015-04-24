@@ -34,6 +34,9 @@
         </Columns>
 
     </asp:GridView>
+        <asp:LinkButton ID="kbkPrint" runat="server" onclick="kbkPrint_Click">IMPRIMIR</asp:LinkButton>
+       
+  
     </div>
 
   

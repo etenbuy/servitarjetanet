@@ -70,15 +70,23 @@
                         Text="Iniciar Sesion" />
                 </td>
             </tr>
+            <tr>
+                <td align="" bgcolor="#ececec" colspan="2" height="22" 
+                    style="color: #134e9d; text-align:center; color:#134e9d; font-weight:bold; font-size:smaller; padding-left:10px;">
+                    Si Ud, Olvido su Contraseña,<br />
+                    Ingrese su Correo y presione Recuperar Contraseña</td>
+            </tr>
             <tr bgcolor="#ececec">
-                <td align="right" class="style1">
-                    <label style="color:#134e9d; font-size:small;">
-                    Si olvido su clave o usuario</label>
+            <td class="style1" height="40">
+            <asp:Label id="Msg" Text="Correo Electronico" runat="server" ForeColor="#134e9d" /><br />
+            <asp:TextBox ID="txtRecover" runat="server" TabIndex="2" 
+                        Width="200"></asp:TextBox>
+                    &nbsp;
                 </td>
                 <td align="center" height="40" valign="middle">
-                    <asp:Button ID="btnpassreturn" runat="server" BackColor="#134E9D" 
-                        BorderStyle="None" Font-Bold="True" ForeColor="White" 
-                        onclick="btnpassreturn_Click" Text="Haga click aqui" />
+                    <asp:Button ID="ResetPassword" runat="server" BackColor="#134E9D" BorderStyle="None"
+                        Font-Bold="True" ForeColor="White" onclick="ResetPassword_OnClick" 
+                        Text="Recuperar Contraseña" />
                 </td>
             </tr>
             <tr>

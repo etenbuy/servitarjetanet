@@ -83,7 +83,7 @@ body
 
 #header .TopMenu a
 {
-	color: #f08013;
+	color: #134e9d;
 	font-weight: bold;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -118,7 +118,7 @@ body
 {	color: #fff; 	
 	padding-left: 4px;
 	margin:0 auto;
-
+    background-color:#fff;
 
 }
 #login tr
@@ -287,7 +287,7 @@ hr
 
 a:link, a:visited
 {
-	color: #fff;
+	color: #134e9d;
 	text-decoration: none;
 	border-bottom: 1px solid #134e9d; /*	border-bottom: 1px solid #a00;      text-decoration: underline;*/
 }
@@ -295,7 +295,7 @@ a:link, a:visited
 a:hover
 {
 	color: #f08013;
-	border-color: #134e9d;
+	border-color: #f08013;
 }
 
 /* ---[ back link ]---------------------------- */
@@ -326,8 +326,10 @@ a:hover
 	border: 1px solid #e2e2e2;
 	background: #fff;
 }
-.detalles a
+.detalles
 {
+    
+    border-bottom-style:dashed;
 	font-size:large;
 }
 

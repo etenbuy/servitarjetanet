@@ -13,6 +13,7 @@ using System.Xml.Linq;
 using BusinessObjects;
 using System.IO;
 using System.Collections.Generic;
+using Controllers;
 
 
 namespace Web
@@ -21,8 +22,8 @@ namespace Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
 
+          
             if (!IsPostBack)
             {
                 //txtUsuario.Focus();
@@ -70,6 +71,55 @@ namespace Web
         protected void btnpassreturn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void PasswordRecovery1_SendingMail(object sender, MailMessageEventArgs e)
+        {
+
+        }
+
+        protected void ResetPassword_OnClick(object sender, EventArgs e)
+        {
+
+            string newPassword;
+
+             System.Web.Security.MembershipUser u = Membership.GetUser(txtRecover.Text, false);
+
+            if (u == null)
+            {
+                Msg.Text = "Usuario " + Server.HtmlEncode(txtRecover.Text) + " No encontrado.";
+                return;
+            }
+
+            try
+            {
+                newPassword = u.ResetPassword();
+            }
+            catch (MembershipPasswordException)
+            {
+                Msg.Text = "Respuesta Invalida.";
+                return;
+            }
+            catch (Exception)
+            {
+                //Msg.Text = e.Message;
+                return;
+            }
+
+            if (newPassword != null)
+            {
+                MailController mail = new MailController();
+                mail.SendMailRecovery("Solicitud Cambio de Clave ServiTarjeta", txtRecover.Text, Server.HtmlEncode(newPassword));
+                Msg.Text = "Correcto: Enviada la nueva contraseña a su correo electronico.";
+                Msg.ForeColor = System.Drawing.Color.Red;
+   
+
+               // Msg.Text = "Contraseña reseteada. Su nueva Clave es: " + Server.HtmlEncode(newPassword);
+            }
+            else
+            {
+                Msg.Text = "Recuperacion de Contraseña fallido.";
+            }
         }
 
        

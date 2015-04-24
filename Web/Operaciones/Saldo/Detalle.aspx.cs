@@ -32,11 +32,11 @@ namespace Web.Operaciones.Saldo
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-            dtvDetalle.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
-            dtvDetalle.DataBind();
+            dtvDetalles.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
+            dtvDetalles.DataBind();
 
-            dtvDetalle2.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
-            dtvDetalle2.DataBind();
+            dtvDetalles2.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
+            dtvDetalles2.DataBind();
         }
 
         protected void txtCalFechaDesde_SelectionChanged(object sender, EventArgs e)

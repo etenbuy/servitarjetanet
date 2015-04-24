@@ -14,30 +14,21 @@ namespace Web.Operaciones.Saldo {
     public partial class Detalle {
         
         /// <summary>
-        /// lblMensaje control.
+        /// dtvDetalles control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
+        protected global::System.Web.UI.WebControls.DetailsView dtvDetalles;
         
         /// <summary>
-        /// dtvDetalle control.
+        /// dtvDetalles2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView dtvDetalle;
-        
-        /// <summary>
-        /// dtvDetalle2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView dtvDetalle2;
+        protected global::System.Web.UI.WebControls.DetailsView dtvDetalles2;
     }
 }

@@ -668,3 +668,8 @@ C:\Users\giner\Desktop\servitarjetanet\BusinessObjects\bin\Debug\BusinessObjects
 C:\Users\giner\Desktop\servitarjetanet\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\giner\Desktop\servitarjetanet\BusinessObjects\obj\Debug\BusinessObjects.dll
 C:\Users\giner\Desktop\servitarjetanet\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Windows\Documents\GitHub\servitarjetanet\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Windows\Documents\GitHub\servitarjetanet\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Windows\Documents\GitHub\servitarjetanet\BusinessObjects\obj\Debug\BusinessObjects.pdb

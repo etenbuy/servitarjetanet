@@ -19,6 +19,25 @@ namespace Controllers
 
         }
 
+        public void SendMailRecovery(string Subject, string mail, string pass)
+        {
+
+            MailMessage mailrecovery = new MailMessage();
+            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+            mailrecovery.From = new MailAddress("servicios@servitarjeta.com");
+            mailrecovery.To.Add(mail);
+            mailrecovery.Subject = Subject;
+            mailrecovery.Body = "Nueva Contraseña de acceso Servitarjeta.net : " + pass + "";
+
+            SmtpServer.Port = 587;
+            SmtpServer.Credentials = new System.Net.NetworkCredential("servicios@servitarjeta.com", "TerMons$Hp");
+            SmtpServer.EnableSsl = true;
+
+            SmtpServer.Send(mailrecovery);
+
+        }
+      
+
         public void SendMail(string Subject, string Client, string Note, int Tipo, decimal Monto, string filepath, string fullPathrecibo)
         {
             string tipo="";

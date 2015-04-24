@@ -12,6 +12,8 @@ using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
 using BusinessObjects;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace Web.Operaciones.Saldo
 {
@@ -20,12 +22,19 @@ namespace Web.Operaciones.Saldo
         protected void Page_Load(object sender, EventArgs e)
         {
            
-
+           
             if (!Page.IsPostBack)
             {
 
                 BuildSolicitudes();
             }
+        }
+
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            return;
+            /* Confirms that an HtmlForm control is rendered for the specified ASP.NET
+               server control at run time. */
         }
 
         private void BuildSolicitudes()
@@ -83,7 +92,67 @@ namespace Web.Operaciones.Saldo
 
           
         }
+       
 
+      
+
+
+        protected void kbkPrint_Click(object sender, EventArgs e)
+        {
+            gvSolicitudes.Visible = true;
+
+            gvSolicitudes.UseAccessibleHeader = true;
+            gvSolicitudes.HeaderRow.TableSection = TableRowSection.TableHeader;
+            gvSolicitudes.FooterRow.TableSection = TableRowSection.TableFooter;
+            gvSolicitudes.Attributes["style"] = "border-collapse:separate";
+            foreach (GridViewRow row in gvSolicitudes.Rows)
+            {
+                if (row.RowIndex % 10 == 0 && row.RowIndex != 0)
+                {
+                    row.Attributes["style"] = "page-break-after:always;";
+                }
+            }
+            StringWriter sw = new StringWriter();
+            HtmlTextWriter hw = new HtmlTextWriter(sw);
+
+            Page page = new Page();
+            HtmlForm form = new HtmlForm();
+
+            
+
+            gvSolicitudes.EnableViewState = false;
+
+            // Deshabilitar la validación de eventos, sólo asp.net 2
+            page.EnableEventValidation = false;
+
+            // Realiza las inicializaciones de la instancia de la clase Page que requieran los diseñadores RAD.
+            page.DesignerInitialize();
+
+            page.Controls.Add(form);
+            form.Controls.Add(gvSolicitudes);
+
+            page.RenderControl(hw);
+            string gridHTML = sw.ToString().Replace("\"", "'").Replace(System.Environment.NewLine, "");
+            StringBuilder sb = new StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload = new function(){");
+            sb.Append("var printWin = window.open('', '', 'left=0");
+            sb.Append(",top=0,width=1000,height=600,status=0');");
+            sb.Append("printWin.document.write(\"");
+            string style = "<style type = 'text/css'>thead {display:table-header-group;} tfoot{display:table-footer-group;}</style>";
+            sb.Append(style + gridHTML);
+            sb.Append("\");");
+            sb.Append("printWin.document.close();");
+            sb.Append("printWin.focus();");
+            sb.Append("printWin.print();");
+            sb.Append("printWin.close();");
+            sb.Append("};");
+            sb.Append("</script>");
+           ClientScript.RegisterStartupScript(this.GetType(), "GridPrint", sb.ToString());
+           // gvSolicitudes.AllowPaging = true;
+           // gvSolicitudes.DataBind();
+  
+        }
        
     }
 }

@@ -21,14 +21,8 @@
                     <font color="red" face="Arial">
                         <asp:Literal runat="server" ID="LiteralError"></asp:Literal></font>
                     <br />
-                    <table id="login" cellspacing="4" bgcolor="#fff" width="440" border="0" cellpadding="0" cellspacing="0">
-                                  <tr>
-                                            <td align="" bgcolor="#ececec" colspan="2" height="22" 
-                                                style="color: #134e9d; text-align:left; color:#2E2E2E; font-weight:bold; font-size:smaller; padding-left:10px;">
-                                                SI AUN NO HAZ RECIBIDO TU CLAVE TEMPORAL Y USUARIO EN TU EMAIL, COMUNICATE CON 
-                                                TU EJECUTIVO DE CUENTA O LINEA DE ATENCION AL CLIENTE</td>
-                                        </tr>
-                    
+           <table id="login" cellspacing="0" bgcolor="#fff" width="440" border="0" cellpadding="0" >
+
                 </td>
             </tr>
             
@@ -76,15 +70,23 @@
                         Text="Iniciar Sesion" />
                 </td>
             </tr>
+            <tr>
+                <td align="" bgcolor="#ececec" colspan="2" height="22" 
+                    style="color: #134e9d; text-align:center; color:#134e9d; font-weight:bold; font-size:smaller; padding-left:10px;">
+                    Si Ud, Olvido su Contraseña,<br />
+                    Ingrese su Correo y presione Recuperar Contraseña</td>
+            </tr>
             <tr bgcolor="#ececec">
-                <td align="right" class="style1">
-                    <label style="color:#134e9d; font-size:small;">
-                    Si olvido su clave o usuario</label>
+            <td class="style1" height="40">
+            <asp:Label id="Msg" Text="Correo Electronico" runat="server" ForeColor="#134e9d" /><br />
+            <asp:TextBox ID="txtRecover" runat="server" TabIndex="2" 
+                        Width="200"></asp:TextBox>
+                    &nbsp;
                 </td>
                 <td align="center" height="40" valign="middle">
-                    <asp:Button ID="btnpassreturn" runat="server" BackColor="#134E9D" 
-                        BorderStyle="None" Font-Bold="True" ForeColor="White" 
-                        onclick="btnpassreturn_Click" Text="Haga click aqui" />
+                    <asp:Button ID="ResetPassword" runat="server" BackColor="#134E9D" BorderStyle="None"
+                        Font-Bold="True" ForeColor="White" onclick="ResetPassword_OnClick" 
+                        Text="Recuperar Contraseña" />
                 </td>
             </tr>
             <tr>

@@ -13,7 +13,7 @@
           <NativeDebugging>False</NativeDebugging>
           <SQLDebugging>False</SQLDebugging>
           <PublishCopyOption>RunFiles</PublishCopyOption>
-          <PublishTargetLocation>C:\Users\giner\Documents\GitHub\servitarjetanet\publish\</PublishTargetLocation>
+          <PublishTargetLocation>C:\Users\Windows\Documents\GitHub\servitarjetanet\publish\</PublishTargetLocation>
           <PublishDeleteAllFiles>True</PublishDeleteAllFiles>
           <PublishCopyAppData>True</PublishCopyAppData>
           <ExternalProgram>

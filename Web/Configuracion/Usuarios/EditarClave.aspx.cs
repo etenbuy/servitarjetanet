@@ -51,8 +51,10 @@ namespace Web.Configuracion.Usuarios
 
             foreach (MembershipUser usuario in usuarios)
             {
-                tNode.ChildNodes.Add(new TreeNode(usuario.UserName.ToUpper()));
-
+                if (usuario.UserName == UsuarioAutenticado.UserName)
+                {
+                    tNode.ChildNodes.Add(new TreeNode(usuario.UserName.ToUpper()));
+                }
 
             }
 
@@ -64,12 +66,12 @@ namespace Web.Configuracion.Usuarios
             usuario = controller.GetUsuario(login);
             if (usuario != null)
             {
-                txtEmail.Text = usuario.memUser.Email.ToLower();
+               // txtEmail.Text = usuario.memUser.Email.ToLower();
                 txtPrimerNombre.Text = usuario.PrimerNombre;
                 txtSegundoNombre.Text = usuario.SegundoNombre;
                 txtPrimerApellido.Text = usuario.PrimerApellido;
                 txtSegundoApellido.Text = usuario.SegundoApellido;
-                cblModulos.DataSource = Roles.GetAllRoles();
+                cblModulos.DataSource = Roles.GetRolesForUser(login);
                 cblModulos.DataBind();
 
                 foreach (ListItem item in cblModulos.Items)
@@ -77,7 +79,11 @@ namespace Web.Configuracion.Usuarios
                     if (Roles.IsUserInRole(usuario.memUser.UserName, item.Text))
                         item.Selected = true;
                 }
+                cblModulos.Visible = false;
+                
+                
                 cbActivarUsuario.Checked = usuario.memUser.IsApproved;
+                cbActivarUsuario.Visible = true;
             }
 
         }
@@ -89,7 +95,7 @@ namespace Web.Configuracion.Usuarios
         }
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
-            usuario.memUser.Email = txtEmail.Text;
+           // usuario.memUser.Email = txtEmail.Text;
 
             if (cbActivarUsuario.Checked)
             {
@@ -100,6 +106,7 @@ namespace Web.Configuracion.Usuarios
                 usuario.memUser.IsApproved = false;
             }
 
+            usuario.memUser.ChangePassword(txtContrasena.Text, txtNuevaContrasena.Text);
             usuario.PrimerNombre = txtPrimerNombre.Text;
             usuario.SegundoNombre = txtSegundoNombre.Text;
             usuario.PrimerApellido = txtPrimerApellido.Text;
