@@ -116,9 +116,10 @@ namespace Web.Operaciones.Clientes
 
             solicitud.ClienteID = solicitudID.ClienteID;
 
+            solicitud.Numero_Factura = txtNumeroFactura.Text;
             solicitud.Monto = decimal.Parse(txtMonto.Text);
-
-            solicitud.Nota = txtNota.Text;
+            solicitud.Monto_Pagado = decimal.Parse(lblMontoPagar.Text);
+            
 
             string fullPath = "";
             string fullPathrecibo = "";
@@ -156,13 +157,13 @@ namespace Web.Operaciones.Clientes
 
 
              Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,fullPath, fullPathrecibo);
-           
-
-            if (result.Resultado == Controllers.Result.Successful)
 
 
+             if (result.Resultado == Controllers.Result.Successful)
 
-                txtNota.Text = string.Empty;
+
+
+                 txtNumeroFactura.Text = string.Empty;
                 txtMonto.Text = string.Empty;
                 SolicitudesPorMes();
             
@@ -190,6 +191,15 @@ namespace Web.Operaciones.Clientes
         {
 
 
+        }
+
+        protected void txtMonto_TextChanged(object sender, EventArgs e)
+        {
+            Ticket ticket = new Ticket();
+            Controllers.TicketController controller = new Controllers.TicketController();
+            ticket = controller.GetTicketMonto(txtMonto.Text);
+            lblMontoPagar.Text = ticket.Monto_Pagar.ToString();
+            
         }
 
 

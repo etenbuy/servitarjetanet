@@ -161,9 +161,11 @@ body
 
 #content
 {
-	padding: 5px 10px 0px 10px;
+    
+    border-width:0px;
+	padding: 5px 10px 10px 10px;
 	font-size: 85%;
-	line-height: 18px;
+	line-height: 20px;
 	min-height: 700px;
 	/* ---background: url('../Images/FONDO.png' )----- */
 }

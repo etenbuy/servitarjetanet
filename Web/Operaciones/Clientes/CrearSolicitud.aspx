@@ -27,9 +27,21 @@ toggleDisabled(el.childNodes[x]);
         ENVIO DE FACTURAS Y RECIBOS 2 Tickets Mensual</h2>
   <asp:Panel ID="primer_ticket" runat="server">
     <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
-        <table class="Formulario" cellpadding="0" cellspacing="0">
+        <table class="Formulario" cellpadding="0" cellspacing="10">
            
-           
+           <tr>
+                <th>
+                    Nº Factura:
+                </th>
+               
+                <td>
+                
+                     <asp:TextBox runat="server" ID="txtNumeroFactura"  AutoPostBack="false" Width="500" 
+                         THeight="400px" />
+                </td>
+                <td>
+                </td>
+            </tr>
             <tr>
                 <th>
                     Monto de su Factura:
@@ -37,28 +49,23 @@ toggleDisabled(el.childNodes[x]);
                
                 <td>
                 
-                     <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="false" Width="500" 
-                         THeight="400px" />
+                     <asp:TextBox runat="server" ID="txtMonto"  AutoPostBack="True" Width="500" 
+                         THeight="400px" ontextchanged="txtMonto_TextChanged" />
                 </td>
                 <td>
                 </td>
             </tr>
-            
-            
              <tr>
                 <th>
-                    Nota:
+                    Total Reembolso:
                 </th>
                
                 <td>
-                
-                     <asp:TextBox runat="server" ID="txtNota"  AutoPostBack="false" Width="500px" 
-                         TextMode="MultiLine" Height="121px" />
+                    <asp:Label ID="lblMontoPagar" runat="server" Text=""></asp:Label>
                 </td>
                 <td>
                 </td>
             </tr>
-            
             <tr>
                 <th>
                     Adjuntar Factura:

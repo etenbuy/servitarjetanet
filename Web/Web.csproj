@@ -121,6 +121,13 @@
     <Compile Include="Configuracion\Usuarios\EditarClave.aspx.designer.cs">
       <DependentUpon>EditarClave.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Operaciones\Clientes\Contrato.aspx.cs">
+      <DependentUpon>Contrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\Clientes\Contrato.aspx.designer.cs">
+      <DependentUpon>Contrato.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Operaciones\Saldo\Detalle.aspx.cs">
       <DependentUpon>Detalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -431,6 +438,7 @@
     <Content Include="Images\i-advertencia.png" />
     <Content Include="Images\I.png" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Operaciones\Clientes\Contrato.aspx" />
     <Content Include="Operaciones\Saldo\Detalle.aspx" />
     <Content Include="Rembolso.aspx" />
     <Content Include="Seguridad.aspx" />

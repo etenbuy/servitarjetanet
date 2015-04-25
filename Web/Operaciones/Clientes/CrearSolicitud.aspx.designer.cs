@@ -32,6 +32,15 @@ namespace Web.Operaciones.Clientes {
         protected global::System.Web.UI.WebControls.Label lblMensaje;
         
         /// <summary>
+        /// txtNumeroFactura control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNumeroFactura;
+        
+        /// <summary>
         /// txtMonto control.
         /// </summary>
         /// <remarks>
@@ -41,13 +50,13 @@ namespace Web.Operaciones.Clientes {
         protected global::System.Web.UI.WebControls.TextBox txtMonto;
         
         /// <summary>
-        /// txtNota control.
+        /// lblMontoPagar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNota;
+        protected global::System.Web.UI.WebControls.Label lblMontoPagar;
         
         /// <summary>
         /// FileUploadFactura control.

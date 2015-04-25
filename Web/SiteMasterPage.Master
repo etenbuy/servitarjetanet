@@ -120,16 +120,7 @@
         <div class="containerseparator">
         </div>
         </form>
-        <center>
-        <ul>
-        <li>
-        <div><a href="" style="color:Blue">Términos y Condiciones</a></div>
-        </li>
-        <li>
-        <div><a href="" style="color:Blue">Seguridad</a></div>
-        </li>
-        </ul>
-        </center>
+        
     </div>
 </body>
 </html>

@@ -89,6 +89,12 @@ namespace Controllers
 
         }
 
+        public Solicitud Get_SolicitudID(int SolicitudID)
+        {
+            return SolicitudDao.GetSolicitudID(SolicitudID);
+
+        }
+
 
     }
 }

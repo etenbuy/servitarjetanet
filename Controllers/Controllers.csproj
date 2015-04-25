@@ -52,6 +52,7 @@
     <Compile Include="Configuracion\CustomMembershipProvider .cs" />
     <Compile Include="Configuracion\Usuarios.cs" />
     <Compile Include="ControllerResult.cs" />
+    <Compile Include="TicketController.cs" />
     <Compile Include="StatusController.cs" />
     <Compile Include="MailController.cs" />
     <Compile Include="ReferidoController.cs" />

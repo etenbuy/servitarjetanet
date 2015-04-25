@@ -25,6 +25,7 @@ namespace Web.Configuracion.Pagos
             {
                 BindGrids();
                 cargarStatus();
+                
            
             }
         }
@@ -85,6 +86,8 @@ namespace Web.Configuracion.Pagos
 
             IList<Solicitud> solicitudes = controller.Solicitudes_Get_ByClientSolicitudID(SolicitudID);
 
+            
+
             if (solicitudes == null)
             {
                 lblMensaje.Text = "No se encontro ninguna solicitud con este numero que contenga datos";
@@ -99,11 +102,17 @@ namespace Web.Configuracion.Pagos
                        txtSolicitudID.Text = solicitudes[i].SolicitudID.ToString();
                        txtFactura.Text = solicitudes[i].Factura;
                        txtMontoFactura.Text = solicitudes[i].Monto.ToString();
-                       txtMontoPagado.Text = solicitudes[i].Monto_Pagado.ToString();
+                       
 
                     }
                 
-            }                             
+            }
+
+            Ticket ticket = new Ticket();
+            Controllers.TicketController controllerticket = new Controllers.TicketController();
+            ticket = controllerticket.GetTicketMonto(txtMontoFactura.Text);
+            txtMontoPagado.Text = ticket.Monto_Pagar.ToString();
+
             BindGrids();
 
         }
@@ -111,6 +120,7 @@ namespace Web.Configuracion.Pagos
         protected void btnEditar_Click(object sender, EventArgs e)
         {
             Buscar(int.Parse(((HiddenField)((LinkButton)sender).FindControl("hfSolicitudID")).Value.ToString()));
+
 
         }
 
@@ -130,10 +140,12 @@ namespace Web.Configuracion.Pagos
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             
             Solicitud solicitud = new Solicitud();
-            solicitud.FechaPagado = DateTime.ParseExact(txtFechaPago.Text, "dd/MM/yyyy",null);
+            solicitud.FechaPagado =  Convert.ToDateTime(txtFechaPago.Text);
+            //solicitud.FechaPagado = DateTime.ParseExact(txtFechaPago.Text, "dd/MM/yyyy", null);
             solicitud.Ntdc = txtTDC.Text;
             solicitud.Ndeposito = txtdeposito.Text;
             solicitud.Monto_Factura = decimal.Parse(txtMontoFactura.Text);
+            solicitud.Numero_Factura = txtFactura.Text;
             solicitud.Monto_Pagado = decimal.Parse(txtMontoPagado.Text);
             solicitud.SolicitudID = int.Parse(txtSolicitudID.Text);
             solicitud.StatusSolicitudID = int.Parse(ddlEstado.SelectedValue);
@@ -155,6 +167,8 @@ namespace Web.Configuracion.Pagos
 
             gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(txtLoginCreado.Text);
             gvSolicitudes.DataBind();
+
+           
 
 
             lblTotalSolicitudes.Text = gvSolicitudes.Rows.Count.ToString();

@@ -31,11 +31,13 @@ namespace DataObjects
                 prn.Value = solicitud.Monto;
                 parameters.Add(prn);
             }
-
-            if (solicitud.Nota != null)
+            prn = new SqlParameter("@Monto_Pagado", SqlDbType.Decimal);
+            prn.Value = solicitud.Monto_Pagado;
+            parameters.Add(prn);
+            if (solicitud.Numero_Factura != null)
             {
-                prn = new SqlParameter("@Nota", SqlDbType.VarChar, 500);
-                prn.Value = solicitud.Nota;
+                prn = new SqlParameter("@Numero_Factura", SqlDbType.VarChar, 30);
+                prn.Value = solicitud.Numero_Factura;
                 parameters.Add(prn);
             }
             if (solicitud.SolicitudTipoID != null)
@@ -143,7 +145,7 @@ namespace DataObjects
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Procesado";
+                    solicitud.Estado = "COMPLETADO";
                 }
                
 
@@ -214,7 +216,7 @@ namespace DataObjects
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Procesado";
+                    solicitud.Estado = "COMPLETADO";
                 }
 
 
@@ -326,7 +328,7 @@ namespace DataObjects
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Procesado";
+                    solicitud.Estado = "COMPLETADO";
                 }
 
 
@@ -399,7 +401,7 @@ namespace DataObjects
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "Procesado";
+                    solicitud.Estado = "COMPLETADO";
                 }
 
 
@@ -414,6 +416,32 @@ namespace DataObjects
 
             return list;
         }
+
+        public static Solicitud GetSolicitudID(int SolicitudID)
+        {
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT StatusSolicitudID " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  SolicitudID ='" + SolicitudID + "' " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            Solicitud solicitud = new Solicitud();
+            foreach (DataRow row in dt.Rows)
+            {
+
+
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
+            }
+
+            return solicitud;
+        }
+
 
         public static Solicitud GetIDClient(string LoginCreado)
         {

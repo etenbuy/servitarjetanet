@@ -76,18 +76,22 @@
                     Si Ud, Olvido su Contraseña,<br />
                     Ingrese su Correo y presione Recuperar Contraseña</td>
             </tr>
+            
             <tr bgcolor="#ececec">
-            <td class="style1" height="40">
+            <td align="center" valign="middle" bgcolor="#ececec" colspan="2" height="22" >
             <asp:Label id="Msg" Text="Correo Electronico" runat="server" ForeColor="#134e9d" /><br />
             <asp:TextBox ID="txtRecover" runat="server" TabIndex="2" 
                         Width="200"></asp:TextBox>
                     &nbsp;
-                </td>
-                <td align="center" height="40" valign="middle">
-                    <asp:Button ID="ResetPassword" runat="server" BackColor="#134E9D" BorderStyle="None"
+            </td>
+            </tr>
+            
+            <tr bgcolor="#ececec">
+            <td  align="center" valign="middle" colspan="2" height="22" >
+            <asp:Button ID="ResetPassword" runat="server" BackColor="#134E9D" BorderStyle="None"
                         Font-Bold="True" ForeColor="White" onclick="ResetPassword_OnClick" 
                         Text="Recuperar Contraseña" />
-                </td>
+            </td>
             </tr>
             <tr>
                 <td colspan="2" height="22">

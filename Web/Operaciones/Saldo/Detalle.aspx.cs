@@ -32,11 +32,27 @@ namespace Web.Operaciones.Saldo
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-            dtvDetalles.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
-            dtvDetalles.DataBind();
 
-            dtvDetalles2.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
-            dtvDetalles2.DataBind();
+            Solicitud solicitud = new Solicitud();
+            solicitud = controller.Get_SolicitudID(int.Parse(Request.QueryString.Get("ID").ToString()));
+
+
+            if (solicitud.StatusSolicitudID == 1)
+            {
+                lblSolicitud.Text = "Solicitud " + Request.QueryString.Get("ID").ToString() + " En Proceso";
+            }
+            else
+            {
+                dtvDetalles.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
+                dtvDetalles.DataBind();
+
+                dtvDetalles2.DataSource = controller.Solicitudes_Get_ByID(Request.QueryString.Get("ID").ToString());
+                dtvDetalles2.DataBind();
+            }
+
+           
+
+           
         }
 
         protected void txtCalFechaDesde_SelectionChanged(object sender, EventArgs e)

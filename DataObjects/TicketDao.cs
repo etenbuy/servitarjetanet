@@ -160,7 +160,31 @@ namespace DataObjects
             return list;
         }
 
+        public static Ticket GetTicketMonto(string MontoFactura)
+        {
 
+            IList<Ticket> list = new List<Ticket>();
+            string monto = MontoFactura;
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT TicketID,Monto_Desde,Monto_Hasta, Monto_Pagar " + "\n";
+            var1 = var1 + "FROM   Ticket " + "\n";
+            var1 = var1 + "WHERE  Monto_Desde<=" + monto.Replace(",", ".") + " AND Monto_Hasta>=" + monto.Replace(",", ".") + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            Ticket ticket = new Ticket();
+            foreach (DataRow row in dt.Rows)
+            {
+                ticket.TicketID = int.Parse(row["TicketID"].ToString());
+                ticket.Monto_Desde = decimal.Parse(row["Monto_Desde"].ToString());
+                ticket.Monto_Hasta = decimal.Parse(row["Monto_Hasta"].ToString());
+                ticket.Monto_Pagar = decimal.Parse(row["Monto_Pagar"].ToString());
+
+            }
+
+            return ticket;
+        }
      
 
 
