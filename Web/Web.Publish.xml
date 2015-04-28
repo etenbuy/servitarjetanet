@@ -12,11 +12,9 @@
     <file relUrl="Images/Iconos/bullet_purple.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_paintbrush.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/emoticon_wink.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Logout.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/database_key.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/folder_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/magnifier.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/Contrato.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_link.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/building_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_stack.png" publishTime="04/28/2015 02:19:48" />
@@ -28,11 +26,9 @@
     <file relUrl="Images/Iconos/brick_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/text_uppercase.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/date_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ReportParameter.datasource" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/award_star_bronze_1.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/control_play.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/link_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Inicio.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_attach.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/report_word.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/application_side_tree.png" publishTime="04/28/2015 02:19:47" />
@@ -46,12 +42,10 @@
     <file relUrl="Images/Iconos/arrow_turn_left.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/control_end.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/folder_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="SiteMasterPage.Master.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/car.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_excel.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/images/ui-bg_highlight-hard_15_003300_1x100.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/sport_raquet.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="PageBase.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/MF26.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/feed_magnify.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/mouse_error.png" publishTime="04/28/2015 02:19:48" />
@@ -67,12 +61,9 @@
     <file relUrl="Images/Iconos/picture_link.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_find.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/application_put.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Clientes/AdministrarClientes.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/chart_line_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Clientes/Dividendos.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/table_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/weather_snow.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Images/Piezas/Monedas/Thumbs.db" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/award_star_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/control_start_blue.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/text_horizontalrule.png" publishTime="04/28/2015 02:19:48" />
@@ -84,7 +75,6 @@
     <file relUrl="Images/Iconos/error_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="JS/JQ/jquery.multiselect.filter.js" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Operaciones/Default.aspx" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Role.datasource" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/heart.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/BENEFICIOS1.jpg" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/house_link.png" publishTime="04/28/2015 02:19:47" />
@@ -105,7 +95,6 @@
     <file relUrl="Images/Iconos/weather_cloudy.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shape_rotate_clockwise.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bomb.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/DataSource.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/tag_blue.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/database_edit.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/sound_low.png" publishTime="04/28/2015 02:19:48" />
@@ -145,12 +134,10 @@
     <file relUrl="Images/Iconos/folder_table.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/sum.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cart_delete.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/Reference.map" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/drive_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/2.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/wrench_orange.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/female.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ExecutionSettingEnum.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_paste.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/telephone_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/text_padding_bottom.png" publishTime="04/28/2015 02:19:48" />
@@ -164,13 +151,10 @@
     <file relUrl="Images/Iconos/application_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/emoticon_grin.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/arrow_rotate_anticlockwise.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="CollectionHelper.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/tag_blue_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/hourglass_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/tag_yellow.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/0,01.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Saldo/Consultar.aspx.cs" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Event.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bullet_arrow_bottom.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/text_letterspacing.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_star.png" publishTime="04/28/2015 02:19:47" />
@@ -186,7 +170,6 @@
     <file relUrl="Style/JQ/jquery.multiselect.css" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/arrow_in.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/layout_content.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Dividendos/Crear.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/user_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/20MA.jpg" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/table_lightning.png" publishTime="04/28/2015 02:19:48" />
@@ -202,11 +185,9 @@
     <file relUrl="Images/Iconos/film_error.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/sound.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/text_align_justify.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Default.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/css_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/sport_football.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Billetes/50A.jpg" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/CrearReferidos.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_text.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_picture.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="JS/JQ/jquery.activity-indicator-1.0.0.min.js" publishTime="04/28/2015 02:19:48" />
@@ -217,7 +198,6 @@
     <file relUrl="Images/Iconos/lightning_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/dvd_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_save.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Clientes/EditarClientes.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="JS/Update.js" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/book_addresses.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/css.png" publishTime="04/28/2015 02:19:47" />
@@ -226,13 +206,11 @@
     <file relUrl="Images/Iconos/shield_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_copy.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/money_pound.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/Beneficios.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/brick_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_c.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bullet_key.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/lock_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/medal_bronze_add.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web.csproj" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/pencil_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/help.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/clock_error.png" publishTime="04/28/2015 02:19:47" />
@@ -244,30 +222,23 @@
     <file relUrl="Images/Iconos/cart_put.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/hourglass.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/drive_web.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web.csproj.user" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/book_key.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/DataSourcePrompt.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_page.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/Advertencia20x20.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/feed_edit.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/date_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/chart_bar_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/script_go.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/ExtensionSettings.datasource" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Properties/AssemblyInfo.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/50.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/EditarUsuario.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/arrow_refresh_small.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/tab.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bullet_toggle_minus.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/folder_bug.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Clientes/CrearSolicitud.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/medal_silver_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/100MA.jpg" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/report_key.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cart_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/map_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Seguridad.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/email_attach.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_word.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cup_error.png" publishTime="04/28/2015 02:19:47" />
@@ -282,11 +253,8 @@
     <file relUrl="Images/Iconos/bin_closed.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/rss_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_key.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Saldo/Consultar.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/Crear.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/bullet_disk.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/award_star_delete.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Dividendos/Editar.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/plugin_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/drive.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_gear.png" publishTime="04/28/2015 02:19:48" />
@@ -302,10 +270,8 @@
     <file relUrl="Images/Iconos/drive_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/lightning.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/joystick_error.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/AdministrarUsuarios.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/application_osx_terminal.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="obj/Debug/TempPE/Reportes.MetroCambio.CrystalReport1.cs.dll" publishTime="04/28/2015 02:19:49" />
-    <file relUrl="Configuracion/Dividendos/Crear.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/1000A.jpg" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/monitor_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/book_previous.png" publishTime="04/28/2015 02:19:47" />
@@ -321,19 +287,15 @@
     <file relUrl="Images/Iconos/page_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/picture.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/report_user.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Pagos/Editar.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/drive_user.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/emoticon_smile.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/Policy.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_cup.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/Contrato.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/tux.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="obj/Debug/TempPE/MetroCambio.Reportes.dsSalidaEnvases.Designer.cs.dll" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/shape_move_back.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cup.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/contrast_decrease.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Monedas/MF26.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/Crear.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/5A.jpg" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/feed_delete.png" publishTime="04/28/2015 02:19:47" />
@@ -348,21 +310,17 @@
     <file relUrl="Images/Iconos/asterisk_orange.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/book_open.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/cup_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Saldo/Detalle.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/vcard_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/script_code_red.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shape_square_error.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/5.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_heart.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Clientes/AdministrarClientes.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/group_key.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/MF2.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/door_in.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/Property.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/tick.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/compress.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_world.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Task.datasource" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/bullet_feed.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/resultset_next.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/flag_green.png" publishTime="04/28/2015 02:19:47" />
@@ -371,7 +329,6 @@
     <file relUrl="Images/Iconos/lightning_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/email_error.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/key_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Operaciones.master.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="JS/Scroll.js" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/magifier_zoom_out.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/telephone_key.png" publishTime="04/28/2015 02:19:48" />
@@ -384,18 +341,16 @@
     <file relUrl="Images/Iconos/shape_rotate_anticlockwise.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/MF21.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/database_refresh.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="obj/Debug/Web.dll" publishTime="04/28/2015 02:20:16" />
+    <file relUrl="obj/Debug/Web.dll" publishTime="04/28/2015 04:44:50" />
     <file relUrl="Images/Iconos/pencil_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/arrow_right.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/database_save.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/report_picture.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_medal.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/Beneficios.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/flag_blue.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/server.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/database_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/application_side_contract.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Terminos.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/images/ui-icons_8dc262_256x240.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/basket_put.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_compressed.png" publishTime="04/28/2015 02:19:48" />
@@ -406,7 +361,6 @@
     <file relUrl="Images/Iconos/film_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_key.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/database_gear.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Pdf.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/zoom_in.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/joystick_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/calculator_add.png" publishTime="04/28/2015 02:19:47" />
@@ -416,24 +370,19 @@
     <file relUrl="Images/Iconos/key.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/award_star_silver_3.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/cog_error.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Properties/Settings.settings" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/monitor_link.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/zoom.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/map_go.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Configuracion.master.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/rosette.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/newspaper_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/control_rewind.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/book_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/font_go.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Clientes/Editar.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/camera_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/package_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/application_key.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/film.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Configuracion/Clientes/AdministrarClientes.aspx" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Default.aspx.cs" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/EditarUsuario.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/control_stop_blue.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Monedas/1000MA.jpg" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/webcam_delete.png" publishTime="04/28/2015 02:19:48" />
@@ -497,7 +446,6 @@
     <file relUrl="Images/Iconos/bullet_wrench.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/monitor_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/world_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Login.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cart_error.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/tag_blue_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_refresh.png" publishTime="04/28/2015 02:19:48" />
@@ -514,7 +462,6 @@
     <file relUrl="Images/Iconos/box.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/lock_open.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/emoticon_happy.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Configuracion.master.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/bullet_picture.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Logout.aspx" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/server_go.png" publishTime="04/28/2015 02:19:48" />
@@ -535,7 +482,6 @@
     <file relUrl="Images/Iconos/shape_align_top.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cog_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/application_side_list.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Reportes/Reporte.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/contrast_high.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_star.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cup_delete.png" publishTime="04/28/2015 02:19:47" />
@@ -570,15 +516,12 @@
     <file relUrl="obj/Debug/TempPE/Reportes.MetroCambio.CartaPorte.Designer.cs.dll" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/folder_find.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/ruby_go.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/EstadosCuentas.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/date_previous.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/shape_handles.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/lock_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Inicio.aspx" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/Dividendos.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shape_align_middle.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/world.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Dividendos/Editar.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/layout_link.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/package.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/ipod.png" publishTime="04/28/2015 02:19:47" />
@@ -590,20 +533,16 @@
     <file relUrl="Terminos.aspx" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/layers.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shape_square_go.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Extension.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/chart_curve_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/100.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/date_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/camera.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/telephone_add.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="bin/DataObjects.pdb" publishTime="04/28/2015 02:19:47" />
+    <file relUrl="bin/DataObjects.pdb" publishTime="04/28/2015 04:44:49" />
     <file relUrl="Images/Piezas/Monedas/MF25.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/world_edit.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="ExtraControls/CartaPorteUI.ascx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/table_error.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Disculpe.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/building_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Clientes/EditarClientes.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/arrow_turn_right.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/database_error.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/folder_page_white.png" publishTime="04/28/2015 02:19:47" />
@@ -619,14 +558,11 @@
     <file relUrl="Images/Iconos/style_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="obj/Debug/Web.csproj.FileListAbsolute.txt" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Operaciones/Operaciones.sitemap" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Disculpe.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/cancel.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ParameterValueOrFieldReference.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="JS/JQ/jquery_decimalMask_1_1_1_min__js_.js" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/layout_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Operaciones/Saldo/Consultar.aspx" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Operaciones/Saldo/Detalle.aspx" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Rembolso.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/medal_gold_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/table_sort.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/magnifier_zoom_in.png" publishTime="04/28/2015 02:19:48" />
@@ -687,9 +623,7 @@
     <file relUrl="Images/Iconos/phone_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/user_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/001.css" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="obj/Debug/ResolveAssemblyReference.cache" publishTime="04/28/2015 02:20:16" />
     <file relUrl="Images/Iconos/ruby.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/ModelCatalogItem.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/medal_silver_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bug_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/folder_explore.png" publishTime="04/28/2015 02:19:47" />
@@ -720,24 +654,21 @@
     <file relUrl="Images/Iconos/feed_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Inicio2.aspx" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shield_go.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="bin/DataObjects.dll" publishTime="04/28/2015 02:19:47" />
+    <file relUrl="bin/DataObjects.dll" publishTime="04/28/2015 04:44:49" />
     <file relUrl="Images/Iconos/contrast_increase.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/sport_basketball.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/application_view_gallery.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_code.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/picture_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/layout_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Operaciones.master.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Rembolso.aspx" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/server_error.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/control_equalizer.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_text_width.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/clock_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/email_open_image.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ActiveState.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/text_align_center.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bell_add.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/DataSetDefinition.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/images/ui-icons_808080_256x240.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="JS/Validador.js" publishTime="04/28/2015 02:19:48" />
@@ -752,28 +683,23 @@
     <file relUrl="Images/Iconos/arrow_redo.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/calendar_edit.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/text_replace.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Images/files/declaracion_destino_divisas.doc" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/cog_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Pdf.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Schedule.datasource" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/controller_error.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/new.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/MenuItemBg.gif" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/1MA.jpg" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/Editar.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/application_side_boxes.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/report_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/printer_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/script_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/time_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/transmit.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Reportes/Reporte.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shape_flip_vertical.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/tag_red.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Configuracion/Clientes/Editar.aspx" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/report_magnify.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/MF20.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="bin/Web.pdb" publishTime="04/28/2015 02:20:16" />
+    <file relUrl="bin/Web.pdb" publishTime="04/28/2015 04:44:50" />
     <file relUrl="Images/Iconos/pencil_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/chart_bar_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/thumb_down.png" publishTime="04/28/2015 02:19:48" />
@@ -816,10 +742,7 @@
     <file relUrl="Images/Iconos/sound_mute.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/transmit_blue.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/basket_add.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Usuarios/EditarClave.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/bell_go.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Seguridad.aspx.cs" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Images/files/windowsprovzla.pem" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/user_gray.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/control_start.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/cd_eject.png" publishTime="04/28/2015 02:19:47" />
@@ -832,16 +755,13 @@
     <file relUrl="Images/Iconos/newspaper_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/script_lightning.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bullet_pink.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Pagos/Editar.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/script_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/medal_silver_1.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/error_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/transmit_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/application_form_edit.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/comments.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/DataSourceDefinition.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_lightbulb.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Logout.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/email_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/user_orange.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/overlays.png" publishTime="04/28/2015 02:19:48" />
@@ -866,22 +786,18 @@
     <file relUrl="Images/Iconos/tag_green.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/calculator_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/database_add.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ItemTypeEnum.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/images/ui-bg_glass_55_fcf0ba_1x400.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/folder_bell.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Monedas/10MA.jpg" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Inicio.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_zip.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/time_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/report_disk.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/basket.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web.Publish.xml" publishTime="04/28/2015 02:19:49" />
-    <file relUrl="Web References/rssTransvalven/ReportHistorySnapshot.datasource" publishTime="04/28/2015 02:19:49" />
+    <file relUrl="Web.Publish.xml" publishTime="04/28/2015 03:49:14" />
     <file relUrl="Images/Iconos/bug_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/medal_bronze_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="obj/Debug/Web.pdb" publishTime="04/28/2015 02:20:16" />
+    <file relUrl="obj/Debug/Web.pdb" publishTime="04/28/2015 04:44:50" />
     <file relUrl="Images/Iconos/rss_valid.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/ParameterValue.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/image.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/control_end_blue.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/html_delete.png" publishTime="04/28/2015 02:19:47" />
@@ -904,13 +820,9 @@
     <file relUrl="Images/Iconos/page_white_paste.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/note_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/keyboard_magnify.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/EditarClave.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/image_delete.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/AdministrarUsuarios.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/10000A.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/CatalogItem.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="obj/Debug/TempPE/DataSet1.Designer.cs.dll" publishTime="04/28/2015 02:19:49" />
-    <file relUrl="Operaciones/Clientes/EstadosCuentas.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/emoticon_evilgrin.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/photo.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/2MA.jpg" publishTime="04/28/2015 02:19:48" />
@@ -933,22 +845,19 @@
     <file relUrl="Images/Iconos/database_connect.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/monitor_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/picture_error.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Saldo/Detalle.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/shape_move_front.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/book_next.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/calendar.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/table_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/pencil.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="bin/Controllers.pdb" publishTime="04/28/2015 02:20:15" />
+    <file relUrl="bin/Controllers.pdb" publishTime="04/28/2015 04:44:49" />
     <file relUrl="Images/Iconos/book_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/image_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_vector.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/report_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/comment_edit.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="SiteMasterPage.Master.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/telephone.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/textfield_key.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Inicio2.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/film_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_office.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/information.png" publishTime="04/28/2015 02:19:47" />
@@ -974,7 +883,6 @@
     <file relUrl="Images/Iconos/contrast.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Disculpe.aspx" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/arrow_left.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Operaciones/Default.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/chart_line.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/BF2.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/script_save.png" publishTime="04/28/2015 02:19:48" />
@@ -984,7 +892,6 @@
     <file relUrl="Images/Iconos/shape_move_forwards.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/BF20.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/wrench.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Inicio2.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/computer_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/cog_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/book_delete.png" publishTime="04/28/2015 02:19:47" />
@@ -992,7 +899,6 @@
     <file relUrl="Images/Iconos/building_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_get.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/lorry_error.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Subscription.datasource" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/shape_align_left.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/text_indent_remove.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Configuracion/Usuarios/Web.config" publishTime="04/28/2015 02:19:47" />
@@ -1004,7 +910,6 @@
     <file relUrl="Images/Iconos/bullet_green.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/jquery-ui-1.8.6.custom22.css" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/ExpirationDefinition.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_magnify.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/clock.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/emoticon_waii.png" publishTime="04/28/2015 02:19:47" />
@@ -1038,7 +943,6 @@
     <file relUrl="Operaciones/Operaciones.master" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/BF2.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/rss_add.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Clientes/Editar.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/FONDO.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/10.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/house.png" publishTime="04/28/2015 02:19:47" />
@@ -1050,7 +954,6 @@
     <file relUrl="Images/Iconos/bullet_red.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/time_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/comments_delete.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Login.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/layout_header.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/font_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/computer_edit.png" publishTime="04/28/2015 02:19:47" />
@@ -1066,9 +969,8 @@
     <file relUrl="Images/Iconos/table_link.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/images/ui-bg_highlight-hard_95_cccccc_1x100.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/email_link.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="bin/BusinessObjects.dll" publishTime="04/28/2015 02:19:46" />
-    <file relUrl="WebServiceClient.asmx.cs" publishTime="04/28/2015 02:19:49" />
-    <file relUrl="bin/BusinessObjects.pdb" publishTime="04/28/2015 02:19:46" />
+    <file relUrl="bin/BusinessObjects.dll" publishTime="04/28/2015 04:44:27" />
+    <file relUrl="bin/BusinessObjects.pdb" publishTime="04/28/2015 04:44:27" />
     <file relUrl="Images/Iconos/text_superscript.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/asterisk_yellow.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/BF22.png" publishTime="04/28/2015 02:19:48" />
@@ -1087,7 +989,6 @@
     <file relUrl="Images/Iconos/printer.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/report_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/picture_key.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="ExtraControls/CartaPorteUI.ascx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/joystick.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/bell_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/picture_go.png" publishTime="04/28/2015 02:19:48" />
@@ -1096,9 +997,6 @@
     <file relUrl="Style/JQ/jquery.multiselect.filter.css" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/arrow_divide.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/controller.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ExtensionParameter.datasource" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Images/files/EL VALOR DE LAS REDES, LOS CANALES, Y LAS COMUNICACIONES INFORMALES EN LA EMPRESA.doc" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Default.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/note_edit.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/note_error.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/pill.png" publishTime="04/28/2015 02:19:48" />
@@ -1106,10 +1004,8 @@
     <file relUrl="Images/Iconos/page_white_code_red.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/html_valid.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/tag_pink.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Clientes/Crear.aspx.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Web.sitemap" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Piezas/MF22.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/ModelItem.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/keyboard.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bullet_yellow.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/page_white_coldfusion.png" publishTime="04/28/2015 02:19:48" />
@@ -1118,20 +1014,15 @@
     <file relUrl="Images/Iconos/control_play_blue.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/lightbulb_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/disk_multiple.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/ModelDrillthroughReport.datasource" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/reportservice2005.wsdl" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/text_columns.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/server_uncompressed.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/map_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/star.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/CrearSolicitud.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/calculator_delete.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/comment_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/image_edit.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/controller_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Style/JQ/images/ui-bg_inset-soft_15_2b2922_1x100.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/ScheduleDefinitionOrReference.datasource" publishTime="04/28/2015 02:19:49" />
-    <file relUrl="Terminos.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/text_indent.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Configuracion/AdministrarUsuarios.aspx" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/application_form_magnify.png" publishTime="04/28/2015 02:19:47" />
@@ -1141,14 +1032,12 @@
     <file relUrl="Images/Iconos/vector_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/brick_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/vector.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Warning.datasource" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/heart_add.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/calendar_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/house_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/ruby_get.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/bullet_error.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Piezas/Billetes/10A.jpg" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Configuracion/Usuarios/Editar.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/feed_link.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/basket_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/chart_pie_link.png" publishTime="04/28/2015 02:19:47" />
@@ -1175,7 +1064,6 @@
     <file relUrl="Images/Iconos/page_white.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/table_multiple.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/flag_pink.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/DataRetrievalPlan.datasource" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_acrobat.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_cplusplus.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/chart_curve_go.png" publishTime="04/28/2015 02:19:47" />
@@ -1187,10 +1075,8 @@
     <file relUrl="Images/Iconos/note.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/drive_go.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/folder_magnify.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Rembolso.aspx.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/lightbulb_delete.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Configuracion/Dividendos/Crear.aspx" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Configuracion/Clientes/Crear.aspx.designer.cs" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/lorry_go.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Style/JQ/images/ui-icons_eeeeee_256x240.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/tag_orange.png" publishTime="04/28/2015 02:19:48" />
@@ -1248,9 +1134,8 @@
     <file relUrl="Images/Iconos/webcam.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Piezas/Monedas/0,10.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/dvd_delete.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="bin/Controllers.dll" publishTime="04/28/2015 02:20:15" />
+    <file relUrl="bin/Controllers.dll" publishTime="04/28/2015 04:44:49" />
     <file relUrl="Images/Iconos/comment.png" publishTime="04/28/2015 02:19:47" />
-    <file relUrl="Web References/rssTransvalven/Reference.cs" publishTime="04/28/2015 02:19:49" />
     <file relUrl="Images/Iconos/pill_add.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/page_white_paint.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/newspaper_add.png" publishTime="04/28/2015 02:19:48" />
@@ -1276,9 +1161,6 @@
     <file relUrl="Configuracion/Configuracion.sitemap" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/control_pause.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/package_delete.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Properties/Settings.Designer.cs" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Web References/rssTransvalven/Job.datasource" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="Operaciones/Clientes/CrearReferidos.aspx.designer.cs" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/sitemap_color.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/drink_empty.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/basket_delete.png" publishTime="04/28/2015 02:19:47" />
@@ -1291,7 +1173,7 @@
     <file relUrl="Images/Iconos/application_double.png" publishTime="04/28/2015 02:19:47" />
     <file relUrl="Images/Iconos/mouse.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/i-advertencia.png" publishTime="04/28/2015 02:19:48" />
-    <file relUrl="bin/Web.dll" publishTime="04/28/2015 02:20:16" />
+    <file relUrl="bin/Web.dll" publishTime="04/28/2015 04:44:50" />
     <file relUrl="Images/Iconos/ruby_gear.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/text_subscript.png" publishTime="04/28/2015 02:19:48" />
     <file relUrl="Images/Iconos/textfield_delete.png" publishTime="04/28/2015 02:19:48" />

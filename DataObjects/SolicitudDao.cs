@@ -122,10 +122,12 @@ namespace DataObjects
 
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
-                solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+                // solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
                 if (row["Fecha_Pagado"].ToString() != "")
                 {
-                    solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    //solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
                 }
                
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
@@ -193,10 +195,12 @@ namespace DataObjects
 
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
-                solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+                // solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
                 if (row["Fecha_Pagado"].ToString() != "")
                 {
-                    solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    //solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
                 }
                
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
@@ -245,7 +249,7 @@ namespace DataObjects
             prn.Value = solicitud.Monto_Factura;
             parameters.Add(prn);
 
-            prn = new SqlParameter("@FechaPagado", SqlDbType.Date);
+            prn = new SqlParameter("@FechaPagado", SqlDbType.VarChar, 30);
             prn.Value = solicitud.FechaPagado;
             parameters.Add(prn);
 
@@ -305,10 +309,12 @@ namespace DataObjects
             {
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
-                solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+                // solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
                 if (row["Fecha_Pagado"].ToString() != "")
                 {
-                    solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    //solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
                 }
                
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
@@ -377,10 +383,12 @@ namespace DataObjects
 
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
-                solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+               // solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
                 if (row["Fecha_Pagado"].ToString() != "")
                 {
-                    solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    //solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
                 }
                          
                 

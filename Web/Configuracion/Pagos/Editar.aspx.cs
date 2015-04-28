@@ -140,8 +140,7 @@ namespace Web.Configuracion.Pagos
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             
             Solicitud solicitud = new Solicitud();
-            solicitud.FechaPagado =  Convert.ToDateTime(txtFechaPago.Text);
-            //solicitud.FechaPagado = DateTime.ParseExact(txtFechaPago.Text, "dd/MM/yyyy", null);
+            solicitud.FechaPagado =  txtFechaPago.Text.ToString().Substring(0, 10);
             solicitud.Ntdc = txtTDC.Text;
             solicitud.Ndeposito = txtdeposito.Text;
             solicitud.Monto_Factura = decimal.Parse(txtMontoFactura.Text);

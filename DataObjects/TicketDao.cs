@@ -89,8 +89,8 @@ namespace DataObjects
 
                 Solicitud solicitud = new Solicitud();
                 solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
-                solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
-                solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+                solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
                 
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
                 solicitud.Nota = row["Nota"].ToString();
