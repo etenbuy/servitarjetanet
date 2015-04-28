@@ -9,9 +9,11 @@
         <h2>
         <asp:HyperLink runat="server" NavigateUrl="~/Operaciones/Saldo/Consultar.aspx">Volver</asp:HyperLink></h2>
      
+    <asp:Label ID="lblSolicitud" runat="server" Text=""></asp:Label>
+     
     <div style="position:relative; float:left; font-size:large;">
-        <asp:DetailsView ID="dtvDetalles" runat="server" Height="50px" Width="350px" 
-            AutoGenerateRows="False" BorderStyle="None" GridLines="None" CellPadding="0" CellSpacing="10">
+        <asp:DetailsView ID="dtvDetalles" runat="server"
+            AutoGenerateRows="False">
               <Fields>
                <asp:BoundField DataField="SolicitudID" HeaderText="Solicitud" SortExpression="SolicitudID" />
                <asp:BoundField DataField="Numero_Factura" HeaderText="N Factura" SortExpression="Numero_Factura" />

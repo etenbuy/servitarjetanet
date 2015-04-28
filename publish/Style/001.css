@@ -17,7 +17,17 @@ body
 	line-height: 1.6em;
 	text-align: left;
 }
-
+#dtvDetalles
+{
+    height:50px;
+    Width:350px;   
+    padding:10px;
+    font-size:larger;
+    border-width:0px;
+    border-style:none;
+    margin:none;
+   
+}
 
 #container
 {
@@ -119,8 +129,12 @@ body
 	padding-left: 4px;
 	margin:0 auto;
     background-color:#fff;
+    
 
 }
+
+
+
 #login tr
 { padding: 0px;
    margin: 0px;
@@ -161,9 +175,11 @@ body
 
 #content
 {
-	padding: 5px 10px 0px 10px;
+    
+    border-width:0px;
+	padding: 5px 10px 10px 10px;
 	font-size: 85%;
-	line-height: 18px;
+	line-height: 20px;
 	min-height: 700px;
 	/* ---background: url('../Images/FONDO.png' )----- */
 }

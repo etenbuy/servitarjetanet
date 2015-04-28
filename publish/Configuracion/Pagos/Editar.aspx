@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
 
  <div align="center">
-
+    
     <h2>
         Actualizar Pagos</h2>
     <div>
@@ -72,7 +72,8 @@
                     Fecha de Pago:
                 </th>
                 <td colspan="2">
-                 <asp:TextBox ID="txtFechaPago" runat="server" MaxLength="10"></asp:TextBox>                   
+                 <asp:TextBox ID="txtFechaPago" runat="server" Width="200px"></asp:TextBox>                   
+                   <asp:CalendarExtender ID="Calendar" Format="dd/MM/yyyy" runat="server" TargetControlID="txtFechaPago" />
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" Text="Requerido!" runat="server"
@@ -84,7 +85,7 @@
                     Nº TDC o Cuenta Bancaria:
                 </th>
                 <td colspan="2">
-                    <asp:TextBox ID="txtTDC" runat="server" MaxLength="10"></asp:TextBox>
+                    <asp:TextBox ID="txtTDC" runat="server" MaxLength="30"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" Text="Requerido!" runat="server"
@@ -105,10 +106,10 @@
             </tr>
             <tr>
                 <th>
-                    Monto Pagado:
+                    Monto a Reembolsar:
                 </th>
                 <td colspan="2">
-                    <asp:TextBox ID="txtMontoPagado" runat="server" MaxLength="10"></asp:TextBox>
+                    <asp:TextBox ID="txtMontoPagado" runat="server" MaxLength="10" Enabled="False"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" Text="Requerido!" runat="server"
@@ -142,7 +143,7 @@
                 ItemStyle-HorizontalAlign="Right" SortExpression="FechaCreado" />
                 <asp:BoundField DataField="Monto" HeaderText="Monto Factura" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Monto" />
-            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto Pagado" HeaderStyle-HorizontalAlign="Right"
+            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Reembolsar" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Monto_Pagado" />
                 
              <asp:TemplateField>

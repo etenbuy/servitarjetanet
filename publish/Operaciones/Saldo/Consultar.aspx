@@ -13,8 +13,8 @@
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
        <!-- Cantidad :
        <asp:Label ID="lblTotalSolicitudes" Text="0" runat="server"></asp:Label>   -->  
-        <asp:GridView ID="gvSolicitudes" CellPadding="0" CellSpacing="0" CssClass="Formulario"
-        AllowSorting="true" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
+        <asp:GridView ID="gvSolicitudes" CellPadding="0" CellSpacing="10" 
+        AllowSorting="true" HeaderStyle-Wrap="false" runat="server" BorderWidth="0px" Font-Size="Large"
        OnSorting="gvSolicitudes_Sorting" AutoGenerateColumns="false"  ShowFooter="true"
          ondatabound="gvSolicitudes_DataBound" Width="1136px">
         <RowStyle HorizontalAlign="Center" />
@@ -26,10 +26,10 @@
             DataTextField="SolicitudID"
             HeaderText="Nº Solicitud"
             SortExpression="SolicitudID" />
-            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha Solicitud" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
+            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha de Solicitud" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
             <asp:BoundField DataField="Numero_Factura" HeaderText="Nº Factura" SortExpression="Numero_Factura"/>
-            <asp:BoundField DataField="Monto" HeaderText="Monto Factura" SortExpression="Monto"/>        
-            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Pagar" SortExpression="Pagado" />
+            <asp:BoundField DataField="Monto" HeaderText="Monto de Factura" SortExpression="Monto"/>        
+            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Reembolsar" SortExpression="Pagado" />
             <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"/>          
         </Columns>
 
