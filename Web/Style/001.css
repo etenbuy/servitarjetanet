@@ -17,7 +17,17 @@ body
 	line-height: 1.6em;
 	text-align: left;
 }
-
+#dtvDetalles
+{
+    height:50px;
+    Width:350px;   
+    padding:10px;
+    font-size:larger;
+    border-width:0px;
+    border-style:none;
+    margin:none;
+   
+}
 
 #container
 {
@@ -119,8 +129,12 @@ body
 	padding-left: 4px;
 	margin:0 auto;
     background-color:#fff;
+    
 
 }
+
+
+
 #login tr
 { padding: 0px;
    margin: 0px;
