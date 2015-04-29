@@ -36,6 +36,36 @@ namespace Web.Operaciones.Saldo
             /* Confirms that an HtmlForm control is rendered for the specified ASP.NET
                server control at run time. */
         }
+        protected void lbtnDetalle_Click(object sender, EventArgs e)
+        {
+
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+
+
+            Solicitud solicitud = new Solicitud();
+            solicitud = controller.Get_SolicitudID(int.Parse(((HiddenField)((LinkButton)sender).FindControl("hfSolicitud")).Value.ToString()));
+
+
+            if (solicitud.StatusSolicitudID == 1)
+            {
+                lblSolicitud.Text = "Solicitud " + ((HiddenField)((LinkButton)sender).FindControl("hfSolicitud")).Value.ToString() + " En Proceso";
+                upanPopUp.Update();
+                mdlPopup.Show();
+            }
+            else
+            {
+                gvDetalles.DataSource = controller.Solicitudes_Get_ByID(((HiddenField)((LinkButton)sender).FindControl("hfSolicitud")).Value.ToString());
+                gvDetalles.DataBind();
+                upanPopUp.Update();
+                mdlPopup.Show();
+
+
+            }
+
+           
+
+        }
+
 
         private void BuildSolicitudes()
         {
