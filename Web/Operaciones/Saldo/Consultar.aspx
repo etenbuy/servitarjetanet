@@ -40,7 +40,7 @@
                     ScrollBars="Vertical">
                     <asp:UpdatePanel ID="upanPopUp" runat="server" UpdateMode="Conditional">
                         <ContentTemplate>
-                            <div class="Header">
+                            <div class="header">
                                 <table width="100%">
                                     <tr>
                                         <td>
@@ -73,9 +73,9 @@
                             </asp:GridView>
                         </ContentTemplate>
                     </asp:UpdatePanel>
+                     <asp:LinkButton ID="kbkPrint" runat="server" onclick="kbkPrint_Click">IMPRIMIR</asp:LinkButton>
                 </asp:Panel>
-        <asp:LinkButton ID="kbkPrint" runat="server" onclick="kbkPrint_Click">IMPRIMIR</asp:LinkButton>
-       
+      
   
     </div>
 
