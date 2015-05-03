@@ -1,6 +1,7 @@
 <%@ Page Language="C#" MasterPageFile="~/Operaciones/Operaciones.master" AutoEventWireup="true" CodeBehind="Consultar.aspx.cs" Inherits="Web.Operaciones.Saldo.Consultar" Title="SERVITARJETA" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register assembly="C1.Web.UI.Controls.3" namespace="C1.Web.UI.Controls.C1GridView" tagprefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
 
  <div align="center">
