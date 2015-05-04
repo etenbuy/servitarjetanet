@@ -155,11 +155,11 @@ namespace Web.Operaciones.Saldo
             {
                 if (row.Cells[6].Text == "COMPLETADO")
                 {
-                    row.Cells[6].ForeColor = Color.LightGreen;
+                    row.Cells[6].ForeColor = Color.Green;
                 }
-                if (row.Cells[6].Text == "En Proceso")
+                if (row.Cells[6].Text == "EN PROCESO")
                 {
-                    row.Cells[6].ForeColor = Color.Red;
+                    row.Cells[6].ForeColor = Color.Orange;
                 }
             }
         }
@@ -190,11 +190,11 @@ namespace Web.Operaciones.Saldo
                 {
                     if (row.Cells[6].Text == "COMPLETADO")
                     {
-                        row.Cells[6].ForeColor = Color.LightGreen;
+                        row.Cells[6].ForeColor = Color.Green;
                     }
-                    if (row.Cells[6].Text == "En Proceso")
+                    if (row.Cells[6].Text == "EN PROCESO")
                     {
-                        row.Cells[6].ForeColor = Color.Red;
+                        row.Cells[6].ForeColor = Color.Orange;
                     }
                 }
 
