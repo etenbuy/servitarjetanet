@@ -176,7 +176,7 @@ namespace DataObjects
             var1 = var1 + "       sum(Monto_Pagado) as Monto_Pagado, " + "\n";
             var1 = var1 + "       sum(Monto_Factura) as Monto_Factura " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
-            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "WHERE  StatusSolicitudID = 1 AND LoginCreado ='" + LoginCreado + "' " + "\n";
 
 
             DataTable dt = Db.GetDataTable(var1);

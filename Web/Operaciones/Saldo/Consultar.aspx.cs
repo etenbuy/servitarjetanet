@@ -119,7 +119,7 @@ namespace Web.Operaciones.Saldo
             solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName);
             if (solicitud.Monto_Pagado != null)
             {
-                lblTotalPagado.Text = string.Format("{0:###,###,###,###.00}",solicitud.Monto_Pagado);
+                lblTotalPagado.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto);
             }
             else
             {
@@ -128,7 +128,7 @@ namespace Web.Operaciones.Saldo
 
             if (solicitud.Monto != null)
             {
-                lblTotalProceso.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto);
+                lblTotalProceso.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto_Pagado); 
             }
             else
             {
@@ -142,6 +142,11 @@ namespace Web.Operaciones.Saldo
         private void BuildSolicitudes()
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
+
+
+            DataTable dtSolicitudes = CollectionHelper.ConvertTo<Solicitud>(controller.Solicitudes_Get_ByClient(UsuarioAutenticado.UserName));
+
+            Session["DSSolicitudes"] = dtSolicitudes;
 
             gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(UsuarioAutenticado.UserName);
             gvSolicitudes.DataBind();
@@ -173,7 +178,27 @@ namespace Web.Operaciones.Saldo
         protected void gvSolicitudes_Sorting(object sender, GridViewSortEventArgs e)
         {
 
-          
+            DataTable dt = Session["DSSolicitudes"] as DataTable;
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+            if (dt != null)
+            {
+                dt.DefaultView.Sort = e.SortExpression + " " + GetSortDirection(e.SortExpression);
+                gvSolicitudes.DataSource = Session["DSSolicitudes"];
+                gvSolicitudes.DataBind();
+
+                foreach (GridViewRow row in gvSolicitudes.Rows)
+                {
+                    if (row.Cells[6].Text == "COMPLETADO")
+                    {
+                        row.Cells[6].ForeColor = Color.LightGreen;
+                    }
+                    if (row.Cells[6].Text == "En Proceso")
+                    {
+                        row.Cells[6].ForeColor = Color.Red;
+                    }
+                }
+
+            }
 
         }
 

@@ -25,23 +25,23 @@
         Saldos y Movimientos</h1>
     <div>
         
-        <table style="width:550px">
+        <table style="width:200px">
             <tr>
-                <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
+              <!--  <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
                         border-bottom-color: #134e9d;">
                      MONTO TOTAL PAGADO
-                </td>
-                 <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
+                </td>-->
+                 <td style="  text-align:center;  padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
                         border-bottom-color: #134e9d;">
-                     MONTO TOTAL EN PROCESO
+                     MONTO EN PROCESO
                 </td>
                 
             </tr>
             
             <tr>
-                 <td style="font-weight:bolder; font-size:50px; color:LightGreen; padding-top:30px;">
+               <!--  <td style="font-weight:bolder; font-size:50px; color:LightGreen; padding-top:30px;">
                      <asp:Label ID="lblTotalPagado" runat="server" Text="Label"></asp:Label>
-                </td>
+                </td>-->
                 <td style="font-weight:bolder; font-size:50px; color:Orange; padding-top:30px;">
                     <asp:Label ID="lblTotalProceso" runat="server" Text="Label"></asp:Label></td>
                
