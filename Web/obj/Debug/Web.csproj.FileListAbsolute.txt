@@ -1962,3 +1962,4 @@ C:\Users\Windows\Documents\GitHub\servitarjetanet\Web\bin\Controllers.pdb
 C:\Users\Windows\Documents\GitHub\servitarjetanet\Web\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Windows\Documents\GitHub\servitarjetanet\Web\obj\Debug\Web.dll
 C:\Users\Windows\Documents\GitHub\servitarjetanet\Web\obj\Debug\Web.pdb
+C:\Users\Windows\Documents\GitHub\servitarjetanet\Web\obj\Debug\Web.dll.licenses

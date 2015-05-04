@@ -431,7 +431,20 @@ namespace DataObjects
             IList<Solicitud> list = new List<Solicitud>();
 
             string var1 = string.Empty;
-            var1 = var1 + "SELECT StatusSolicitudID " + "\n";
+            var1 = var1 + "SELECT StatusSolicitudID, " + "\n";
+            var1 = var1 + "       ClienteID, " + "\n";
+            var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       Fecha_Pagado, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Ntdc, " + "\n";
+            var1 = var1 + "       Ndeposito, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
+            var1 = var1 + "       SolicitudID " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
             var1 = var1 + "WHERE  SolicitudID ='" + SolicitudID + "' " + "\n";
 
@@ -442,8 +455,41 @@ namespace DataObjects
             foreach (DataRow row in dt.Rows)
             {
 
+               
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+               
+                if (row["Fecha_Pagado"].ToString() != "")
+                {
+                   
+                    solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
+                }
 
+
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Nota = row["Nota"].ToString();
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Ntdc = row["Ntdc"].ToString();
+                solicitud.Ndeposito = row["Ndeposito"].ToString();
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
+
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
                 solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
+                if (solicitud.StatusSolicitudID == 1)
+                {
+                    solicitud.Estado = "En Proceso";
+                }
+                if (solicitud.StatusSolicitudID == 2)
+                {
+                    solicitud.Estado = "COMPLETADO";
+                }
+
+
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
 
             }
 

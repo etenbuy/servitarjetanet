@@ -20,6 +20,7 @@ namespace Web
 
             FormsAuthentication.SignOut();
             Session.Clear();
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

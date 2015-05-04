@@ -23,15 +23,6 @@ namespace Web.Operaciones.Saldo {
         protected global::System.Web.UI.WebControls.Label lblMensaje;
         
         /// <summary>
-        /// lblTotalSolicitudes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTotalSolicitudes;
-        
-        /// <summary>
         /// gvSolicitudes control.
         /// </summary>
         /// <remarks>
@@ -95,21 +86,84 @@ namespace Web.Operaciones.Saldo {
         protected global::System.Web.UI.WebControls.Label lblSolicitud;
         
         /// <summary>
-        /// gvDetalles control.
+        /// lblsolicitudid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvDetalles;
+        protected global::System.Web.UI.WebControls.Label lblsolicitudid;
         
         /// <summary>
-        /// kbkPrint control.
+        /// lblFechaCreado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton kbkPrint;
+        protected global::System.Web.UI.WebControls.Label lblFechaCreado;
+        
+        /// <summary>
+        /// lblNumero_Factura control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumero_Factura;
+        
+        /// <summary>
+        /// lblMonto_Factura control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMonto_Factura;
+        
+        /// <summary>
+        /// lblNtdc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNtdc;
+        
+        /// <summary>
+        /// lblNdeposito control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNdeposito;
+        
+        /// <summary>
+        /// lblMonto_Pagado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMonto_Pagado;
+        
+        /// <summary>
+        /// lblFechaPagado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFechaPagado;
+        
+        /// <summary>
+        /// btnPrint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPrint;
     }
 }
