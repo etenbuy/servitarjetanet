@@ -29,6 +29,7 @@ namespace Web.Operaciones.Saldo
                 
                 solicitud = null;
                 BuildSolicitudes();
+                builTotales();
             }
         }
 
@@ -64,7 +65,7 @@ namespace Web.Operaciones.Saldo
 
             if (solicitud.StatusSolicitudID == 1)
             {
-                lblSolicitud.ForeColor = System.Drawing.Color.Red;
+                lblSolicitud.ForeColor = System.Drawing.Color.Orange;
                 lblSolicitud.Font.Bold = true;
                 lblSolicitud.Text = "Solicitud NRO " + value.ToString() + " En Proceso";
                 upanPopUp.Update();
@@ -111,7 +112,33 @@ namespace Web.Operaciones.Saldo
 
         }
 
+        private void builTotales()
+        {
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+            Solicitud solicitud = new Solicitud();
+            solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName);
+            if (solicitud.Monto_Pagado != null)
+            {
+                lblTotalPagado.Text = string.Format("{0:###,###,###,###.00}",solicitud.Monto_Pagado);
+            }
+            else
+            {
+                lblTotalPagado.Text = "0";
+            }
 
+            if (solicitud.Monto != null)
+            {
+                lblTotalProceso.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto);
+            }
+            else
+            {
+                lblTotalPagado.Text = "0";
+            }
+            
+            
+
+        
+        }
         private void BuildSolicitudes()
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();

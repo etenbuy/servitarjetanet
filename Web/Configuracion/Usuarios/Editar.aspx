@@ -134,7 +134,7 @@
                     </tr>
                     <tr>
                         <td align="center" colspan="2">
-                            <asp:Button ID="btnActualizar"  OnClick="btnActualizar_Click" Text="Actualizar" runat="server" />
+                            <asp:Button CssClass="buttons" ID="btnActualizar"  OnClick="btnActualizar_Click" Text="Actualizar" runat="server" />
                         </td>
                         <td>
                         </td>

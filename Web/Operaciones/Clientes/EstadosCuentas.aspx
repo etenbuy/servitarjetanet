@@ -20,7 +20,7 @@
 		<asp:FileUpload ID="FileUpload1" runat="server" />
 		<br />
 		<br />
-		<asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="ENVIAR"
+		<asp:Button CssClass="buttons" ID="Button1" runat="server" onclick="Button1_Click" Text="ENVIAR"
 		Width="123px" />
 		<br />
 		<br />

@@ -180,7 +180,7 @@ body
 #sond
 {
     bottom:0;
-    position:absolute;
+    position:fixed;
 }
 .left-menu-content span
 {	
@@ -196,7 +196,8 @@ body
 /* --- [ misc ] ----- */
 
 #main-body
-{
+{   
+  
 	width: 100%;
 }
 
@@ -207,7 +208,7 @@ body
 	padding: 5px 10px 10px 10px;
 	font-size: 85%;
 	line-height: 20px;
-	min-height: 700px;
+	min-height: 900px;
 	/* ---background: url('../Images/FONDO.png' )----- */
 }
 
@@ -230,7 +231,7 @@ body
 	color: #134e9d;
 }
 
-#performance
+#performance    
 {
 	color: #888;
 	padding: 15px;
@@ -335,6 +336,13 @@ a:link, a:visited
 	border-bottom: 1px solid #134e9d; /*	border-bottom: 1px solid #a00;      text-decoration: underline;*/
 }
 
+.buttons
+{
+    color:#fff;
+    width:150px;
+    height:30px;
+    background-color:#f08013;
+}
 a:hover
 {
 	color: #f08013;
@@ -366,7 +374,9 @@ a:hover
 
 .Formulario
 {
-	border: 1px solid #e2e2e2;
+    font-weight:bold;
+    color: #134e9d;
+	border: 0px solid #e2e2e2;
 	background: #fff;
 	
 
@@ -380,13 +390,14 @@ a:hover
 
 .Formulario a
 {
-	border: 1px solid #e2e2e2;	
+	border: 0px solid #e2e2e2;	
 	color:#134e9d;
 	font-size:large;
 }
 .Formulario th
 {
-	border-bottom: 1px solid #e2e2e2;
+    font-weight:bolder;
+	border-bottom: 0px solid #e2e2e2;
 	background: #fff;
 	text-align: left;
 	color: #134e9d;
@@ -402,7 +413,7 @@ a:hover
 	padding-bottom: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-bottom: 1px solid #e2e2e2;
+	border-bottom: 0px solid #e2e2e2;
 	color:#555555;
 	font-size:large;
 }

@@ -82,7 +82,7 @@
             <tr>
                 <td colspan="4">
                     
-                    <asp:Button ID="btnGuardar" runat="server" Visible="true" Text="Guardar" OnClick="btnGuardar_Click"
+                    <asp:Button CssClass="buttons" ID="btnGuardar" runat="server" Visible="true" Text="Guardar" OnClick="btnGuardar_Click"
                         OnClientClick="if (!Page_ClientValidate()) return false; if (!confirm('¿Esta seguro de actualizar este cliente?')) return false;"
                         ValidationGroup="Submit" />
                 </td>

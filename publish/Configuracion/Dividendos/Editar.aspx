@@ -87,7 +87,7 @@
 
             <tr>
                 <td colspan="4">
-                    <asp:Button ID="btnCrear" runat="server" Text="Guardar" OnClick="btnGuardar_Click"
+                    <asp:Button CssClass="buttons" ID="btnCrear" runat="server" Text="Guardar" OnClick="btnGuardar_Click"
                         ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear este cliente?')) return false;" />
                     
                 </td>

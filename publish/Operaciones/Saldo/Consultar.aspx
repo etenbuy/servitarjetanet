@@ -25,6 +25,31 @@
         Saldos y Movimientos</h1>
     <div>
         
+        <table style="width:550px">
+            <tr>
+                <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
+                        border-bottom-color: #134e9d;">
+                     MONTO TOTAL PAGADO
+                </td>
+                 <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
+                        border-bottom-color: #134e9d;">
+                     MONTO TOTAL EN PROCESO
+                </td>
+                
+            </tr>
+            
+            <tr>
+                 <td style="font-weight:bolder; font-size:50px; color:LightGreen; padding-top:30px;">
+                     <asp:Label ID="lblTotalPagado" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td style="font-weight:bolder; font-size:50px; color:Orange; padding-top:30px;">
+                    <asp:Label ID="lblTotalProceso" runat="server" Text="Label"></asp:Label></td>
+               
+            </tr>
+            
+        </table>
+        <br />
+        <br />
         <br />
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
 
@@ -86,7 +111,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <asp:Button ID="btnShowPopup" runat="server" Style="display: none" />
+                            <asp:Button CssClass="buttons" ID="btnShowPopup" runat="server" Style="display: none" />
                             <asp:ModalPopupExtender ID="mdlPopup" runat="server" TargetControlID="btnShowPopup"
                                 PopupControlID="pnlPopup" CancelControlID="btnCerrar" BackgroundCssClass="modalBackground">
                             </asp:ModalPopupExtender>
@@ -172,7 +197,7 @@
                     </asp:UpdatePanel>
                     <br />
                     <br />
-                        <asp:Button ID="btnPrint" runat="server" Text="IMPRIMIR" 
+                        <asp:Button CssClass="buttons" ID="btnPrint" runat="server" Text="IMPRIMIR" 
                             OnClientClick = "return PrintPanel();" onclick="btnPrint_Click" />
                 </asp:Panel>
    

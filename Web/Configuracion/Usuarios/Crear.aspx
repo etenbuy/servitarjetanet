@@ -124,7 +124,7 @@
         </tr>
         <tr>
             <td align="center" colspan="2">
-                <asp:Button ID="btnCrearUsuario" OnClick="btnCrearUsuario_Click" Text="Crear usuario"
+                <asp:Button CssClass="buttons" ID="btnCrearUsuario" OnClick="btnCrearUsuario_Click" Text="Crear usuario"
                     runat="server" />
             </td>
             <td>

@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                         <td align="right" colspan="2">
-                            <asp:Button ID="btnCrearUsuario" OnClick="btnCrearUsuario_Click" Text="Crear usuario"
+                            <asp:Button CssClass="buttons" ID="btnCrearUsuario" OnClick="btnCrearUsuario_Click" Text="Crear usuario"
                                 runat="server" />
                         </td>
                         <td>
@@ -143,7 +143,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Button ID="btnActualizarModulos" runat="server" Text="Actualizar" 
+                            <asp:Button CssClass="buttons" ID="btnActualizarModulos" runat="server" Text="Actualizar" 
                                 Visible="false" onclick="btnActualizarModulos_Click" />
                         </td>
                     </tr>

@@ -72,9 +72,9 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    <asp:Button ID="btnCrear" runat="server" Text="Guardar" OnClick="btnCrear_Click"
+                    <asp:Button CssClass="buttons" ID="btnCrear" runat="server" Text="Guardar" OnClick="btnCrear_Click"
                         ValidationGroup="Submit" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear al referido?')) return false;" />
-                    <asp:Button ID="btnEliminar" runat="server" Visible="false" Text="Eliminar" OnClick="btnEliminar_Click"
+                    <asp:Button CssClass="buttons" ID="btnEliminar" runat="server" Visible="false" Text="Eliminar" OnClick="btnEliminar_Click"
                         OnClientClick="if (!Page_ClientValidate()) return false; if (!confirm('¿Esta seguro de eliminar este referido?')) return false;"
                         ValidationGroup="Submit" />
                 </td>

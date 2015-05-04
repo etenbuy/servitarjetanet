@@ -42,6 +42,13 @@ namespace Controllers
 
         }
 
+        public Solicitud SolicitudesTotales_Get_ByClient(string LoginCreado)
+        {
+            return SolicitudDao.GetSolicitudesTotalesByClient(LoginCreado);
+
+        }
+
+       
         public IList<Solicitud> Solicitudes_Get_ByID(string SolicitudID)
         {
             return SolicitudDao.GetSolicitudesByID(SolicitudID);

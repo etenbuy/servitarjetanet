@@ -107,7 +107,7 @@
                
                 <tr>
                     <td colspan="3">
-                        <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click"
+                        <asp:Button CssClass="buttons" ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click"
                             ValidationGroup="Submit" 
                             OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear esta solicitud?')) return false;" 
                             BackColor="#134E9D" BorderStyle="None" Font-Bold="True" ForeColor="White" />

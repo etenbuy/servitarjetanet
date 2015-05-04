@@ -163,6 +163,35 @@ namespace DataObjects
             return list;
         }
 
+        public static Solicitud GetSolicitudesTotalesByClient(string LoginCreado)
+        {
+
+          
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT sum(Monto) as Monto, " + "\n";
+            var1 = var1 + "       sum(Monto_Pagado) as Monto_Pagado, " + "\n";
+            var1 = var1 + "       sum(Monto_Factura) as Monto_Factura " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+            Solicitud solicitud = new Solicitud();
+            foreach (DataRow row in dt.Rows)
+            {
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+               
+
+            }
+            return solicitud;
+        }
+
         public static IList<Solicitud> GetSolicitudesByID(string SolicitudID)
         {
 
