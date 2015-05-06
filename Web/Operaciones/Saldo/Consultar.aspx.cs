@@ -81,7 +81,25 @@ namespace Web.Operaciones.Saldo
                 btnPrint.Visible = false;
              
             }
-            else
+            if (solicitud.StatusSolicitudID == 3)
+            {
+                lblSolicitud.ForeColor = System.Drawing.Color.Orange;
+                lblSolicitud.Font.Bold = true;
+                lblSolicitud.Text = "Solicitud NRO " + value.ToString() + " NO APROBADA";
+                upanPopUp.Update();
+                mdlPopup.Show();
+                lblsolicitudid.Text = string.Empty;
+                lblFechaCreado.Text = string.Empty;
+                lblNumero_Factura.Text = string.Empty;
+                lblMonto_Factura.Text = string.Empty;
+                lblNtdc.Text = string.Empty;
+                lblNdeposito.Text = string.Empty;
+                lblMonto_Pagado.Text = string.Empty;
+                lblFechaPagado.Text = string.Empty;
+                btnPrint.Visible = false;
+
+            }
+            if (solicitud.StatusSolicitudID == 2)
             {
                 lblSolicitud.ForeColor = System.Drawing.Color.LightGreen;
                 lblSolicitud.Font.Bold = true;
@@ -153,13 +171,17 @@ namespace Web.Operaciones.Saldo
 
             foreach (GridViewRow row in gvSolicitudes.Rows)
             {
-                if (row.Cells[6].Text == "COMPLETADO")
+                if (row.Cells[6].Text == "COMPLETADA")
                 {
                     row.Cells[6].ForeColor = Color.Green;
                 }
                 if (row.Cells[6].Text == "EN PROCESO")
                 {
                     row.Cells[6].ForeColor = Color.Orange;
+                }
+                if (row.Cells[6].Text == "NO APROBADA")
+                {
+                    row.Cells[6].ForeColor = Color.Red;
                 }
             }
         }
@@ -188,13 +210,17 @@ namespace Web.Operaciones.Saldo
 
                 foreach (GridViewRow row in gvSolicitudes.Rows)
                 {
-                    if (row.Cells[6].Text == "COMPLETADO")
+                    if (row.Cells[6].Text == "COMPLETADA")
                     {
                         row.Cells[6].ForeColor = Color.Green;
                     }
                     if (row.Cells[6].Text == "EN PROCESO")
                     {
                         row.Cells[6].ForeColor = Color.Orange;
+                    }
+                    if (row.Cells[6].Text == "NO APROBADA")
+                    {
+                        row.Cells[6].ForeColor = Color.Red;
                     }
                 }
 

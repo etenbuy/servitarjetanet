@@ -143,11 +143,15 @@ namespace DataObjects
 
                 if (solicitud.StatusSolicitudID == 1)
                 {
-                    solicitud.Estado = "En Proceso";
+                    solicitud.Estado = "EN PROCESO";
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "COMPLETADO";
+                    solicitud.Estado = "COMPLETADA";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "NO APROBADA";
                 }
                
 
@@ -176,7 +180,7 @@ namespace DataObjects
             var1 = var1 + "       sum(Monto_Pagado) as Monto_Pagado, " + "\n";
             var1 = var1 + "       sum(Monto_Factura) as Monto_Factura " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
-            var1 = var1 + "WHERE  StatusSolicitudID = 1 AND LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "WHERE  StatusSolicitudID <> 3 AND LoginCreado ='" + LoginCreado + "' " + "\n";
 
 
             DataTable dt = Db.GetDataTable(var1);
@@ -245,11 +249,15 @@ namespace DataObjects
 
                 if (solicitud.StatusSolicitudID == 1)
                 {
-                    solicitud.Estado = "En Proceso";
+                    solicitud.Estado = "EN PROCESO";
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "COMPLETADO";
+                    solicitud.Estado = "COMPLETADA";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "NO APROBADA";
                 }
 
 
@@ -322,6 +330,7 @@ namespace DataObjects
             var1 = var1 + "       SolicitudTipoID, " + "\n";
             var1 = var1 + "       Monto, " + "\n";
             var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Pagar, " + "\n";
             var1 = var1 + "       Monto_Factura, " + "\n";
             var1 = var1 + "       Ntdc, " + "\n";
             var1 = var1 + "       Ndeposito, " + "\n";
@@ -359,16 +368,21 @@ namespace DataObjects
 
                 if (solicitud.StatusSolicitudID == 1)
                 {
-                    solicitud.Estado = "En Proceso";
+                    solicitud.Estado = "EN PROCESO";
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "COMPLETADO";
+                    solicitud.Estado = "COMPLETADA";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "NO APROBADA";
                 }
 
 
                 solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                 solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.Monto_Pagar = decimal.Parse(row["Monto_Pagar"].ToString());
                 solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
 
 
@@ -388,6 +402,7 @@ namespace DataObjects
             var1 = var1 + "SELECT sum(Monto) AS Monto " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
             var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  StatusSolicitudID = 1 " + "\n";
             var1 = var1 + "AND  datepart(mm, FechaCreado) =datepart(mm,'" + DateTime.Now.ToString("MM/dd/yyyy") + "') " + "\n";
 
 
@@ -461,11 +476,15 @@ namespace DataObjects
 
                 if (solicitud.StatusSolicitudID == 1)
                 {
-                    solicitud.Estado = "En Proceso";
+                    solicitud.Estado = "EN PROCESO";
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "COMPLETADO";
+                    solicitud.Estado = "COMPLETADA";
+                }
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "NO APROBADA";
                 }
 
 
@@ -535,13 +554,16 @@ namespace DataObjects
 
                 if (solicitud.StatusSolicitudID == 1)
                 {
-                    solicitud.Estado = "En Proceso";
+                    solicitud.Estado = "EN PROCESO";
                 }
                 if (solicitud.StatusSolicitudID == 2)
                 {
-                    solicitud.Estado = "COMPLETADO";
+                    solicitud.Estado = "COMPLETADA";
                 }
-
+                if (solicitud.StatusSolicitudID == 3)
+                {
+                    solicitud.Estado = "NO APROBADA";
+                }
 
                 solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                 solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());

@@ -49,5 +49,7 @@ namespace BusinessObjects
         public string Ndeposito { get; set; }
 
         public string Numero_Factura { get; set; }
+
+        public decimal Monto_Pagar { get; set; }
     }
 }

@@ -102,16 +102,19 @@ namespace Web.Configuracion.Pagos
                        txtSolicitudID.Text = solicitudes[i].SolicitudID.ToString();
                        txtFactura.Text = solicitudes[i].Factura;
                        txtMontoFactura.Text = solicitudes[i].Monto.ToString();
+                       txtMontoPagado.Text = solicitudes[i].Monto_Pagado.ToString();
                        
 
                     }
                 
             }
 
-            Ticket ticket = new Ticket();
+         /*   Ticket ticket = new Ticket();
             Controllers.TicketController controllerticket = new Controllers.TicketController();
-            ticket = controllerticket.GetTicketMonto(txtMontoFactura.Text);
-            txtMontoPagado.Text = ticket.Monto_Pagar.ToString();
+
+            ticket = controllerticket.GetTicketMontoMensual_Porcentaje();
+            txtMontoPagado.Text = Convert.ToString(decimal.Parse(txtMontoFactura.Text));
+*/
 
             BindGrids();
 
@@ -148,6 +151,7 @@ namespace Web.Configuracion.Pagos
             solicitud.Monto_Pagado = decimal.Parse(txtMontoPagado.Text);
             solicitud.SolicitudID = int.Parse(txtSolicitudID.Text);
             solicitud.StatusSolicitudID = int.Parse(ddlEstado.SelectedValue);
+            
 
             Controllers.ControllerResult result = controller.ActualizarSolicitud(solicitud, UsuarioAutenticado.UserName);
 

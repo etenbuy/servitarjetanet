@@ -20,11 +20,7 @@ namespace Controllers
 
         }
 
-        public Ticket GetTicketMonto(string MontoFactura)
-        {
-            return TicketDao.GetTicketMonto(MontoFactura);
-
-        }
+      
 
         public Ticket GetTicketMontoMensual_Porcentaje()
         {

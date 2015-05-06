@@ -36,9 +36,9 @@ namespace Controllers
             SmtpServer.Send(mailrecovery);
 
         }
-      
 
-        public void SendMail(string Subject, string Client, string Note, int Tipo, decimal Monto, string filepath, string fullPathrecibo)
+
+        public void SendMail(string Subject, string Client, string Note, int Tipo, decimal Monto, decimal Monto_Pagado, string filepath, string fullPathrecibo)
         {
             string tipo="";
             if (Tipo == 1)
@@ -55,16 +55,16 @@ namespace Controllers
             }
 
            
-            IList<Ticket> ticket = Get_MontoPagar(Monto);
+           // IList<Ticket> ticket = Get_MontoPagar(Monto);
 
-            decimal monto_pagar = 0;
+           // decimal monto_pagar = 0;
 
-            for (int i = 0; i < ticket.Count; ++i)
-            {
+           // for (int i = 0; i < ticket.Count; ++i)
+           // {
                 
-               monto_pagar = ticket[i].Monto_Pagar;
+               //monto_pagar = ticket[i].Monto_Pagar;
 
-            }
+           // }
 
 
             MailMessage mail = new MailMessage();
@@ -72,7 +72,7 @@ namespace Controllers
             mail.From = new MailAddress("servicios@servitarjeta.com");
             mail.To.Add("sistemas@servitarjeta.com");
             mail.Subject = Subject;
-            mail.Body = "Cliente = " + Client + " Tipo: " + tipo + " Mensaje: " + Note + " Monto Factura: " + Monto + " Monto a Pagar: " + monto_pagar + "";
+            mail.Body = "Cliente = " + Client + " Tipo: " + tipo + " Mensaje: " + Note + " Monto Factura: " + Monto + " Monto a Pagar: " + Monto_Pagado + "";
 
             System.Net.Mail.Attachment attachment;
             System.Net.Mail.Attachment attachmentRecibo;

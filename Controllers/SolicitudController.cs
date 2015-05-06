@@ -22,7 +22,7 @@ namespace Controllers
             if (daoResult.ErrorCount == 0)
             {
                 MailController mail = new MailController();
-                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto, filepath, fullPathrecibo);
+                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto,solicitud.Monto_Pagado, filepath, fullPathrecibo);
                 resultado.Mensaje = "Correcto: La Solicitud se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;
             }

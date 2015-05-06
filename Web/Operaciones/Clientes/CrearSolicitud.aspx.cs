@@ -37,12 +37,12 @@ namespace Web.Operaciones.Clientes
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             Controllers.TicketController controllerTicket = new Controllers.TicketController();
-
             Solicitud solicitudes = controller.GetSolicitudesByClientMontoFactura(UsuarioAutenticado.UserName);
+
             Ticket ticket =  controllerTicket.GetTicketMontoMensual_Porcentaje();
             
 
-            if (solicitudes.Monto > decimal.Parse(ticket.Monto_Mensual))
+            if (solicitudes.Monto > ticket.Monto_Mensual)
             {
                 FileUploadFactura.Enabled = false;
                 FileUploadRecibo.Enabled = false;
@@ -125,8 +125,9 @@ namespace Web.Operaciones.Clientes
 
 
 
-                 txtNumeroFactura.Text = string.Empty;
+                txtNumeroFactura.Text = string.Empty;
                 txtMonto.Text = string.Empty;
+                lblMontoPagar.Text = string.Empty;
                 SolicitudesPorMes();
             
             Alert(result.Mensaje);
@@ -159,8 +160,8 @@ namespace Web.Operaciones.Clientes
         {
             Ticket ticket = new Ticket();
             Controllers.TicketController controller = new Controllers.TicketController();
-            ticket = controller.GetTicketMonto(txtMonto.Text);
-            lblMontoPagar.Text = ticket.Monto_Pagar.ToString();
+            ticket = controller.GetTicketMontoMensual_Porcentaje();
+            lblMontoPagar.Text = Convert.ToString(decimal.Parse(txtMonto.Text) / ticket.Porcentaje);
             
         }
 
