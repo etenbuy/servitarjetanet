@@ -135,14 +135,7 @@ namespace Web.Operaciones.Saldo
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             Solicitud solicitud = new Solicitud();
             solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName);
-            if (solicitud.Monto_Pagado != null)
-            {
-                lblTotalPagado.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto);
-            }
-            else
-            {
-                lblTotalPagado.Text = "0";
-            }
+           
 
             if (solicitud.Monto != null)
             {
@@ -150,7 +143,7 @@ namespace Web.Operaciones.Saldo
             }
             else
             {
-                lblTotalPagado.Text = "0";
+                lblTotalProceso.Text = "0";
             }
             
             
@@ -169,9 +162,9 @@ namespace Web.Operaciones.Saldo
             gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(UsuarioAutenticado.UserName);
             gvSolicitudes.DataBind();
 
-            foreach (GridViewRow row in gvSolicitudes.Rows)
+          /*  foreach (GridViewRow row in gvSolicitudes.Rows)
             {
-                if (row.Cells[6].Text == "COMPLETADA")
+                if (row.Cells[6].Text == "+")
                 {
                     row.Cells[6].ForeColor = Color.Green;
                 }
@@ -183,7 +176,7 @@ namespace Web.Operaciones.Saldo
                 {
                     row.Cells[6].ForeColor = Color.Red;
                 }
-            }
+            }*/
         }
 
         protected void txtCalFechaDesde_SelectionChanged(object sender, EventArgs e)
@@ -208,7 +201,7 @@ namespace Web.Operaciones.Saldo
                 gvSolicitudes.DataSource = Session["DSSolicitudes"];
                 gvSolicitudes.DataBind();
 
-                foreach (GridViewRow row in gvSolicitudes.Rows)
+                /*foreach (GridViewRow row in gvSolicitudes.Rows)
                 {
                     if (row.Cells[6].Text == "COMPLETADA")
                     {
@@ -222,7 +215,7 @@ namespace Web.Operaciones.Saldo
                     {
                         row.Cells[6].ForeColor = Color.Red;
                     }
-                }
+                }*/
 
             }
 
@@ -233,7 +226,7 @@ namespace Web.Operaciones.Saldo
         decimal Monto_Pagado = 0;
         decimal monto = 0;
 
-        protected void gvSolicitudes_RowDataBound(object sender, GridViewRowEventArgs e)
+       /* protected void gvSolicitudes_RowDataBound(object sender, GridViewRowEventArgs e)
         {
 
           
@@ -260,7 +253,7 @@ namespace Web.Operaciones.Saldo
             }
   
         }
-
+        */
       
 
        

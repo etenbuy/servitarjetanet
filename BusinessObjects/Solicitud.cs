@@ -51,5 +51,7 @@ namespace BusinessObjects
         public string Numero_Factura { get; set; }
 
         public decimal Monto_Pagar { get; set; }
+
+        public decimal Saldo { get; set; }
     }
 }

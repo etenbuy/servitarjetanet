@@ -24,7 +24,7 @@ namespace Web.Configuracion.Pagos
             if (!Page.IsPostBack)
             {
                 BindGrids();
-                cargarStatus();
+                cargarTipo();
                 
            
             }
@@ -100,7 +100,7 @@ namespace Web.Configuracion.Pagos
                     {
                         
                        txtSolicitudID.Text = solicitudes[i].SolicitudID.ToString();
-                       txtFactura.Text = solicitudes[i].Factura;
+                       txtFactura.Text = solicitudes[i].Numero_Factura;
                        txtMontoFactura.Text = solicitudes[i].Monto.ToString();
                        txtMontoPagado.Text = solicitudes[i].Monto_Pagado.ToString();
                        
@@ -127,14 +127,14 @@ namespace Web.Configuracion.Pagos
 
         }
 
-        protected void cargarStatus()
+        protected void cargarTipo()
         {
-            Controllers.StatusController controller = new Controllers.StatusController();
+            Controllers.TipoController controller = new Controllers.TipoController();
 
-            ddlEstado.DataSource = controller.Get_Status();
-            ddlEstado.DataTextField = "Descripcion";
-            ddlEstado.DataValueField = "StatusID";
-            ddlEstado.DataBind();
+            ddlTipo.DataSource = controller.Get_Tipos();
+            ddlTipo.DataTextField = "Definicion";
+            ddlTipo.DataValueField = "Valor";
+            ddlTipo.DataBind();
         }
       
 
@@ -150,10 +150,15 @@ namespace Web.Configuracion.Pagos
             solicitud.Numero_Factura = txtFactura.Text;
             solicitud.Monto_Pagado = decimal.Parse(txtMontoPagado.Text);
             solicitud.SolicitudID = int.Parse(txtSolicitudID.Text);
-            solicitud.StatusSolicitudID = int.Parse(ddlEstado.SelectedValue);
-            
+           // solicitud.StatusSolicitudID = int.Parse(ddlTipo.SelectedValue);
+            solicitud.SolicitudTipoID = int.Parse(ddlTipo.SelectedValue);
+            solicitud.LoginCreado = txtLoginCreado.Text;
+            solicitud.Factura = "";
+            solicitud.Monto = decimal.Parse(txtMontoFactura.Text);
 
-            Controllers.ControllerResult result = controller.ActualizarSolicitud(solicitud, UsuarioAutenticado.UserName);
+            Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,"","");
+
+           // Controllers.ControllerResult result = controller.ActualizarSolicitud(solicitud, UsuarioAutenticado.UserName);
 
             if (result.Resultado == Controllers.Result.Successful)
                txtSolicitudID.Text = string.Empty;

@@ -61,7 +61,7 @@
                     Estado:
                 </th>
                 <td colspan="2">
-                    <asp:DropDownList ID="ddlEstado" AutoPostBack="true" runat="server" 
+                    <asp:DropDownList ID="ddlTipo" AutoPostBack="true" runat="server" 
                          Height="16px" 
                         Width="126px"></asp:DropDownList>
                 </td>

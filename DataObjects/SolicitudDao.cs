@@ -40,10 +40,12 @@ namespace DataObjects
                 prn.Value = solicitud.Numero_Factura;
                 parameters.Add(prn);
             }
+           
+
             if (solicitud.SolicitudTipoID != null)
             {
                 prn = new SqlParameter("@SolicitudTipoID", SqlDbType.Int);
-                prn.Value = solicitud.StatusSolicitudID;
+                prn.Value = solicitud.SolicitudTipoID;
                 parameters.Add(prn);
             }
             
@@ -78,9 +80,21 @@ namespace DataObjects
                 prn = new SqlParameter("@Recibo_2", SqlDbType.VarChar, 50);
                 prn.Value = solicitud.Recibo_2;
                 parameters.Add(prn);
-            
+                
+              
+                    prn = new SqlParameter("@FechaPagado", SqlDbType.VarChar, 30);
+                    prn.Value = solicitud.FechaPagado;
+                    parameters.Add(prn);
+               
+                    prn = new SqlParameter("@Ntdc", SqlDbType.VarChar, 30);
+                    prn.Value = solicitud.Ntdc;
+                    parameters.Add(prn);
+               
+                    prn = new SqlParameter("@Ndeposito", SqlDbType.VarChar, 30);
+                    prn.Value = solicitud.Ndeposito;
+                    parameters.Add(prn);
 
-
+               
             DaoResult result = Db.Insert(parameters, "Solicitud_INSERT", false,false);
             return result;
         }
@@ -110,6 +124,7 @@ namespace DataObjects
             var1 = var1 + "       Ndeposito, " + "\n";
             var1 = var1 + "       Numero_Factura, " + "\n";
             var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       Saldo, " + "\n";
             var1 = var1 + "       SolicitudID " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
             var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
@@ -141,20 +156,20 @@ namespace DataObjects
                 solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
                 solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
 
-                if (solicitud.StatusSolicitudID == 1)
+                if (solicitud.SolicitudTipoID == 1)
                 {
-                    solicitud.Estado = "EN PROCESO";
+                    solicitud.Estado = "+";
                 }
-                if (solicitud.StatusSolicitudID == 2)
+                if (solicitud.SolicitudTipoID == 2)
                 {
-                    solicitud.Estado = "COMPLETADA";
+                    solicitud.Estado = "-";
                 }
-                if (solicitud.StatusSolicitudID == 3)
+                if (solicitud.SolicitudTipoID == 3)
                 {
-                    solicitud.Estado = "NO APROBADA";
+                    solicitud.Estado = "-";
                 }
-               
 
+                solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
                 solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                 solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
                 solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
@@ -187,10 +202,18 @@ namespace DataObjects
             Solicitud solicitud = new Solicitud();
             foreach (DataRow row in dt.Rows)
             {
-                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
-                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
-                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
-               
+                if (row["Monto_Factura"].ToString() != "")
+                {
+                    solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                    solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                    solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                }
+                else
+                {
+                    solicitud.Monto_Factura = 0;
+                    solicitud.Monto = 0;
+                    solicitud.Monto_Pagado = 0;
+                }
 
             }
             return solicitud;
@@ -411,9 +434,14 @@ namespace DataObjects
             Solicitud solicitud = new Solicitud();
             foreach (DataRow row in dt.Rows)
             {
-
-                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
-            
+                if (row["Monto"].ToString() != "")
+                {
+                    solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                }
+                else
+                {
+                    solicitud.Monto = 0;
+                }
             }
 
             return solicitud;

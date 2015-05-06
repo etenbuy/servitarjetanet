@@ -74,13 +74,14 @@ namespace Web.Operaciones.Clientes
 
             solicitud.StatusSolicitudID = 1;
 
-            //solicitud.SolicitudTipoID = int.Parse(ddlServicio.SelectedValue);
+           //solicitud.SolicitudTipoID = int.Parse(ddlServicio.SelectedValue);
 
             solicitud.ClienteID = solicitudID.ClienteID;
 
             solicitud.Numero_Factura = txtNumeroFactura.Text;
             solicitud.Monto = decimal.Parse(txtMonto.Text);
             solicitud.Monto_Pagado = decimal.Parse(lblMontoPagar.Text);
+            solicitud.SolicitudTipoID = 1;
             
 
             string fullPath = "";
@@ -161,7 +162,7 @@ namespace Web.Operaciones.Clientes
             Ticket ticket = new Ticket();
             Controllers.TicketController controller = new Controllers.TicketController();
             ticket = controller.GetTicketMontoMensual_Porcentaje();
-            lblMontoPagar.Text = Convert.ToString(decimal.Parse(txtMonto.Text) / ticket.Porcentaje);
+            lblMontoPagar.Text = Convert.ToString(decimal.Parse(txtMonto.Text) * ticket.Porcentaje / 100);
             
         }
 

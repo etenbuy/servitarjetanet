@@ -54,6 +54,7 @@
     <Compile Include="BusinessRules\ValidateLength.cs" />
     <Compile Include="BusinessRules\ValidateRequired.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Tipo.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="Solicitud.cs" />
     <Compile Include="Referido.cs" />
