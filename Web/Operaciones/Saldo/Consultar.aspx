@@ -54,7 +54,7 @@
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
 
         <asp:GridView ID="gvSolicitudes" DataKeyNames="SolicitudID"
-        AllowSorting="true" runat="server" 
+        AllowSorting="false" runat="server" 
        OnSorting="gvSolicitudes_Sorting" AutoGenerateColumns="false" 
             HeaderStyle-Wrap="false" ShowFooter="true" Width="1136px"
             onselectedindexchanged="gvSolicitudes_SelectedIndexChanged" 

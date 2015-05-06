@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{943A2730-7C92-455F-9B30-5EDA8A5FC284}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -435,6 +435,16 @@
     <Content Include="Configuracion\Clientes\EditarClientes.aspx" />
     <Content Include="Configuracion\Pagos\Editar.aspx" />
     <Content Include="Configuracion\Usuarios\EditarClave.aspx" />
+    <Content Include="files\10372785_10205930144797372_2678473415018688359_n.jpg" />
+    <Content Include="files\2015-4-3_23-8-23-146.BMP" />
+    <Content Include="files\2015-4-3_23-8-24-420.BMP" />
+    <Content Include="files\2015-4-3_23-8-24-930.BMP" />
+    <Content Include="files\20150306_095843 %281%29.jpg" />
+    <Content Include="files\BOTON1.png" />
+    <Content Include="files\IMG-20130930-WA0001.jpg" />
+    <Content Include="files\IMG-20130930-WA0002.jpg" />
+    <Content Include="files\IMG-20130930-WA0008.jpg" />
+    <Content Include="files\Logo.png" />
     <Content Include="Images\i-advertencia.png" />
     <Content Include="Images\I.png" />
     <Content Include="Images\Logo.png" />
@@ -1532,6 +1542,7 @@
     <Content Include="Operaciones\Operaciones.master" />
     <Content Include="Operaciones\Operaciones.sitemap" />
     <Content Include="Operaciones\Reportes\Reporte.aspx" />
+    <None Include="files\Factura.docx" />
     <None Include="Images\files\declaracion_destino_divisas.doc" />
     <None Include="Images\files\EL VALOR DE LAS REDES, LOS CANALES, Y LAS COMUNICACIONES INFORMALES EN LA EMPRESA.doc" />
     <None Include="Images\files\windowsprovzla.pem" />
@@ -1701,9 +1712,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

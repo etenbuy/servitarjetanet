@@ -101,7 +101,12 @@ namespace Controllers
             return SolicitudDao.GetSolicitudID(SolicitudID);
 
         }
+        public Solicitud GetSolicitudesByClientMontoFactura(string LoginCreado)
+        {
+            return SolicitudDao.GetSolicitudesByClientMontoFactura(LoginCreado);
 
+        }
+        
 
     }
 }

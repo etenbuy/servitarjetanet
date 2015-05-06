@@ -379,6 +379,33 @@ namespace DataObjects
             return list;
         }
 
+        public static Solicitud GetSolicitudesByClientMontoFactura(string LoginCreado)
+        {
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT sum(Monto) AS Monto " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  datepart(mm, FechaCreado) =datepart(mm,'" + DateTime.Now.ToString("MM/dd/yyyy") + "') " + "\n";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            Solicitud solicitud = new Solicitud();
+            foreach (DataRow row in dt.Rows)
+            {
+
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+            
+            }
+
+            return solicitud;
+        }
+
+       
+
         public static IList<Solicitud> GetSolicitudesAlMesByClient(string LoginCreado)
         {
 

@@ -24,7 +24,7 @@ toggleDisabled(el.childNodes[x]);
 </script>
 
     <h2>
-        ENVIO DE FACTURAS Y RECIBOS 2 Tickets Mensual</h2>
+        ENVIO DE FACTURAS Y RECIBOS</h2>
   <asp:Panel ID="primer_ticket" runat="server">
     <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
         <table class="Formulario" cellpadding="0" cellspacing="10">

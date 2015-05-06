@@ -32,70 +32,32 @@ namespace Web.Operaciones.Clientes
                 SolicitudesPorMes();
             }
         }
-
+                
         private void SolicitudesPorMes()
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
+            Controllers.TicketController controllerTicket = new Controllers.TicketController();
 
-            IList<Solicitud> solicitudes = controller.SolicitudesAlMes_Get_ByClient(UsuarioAutenticado.UserName);
+            Solicitud solicitudes = controller.GetSolicitudesByClientMontoFactura(UsuarioAutenticado.UserName);
+            Ticket ticket =  controllerTicket.GetTicketMontoMensual_Porcentaje();
+            
 
-            if (solicitudes.Count == 1)
+            if (solicitudes.Monto > decimal.Parse(ticket.Monto_Mensual))
+            {
+                FileUploadFactura.Enabled = false;
+                FileUploadRecibo.Enabled = false;
+                primer_ticket.Enabled = false;
+                lblMensaje.Text = "Monto maximo en factura mensual alcanzado";
+            }
+            else
             {
                 primer_ticket.Enabled = true;
                 FileUploadFactura.Enabled = true;
                 FileUploadRecibo.Enabled = true;
-                
-                
-            }
-            if (solicitudes.Count == 2)
-            {
-                FileUploadFactura.Enabled = false;
-                FileUploadRecibo.Enabled = false;
-                primer_ticket.Enabled = false;
-                lblMensaje.Text = "Ticket Utilizado";
-                
-            }
-            if (solicitudes.Count == 3)
-            {
-                FileUploadFactura.Enabled = false;
-                FileUploadRecibo.Enabled = false;
-               
-                primer_ticket.Enabled = false;
-              
-                lblMensaje.Text = "Ticket Utilizado";
-               
-            }
-            if (solicitudes.Count == 4)
-            {
-                FileUploadFactura.Enabled = false;
-                FileUploadRecibo.Enabled = false;
-              
-                primer_ticket.Enabled = false;
-               
-                lblMensaje.Text = "Ticket Utilizado";
-                
-            }
-            if (solicitudes.Count == 5)
-            {
-                FileUploadFactura.Enabled = false;
-                FileUploadRecibo.Enabled = false;
-                
-                primer_ticket.Enabled = false;
-               
-                lblMensaje.Text = "Ticket Utilizado";
-                
-            }
-
-            if (solicitudes.Count == 0)
-            {
-                FileUploadFactura.Enabled = true;
-                FileUploadRecibo.Enabled = true;
-               
-                primer_ticket.Enabled = true;
-                
                 lblMensaje.Text = "";
-                
             }
+
+          
 
         }
 

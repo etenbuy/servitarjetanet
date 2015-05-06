@@ -26,5 +26,11 @@ namespace Controllers
 
         }
 
+        public Ticket GetTicketMontoMensual_Porcentaje()
+        {
+            return TicketDao.GetTicketMontoMensual_Porcentaje();
+
+        }
+
     }
 }

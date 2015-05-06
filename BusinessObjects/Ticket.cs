@@ -9,11 +9,9 @@ namespace BusinessObjects
     {
         public int TicketID { get; set; }
 
-        public decimal Monto_Desde { get; set; }
+        public decimal Monto_Porcentaje { get; set; }
 
-        public decimal Monto_Hasta { get; set; }
-
-        public decimal Monto_Pagar { get; set; }
+        public decimal Monto_Mensual { get; set; }
 
        
     }
