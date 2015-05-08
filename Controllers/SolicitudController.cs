@@ -42,12 +42,22 @@ namespace Controllers
 
         }
 
+        public IList<Solicitud> Solicitudes_TarjetaGet_ByClient(string LoginCreado,string tarjeta)
+        {
+            return SolicitudDao.GetSolicitudesTarjetaByClient(LoginCreado,tarjeta);
+
+        }
+
         public Solicitud SolicitudesTotales_Get_ByClient(string LoginCreado)
         {
             return SolicitudDao.GetSolicitudesTotalesByClient(LoginCreado);
 
         }
+        public Solicitud SolicitudesTotalesTarjeta_Get_ByClient(string LoginCreado,string Tarjeta)
+        {
+            return SolicitudDao.GetSolicitudesTotalesTarjetaByClient(LoginCreado,Tarjeta);
 
+        }
        
         public IList<Solicitud> Solicitudes_Get_ByID(string SolicitudID)
         {
@@ -101,9 +111,9 @@ namespace Controllers
             return SolicitudDao.GetSolicitudID(SolicitudID);
 
         }
-        public Solicitud GetSolicitudesByClientMontoFactura(string LoginCreado)
+        public Solicitud GetSolicitudesByClientMontoFactura(string LoginCreado,string tarjeta)
         {
-            return SolicitudDao.GetSolicitudesByClientMontoFactura(LoginCreado);
+            return SolicitudDao.GetSolicitudesByClientMontoFactura(LoginCreado,tarjeta);
 
         }
         

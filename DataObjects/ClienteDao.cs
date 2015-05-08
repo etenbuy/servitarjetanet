@@ -295,12 +295,14 @@ namespace DataObjects
 
         public static Cliente ObtenerCliente(string descripcion)
         {
-            IList<SqlParameter> parameters = new List<SqlParameter>();
-            SqlParameter prn = new SqlParameter("@Descripcion", SqlDbType.VarChar, 100);
-            prn.Value = descripcion;
-            parameters.Add(prn);
+         
 
-            DataRow row = Db.GetDataRow(parameters, "Cliente_GET_DESCRIP");
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT * " + "\n";
+            var1 = var1 + "FROM   Cliente " + "\n";
+            var1 = var1 + "WHERE  Email ='" + descripcion + "' " + "\n";
+
+            DataRow row = Db.GetDataRow(var1);
 
 
             if (row != null)
@@ -327,6 +329,8 @@ namespace DataObjects
                 return null;
 
         }
+
+        
 
 
 

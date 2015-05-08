@@ -28,16 +28,33 @@ namespace Web.Operaciones.Clientes
 
             if (!Page.IsPostBack)
             {
-
+                BuildTarjetas();
                 SolicitudesPorMes();
             }
+        }
+
+        private void BuildTarjetas()
+        {
+            Controllers.ClienteController controllerCliente = new Controllers.ClienteController();
+
+            Cliente cliente = new Cliente();
+            cliente = controllerCliente.ObtenerCliente(UsuarioAutenticado.UserName);
+
+            Controllers.TarjetaController controllerTarjeta = new Controllers.TarjetaController();
+            ddlTarjetas.DataSource = controllerTarjeta.Get_Tarjetas(cliente.ClienteID);
+
+            ddlTarjetas.DataTextField = "Numero";
+            ddlTarjetas.DataValueField = "Id";
+            ddlTarjetas.DataBind();
+
+            ddlTarjetas.Items.Insert(0, new ListItem("Seleccionar...", ""));
         }
                 
         private void SolicitudesPorMes()
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             Controllers.TicketController controllerTicket = new Controllers.TicketController();
-            Solicitud solicitudes = controller.GetSolicitudesByClientMontoFactura(UsuarioAutenticado.UserName);
+            Solicitud solicitudes = controller.GetSolicitudesByClientMontoFactura(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
 
             Ticket ticket =  controllerTicket.GetTicketMontoMensual_Porcentaje();
             
@@ -82,6 +99,7 @@ namespace Web.Operaciones.Clientes
             solicitud.Monto = decimal.Parse(txtMonto.Text);
             solicitud.Monto_Pagado = decimal.Parse(lblMontoPagar.Text);
             solicitud.SolicitudTipoID = 1;
+            solicitud.Numero_TDC = ddlTarjetas.SelectedItem.Text;
             
 
             string fullPath = "";
@@ -164,6 +182,11 @@ namespace Web.Operaciones.Clientes
             ticket = controller.GetTicketMontoMensual_Porcentaje();
             lblMontoPagar.Text = Convert.ToString(decimal.Parse(txtMonto.Text) * ticket.Porcentaje / 100);
             
+        }
+
+        protected void ddlTarjetas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
 

@@ -28,7 +28,9 @@ namespace Web.Operaciones.Saldo
             {
                 
                 solicitud = null;
+                BuildTarjetas();
                 BuildSolicitudes();
+                
                 builTotales();
             }
         }
@@ -134,7 +136,8 @@ namespace Web.Operaciones.Saldo
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             Solicitud solicitud = new Solicitud();
-            solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName);
+           // solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
+            solicitud = controller.SolicitudesTotalesTarjeta_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
 
             if (solicitud.Saldo != null)
             {
@@ -149,16 +152,32 @@ namespace Web.Operaciones.Saldo
 
         
         }
+        private void BuildTarjetas()
+        {
+            Controllers.ClienteController controllerCliente = new Controllers.ClienteController();
+
+            Cliente cliente = new Cliente();
+            cliente = controllerCliente.ObtenerCliente(UsuarioAutenticado.UserName);
+
+            Controllers.TarjetaController controllerTarjeta = new Controllers.TarjetaController();
+            ddlTarjetas.DataSource = controllerTarjeta.Get_Tarjetas(cliente.ClienteID);
+
+            ddlTarjetas.DataTextField = "Numero";
+            ddlTarjetas.DataValueField = "Id";
+            ddlTarjetas.DataBind();
+
+            ddlTarjetas.Items.Insert(0, new ListItem("Seleccionar...", ""));
+        }
         private void BuildSolicitudes()
         {
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-
-            DataTable dtSolicitudes = CollectionHelper.ConvertTo<Solicitud>(controller.Solicitudes_Get_ByClient(UsuarioAutenticado.UserName));
+           
+            DataTable dtSolicitudes = CollectionHelper.ConvertTo<Solicitud>(controller.Solicitudes_TarjetaGet_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text));
 
             Session["DSSolicitudes"] = dtSolicitudes;
 
-            gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(UsuarioAutenticado.UserName);
+            gvSolicitudes.DataSource = controller.Solicitudes_TarjetaGet_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
             gvSolicitudes.DataBind();
 
           /*  foreach (GridViewRow row in gvSolicitudes.Rows)
@@ -322,6 +341,12 @@ namespace Web.Operaciones.Saldo
         {
             btnPrint.Visible = false;
 
+        }
+
+        protected void ddlTarjetas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BuildSolicitudes();
+            builTotales();
         }
 
     }

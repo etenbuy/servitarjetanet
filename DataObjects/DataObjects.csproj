@@ -49,6 +49,7 @@
     <Compile Include="AdoNet\Db.cs" />
     <Compile Include="ClienteDao.cs" />
     <Compile Include="ConfiguracionDao.cs" />
+    <Compile Include="TarjetaDao.cs" />
     <Compile Include="TiposDao.cs" />
     <Compile Include="StatusDao.cs" />
     <Compile Include="TicketDao.cs" />

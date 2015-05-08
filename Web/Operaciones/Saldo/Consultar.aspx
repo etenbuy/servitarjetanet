@@ -26,6 +26,17 @@
     <div>
         
         <table style="width:500px">
+             <tr>
+                <th>
+                    Tarjetas Aseguradas:
+                </th>
+                <td colspan="2">
+                    <asp:DropDownList ID="ddlTarjetas" AutoPostBack="true" runat="server" 
+                         Height="16px" 
+                        Width="300px" onselectedindexchanged="ddlTarjetas_SelectedIndexChanged"></asp:DropDownList>
+                </td>
+             
+            </tr>
             <tr>
               <!--  <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
                         border-bottom-color: #134e9d;">
@@ -40,11 +51,7 @@
                 
             </tr>
             
-            <tr>
-             
-            </tr>
-            
-        </table>
+            </table>
         <br />
         <br />
         <br />

@@ -28,7 +28,17 @@ toggleDisabled(el.childNodes[x]);
   <asp:Panel ID="primer_ticket" runat="server">
     <asp:Label ID="lblMensaje" ForeColor="#F80404" runat="server" Text=""></asp:Label>
         <table class="Formulario" cellpadding="0" cellspacing="10">
-           
+           <tr>
+                <th>
+                    Tarjetas Aseguradas:
+                </th>
+                <td colspan="2">
+                    <asp:DropDownList ID="ddlTarjetas" AutoPostBack="true" runat="server" 
+                         Height="16px" 
+                        Width="300px" onselectedindexchanged="ddlTarjetas_SelectedIndexChanged"></asp:DropDownList>
+                </td>
+             
+            </tr>
            <tr>
                 <th>
                     Nº Factura:

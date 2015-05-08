@@ -29,10 +29,21 @@
             </tr>
             <tr>
                 <th>
+                    Tarjetas Aseguradas:
+                </th>
+                <td colspan="2">
+                    <asp:DropDownList ID="ddlTarjetas" AutoPostBack="true" runat="server" 
+                         Height="16px" 
+                        Width="300px" onselectedindexchanged="ddlTarjetas_SelectedIndexChanged"></asp:DropDownList>
+                </td>
+             
+            </tr>
+          <tr>
+                <th>
                     Solicitud ID:
                 </th>
                 <td colspan="2">
-                    <asp:TextBox ID="txtSolicitudID" Enabled="false" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtSolicitudID" Enabled="false" Visible="false" runat="server"></asp:TextBox>
                 </td>
                 
             </tr>
@@ -42,7 +53,7 @@
                     Factura:
                 </th>
                 <td colspan="2">
-                    <asp:TextBox ID="txtFactura" Enabled="false" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtFactura" Enabled="false" Visible="false" runat="server"></asp:TextBox>
                 </td>
                 
             </tr>
@@ -51,7 +62,7 @@
                     Monto Factura:
                 </th>
                 <td colspan="2">
-                    <asp:TextBox ID="txtMontoFactura" Enabled="false" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtMontoFactura" Enabled="false" Visible="false" runat="server"></asp:TextBox>
                 </td>
                 
             </tr>
@@ -109,7 +120,7 @@
                     Monto a Reembolsar:
                 </th>
                 <td colspan="2">
-                    <asp:TextBox ID="txtMontoPagado" runat="server" MaxLength="10" Enabled="False"></asp:TextBox>
+                    <asp:TextBox ID="txtMontoPagado" runat="server" MaxLength="10"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" Text="Requerido!" runat="server"

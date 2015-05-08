@@ -53,5 +53,7 @@ namespace BusinessObjects
         public decimal Monto_Pagar { get; set; }
 
         public decimal Saldo { get; set; }
+
+        public string Numero_TDC { get; set; }
     }
 }

@@ -23,7 +23,6 @@ namespace Web.Configuracion.Pagos
 
             if (!Page.IsPostBack)
             {
-                BindGrids();
                 cargarTipo();
                 
            
@@ -47,12 +46,34 @@ namespace Web.Configuracion.Pagos
 
             }
         }
+
+        private void builTotales()
+        {
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+            Solicitud solicitud = new Solicitud();
+            // solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
+            solicitud = controller.SolicitudesTotalesTarjeta_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
+
+            if (solicitud.Saldo != null)
+            {
+                txtMontoPagado.Text = string.Format("{0:###,###,###,###.00}", solicitud.Saldo);
+            }
+            else
+            {
+                txtMontoPagado.Text = "0";
+            }
+
+
+
+
+        }
+
         protected void BindGrids()
         {           
 
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-            gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(txtLoginCreado.Text);
+            gvSolicitudes.DataSource = controller.Solicitudes_TarjetaGet_ByClient(txtLoginCreado.Text, ddlTarjetas.SelectedItem.Text);
             gvSolicitudes.DataBind();
            
         
@@ -126,7 +147,24 @@ namespace Web.Configuracion.Pagos
 
 
         }
+        private void BuildTarjetas()
+        {
 
+
+            Controllers.ClienteController controllerCliente = new Controllers.ClienteController();
+
+            Cliente cliente = new Cliente();
+            cliente = controllerCliente.ObtenerCliente(txtLoginCreado.Text);
+
+            Controllers.TarjetaController controllerTarjeta = new Controllers.TarjetaController();
+            ddlTarjetas.DataSource = controllerTarjeta.Get_Tarjetas(cliente.ClienteID);
+
+            ddlTarjetas.DataTextField = "Numero";
+            ddlTarjetas.DataValueField = "Id";
+            ddlTarjetas.DataBind();
+
+            ddlTarjetas.Items.Insert(0, new ListItem("Seleccionar...", ""));
+        }
         protected void cargarTipo()
         {
             Controllers.TipoController controller = new Controllers.TipoController();
@@ -146,15 +184,16 @@ namespace Web.Configuracion.Pagos
             solicitud.FechaPagado =  txtFechaPago.Text.ToString().Substring(0, 10);
             solicitud.Ntdc = txtTDC.Text;
             solicitud.Ndeposito = txtdeposito.Text;
-            solicitud.Monto_Factura = decimal.Parse(txtMontoFactura.Text);
+           // solicitud.Monto_Factura = decimal.Parse(txtMontoFactura.Text);
             solicitud.Numero_Factura = txtFactura.Text;
             solicitud.Monto_Pagado = decimal.Parse(txtMontoPagado.Text);
-            solicitud.SolicitudID = int.Parse(txtSolicitudID.Text);
+           // solicitud.SolicitudID = int.Parse(txtSolicitudID.Text);
            // solicitud.StatusSolicitudID = int.Parse(ddlTipo.SelectedValue);
             solicitud.SolicitudTipoID = int.Parse(ddlTipo.SelectedValue);
             solicitud.LoginCreado = txtLoginCreado.Text;
             solicitud.Factura = "";
-            solicitud.Monto = decimal.Parse(txtMontoFactura.Text);
+           // solicitud.Monto = decimal.Parse(txtMontoFactura.Text);
+            solicitud.Numero_TDC = ddlTarjetas.SelectedItem.Text;
 
             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,"","");
 
@@ -171,15 +210,18 @@ namespace Web.Configuracion.Pagos
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            Controllers.SolicitudController controller = new Controllers.SolicitudController();
-
-            gvSolicitudes.DataSource = controller.Solicitudes_Get_ByClient(txtLoginCreado.Text);
-            gvSolicitudes.DataBind();
-
            
 
+            BuildTarjetas();
 
-            lblTotalSolicitudes.Text = gvSolicitudes.Rows.Count.ToString();
+           
+            
+        }
+
+        protected void ddlTarjetas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BindGrids();
+            builTotales();
         }
     }
 }
