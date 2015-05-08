@@ -135,11 +135,10 @@ namespace Web.Operaciones.Saldo
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             Solicitud solicitud = new Solicitud();
             solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName);
-           
 
-            if (solicitud.Monto != null)
+            if (solicitud.Saldo != null)
             {
-                lblTotalProceso.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto_Pagado); 
+                lblTotalProceso.Text = string.Format("{0:###,###,###,###.00}", solicitud.Saldo); 
             }
             else
             {

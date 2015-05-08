@@ -128,7 +128,8 @@ namespace DataObjects
             var1 = var1 + "       SolicitudID " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
             var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
-
+            var1 = var1 + "ORDER BY FechaCreado";
+            
 
             DataTable dt = Db.GetDataTable(var1);
 
@@ -191,11 +192,13 @@ namespace DataObjects
             IList<Solicitud> list = new List<Solicitud>();
 
             string var1 = string.Empty;
-            var1 = var1 + "SELECT sum(Monto) as Monto, " + "\n";
-            var1 = var1 + "       sum(Monto_Pagado) as Monto_Pagado, " + "\n";
-            var1 = var1 + "       sum(Monto_Factura) as Monto_Factura " + "\n";
+            var1 = var1 + "SELECT TOP(1) Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Saldo " + "\n";
             var1 = var1 + "FROM   Solicitud " + "\n";
-            var1 = var1 + "WHERE  StatusSolicitudID <> 3 AND LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "ORDER BY FechaCreado DESC";
 
 
             DataTable dt = Db.GetDataTable(var1);
@@ -204,6 +207,7 @@ namespace DataObjects
             {
                 if (row["Monto_Factura"].ToString() != "")
                 {
+                    solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
                     solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
                     solicitud.Monto = decimal.Parse(row["Monto"].ToString());
                     solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
@@ -213,6 +217,7 @@ namespace DataObjects
                     solicitud.Monto_Factura = 0;
                     solicitud.Monto = 0;
                     solicitud.Monto_Pagado = 0;
+                    solicitud.Saldo = 0;
                 }
 
             }
