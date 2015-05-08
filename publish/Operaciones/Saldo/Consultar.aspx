@@ -25,7 +25,18 @@
         Saldos y Movimientos</h1>
     <div>
         
-        <table style="width:200px">
+        <table style="width:500px">
+             <tr>
+                <th>
+                    Tarjetas Aseguradas:
+                </th>
+                <td colspan="2">
+                    <asp:DropDownList ID="ddlTarjetas" AutoPostBack="true" runat="server" 
+                         Height="16px" 
+                        Width="300px" onselectedindexchanged="ddlTarjetas_SelectedIndexChanged"></asp:DropDownList>
+                </td>
+             
+            </tr>
             <tr>
               <!--  <td style="   padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
                         border-bottom-color: #134e9d;">
@@ -34,60 +45,55 @@
                  <td style="  text-align:center;  padding-right: 50px; width:200px; font-weight:bolder; border-bottom-color:#134e9d; border-style: ridge; border-top: aliceblue; border-left: aliceblue; border-right: aliceblue;
                         border-bottom-color: #134e9d;">
                      MONTO EN PROCESO
+                     <td style="font-weight:bolder; font-size:50px; color:Orange; padding-top:30px;">
+                    <asp:Label ID="lblTotalProceso" runat="server" Text="Label"></asp:Label></td>
                 </td>
                 
             </tr>
             
-            <tr>
-               <!--  <td style="font-weight:bolder; font-size:50px; color:LightGreen; padding-top:30px;">
-                     <asp:Label ID="lblTotalPagado" runat="server" Text="Label"></asp:Label>
-                </td>-->
-                <td style="font-weight:bolder; font-size:50px; color:Orange; padding-top:30px;">
-                    <asp:Label ID="lblTotalProceso" runat="server" Text="Label"></asp:Label></td>
-               
-            </tr>
-            
-        </table>
+            </table>
         <br />
         <br />
         <br />
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
 
         <asp:GridView ID="gvSolicitudes" DataKeyNames="SolicitudID"
-        AllowSorting="false" runat="server" 
-       OnSorting="gvSolicitudes_Sorting" AutoGenerateColumns="false" 
-            HeaderStyle-Wrap="false" ShowFooter="true" Width="1136px"
+        AllowSorting="false" runat="server" AutoGenerateColumns="false" 
+            HeaderStyle-Wrap="false" ShowFooter="FALSE" Width="1136px"
             onselectedindexchanged="gvSolicitudes_SelectedIndexChanged" 
             CellPadding="10" CellSpacing="10" Font-Bold="True" Font-Size="Medium" 
-            onrowdatabound="gvSolicitudes_RowDataBound">
+            >
         <RowStyle HorizontalAlign="Center" />
         <Columns>
-         <asp:CommandField ShowSelectButton="True" />
-                        <asp:BoundField DataField="SolicitudID" HeaderText="Nº Solicitud" SortExpression="SolicitudID"/>
-            <asp:BoundField DataField="FechaCreado" HeaderText="Fecha de Solicitud" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
-            <asp:BoundField DataField="Numero_Factura" HeaderText="Nº Factura" SortExpression="Numero_Factura" FooterText="Total"/>
-            <asp:BoundField DataField="Monto" HeaderText="Monto de Factura" 
+         
+         <asp:BoundField DataField="FechaCreado" HeaderText="Fecha" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
+         <asp:CommandField  ShowSelectButton="True" HeaderText="Descripcion" InsertText="Solicitud" />
+         <asp:BoundField DataField="SolicitudID" HeaderText="Nro" SortExpression="SolicitudID"/>
+            
+            <asp:BoundField DataField="Numero_Factura" HeaderText="Factura" SortExpression="Numero_Factura" />
+            <asp:BoundField DataField="Monto" HeaderText="Valor de Factura" 
                 SortExpression="Monto" HeaderStyle-HorizontalAlign="Right" DataFormatString="{0:###,###,###,###.00}"
                 ItemStyle-HorizontalAlign="Right">        
                 <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
 
             <ItemStyle HorizontalAlign="Right"></ItemStyle>
             </asp:BoundField>
-            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Reembolsar" 
+            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto" 
                 SortExpression="Pagado" HeaderStyle-HorizontalAlign="Right" DataFormatString="{0:###,###,###,###.00}"
+                ItemStyle-HorizontalAlign="Right" >
+                <ItemStyle HorizontalAlign="Right"></ItemStyle>
+            </asp:BoundField>
+            <asp:BoundField DataField="Estado" HeaderText="D/C" SortExpression="Estado"/>
+            <asp:BoundField DataField="Saldo" HeaderText="Saldo" 
+                SortExpression="Saldo" HeaderStyle-HorizontalAlign="Right" DataFormatString="{0:###,###,###,###.00}"
                 ItemStyle-HorizontalAlign="Right" >
                 <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
 
             <ItemStyle HorizontalAlign="Right"></ItemStyle>
             </asp:BoundField>
-            <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado"/>  
+
            
-           <asp:TemplateField>
-                <ItemTemplate>
-                <asp:HiddenField ID="hfMonto_Pagado" runat="server" Value='<%#Eval("Monto_Pagado") %>'  />
-                    <asp:HiddenField ID="hfMonto" runat="server" Value='<%#Eval("Monto") %>' />
-                </ItemTemplate>
-            </asp:TemplateField>
+          
         </Columns>
 
 
