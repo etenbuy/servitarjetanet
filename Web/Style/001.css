@@ -699,11 +699,11 @@ a:hover
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
-  font-weight:bolder;
+  font-weight:lighter;
   padding: 10px;
   padding-right: 50px;
   width: 200px;
-  font-weight: bolder;
+  font-weight:normal;
   border-bottom-color: #134e9d;
   border-style: ridge;
   border-top: aliceblue;

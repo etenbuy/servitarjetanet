@@ -28,7 +28,7 @@
         <table style="width:500px">
              <tr>
                 <th>
-                    Tarjetas Aseguradas:
+                    Tarjetas Afiliadas:
                 </th>
                 <td colspan="2">
                     <asp:DropDownList ID="ddlTarjetas" AutoPostBack="true" runat="server" 
@@ -65,9 +65,9 @@
             >
         <RowStyle HorizontalAlign="Center" />
         <Columns>
-         
+         <asp:CommandField  ShowSelectButton="True" HeaderText="Seleccionar" InsertText="Solicitud" />
          <asp:BoundField DataField="FechaCreado" HeaderText="Fecha" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
-         <asp:CommandField  ShowSelectButton="True" HeaderText="Descripcion" InsertText="Solicitud" />
+         <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion"  />
          <asp:BoundField DataField="SolicitudID" HeaderText="Nro" SortExpression="SolicitudID"/>
             
             <asp:BoundField DataField="Numero_Factura" HeaderText="Factura" SortExpression="Numero_Factura" />

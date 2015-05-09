@@ -50,6 +50,15 @@ namespace Web.Configuracion.Pagos {
         protected global::System.Web.UI.WebControls.DropDownList ddlTarjetas;
         
         /// <summary>
+        /// RequiredFieldValidator5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        
+        /// <summary>
         /// txtSolicitudID control.
         /// </summary>
         /// <remarks>

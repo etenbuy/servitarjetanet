@@ -26,6 +26,8 @@ namespace BusinessObjects
 
         public string Nota { get; set; }
 
+        public string Descripcion { get; set; }
+
         public decimal Monto { get; set; }
 
         public decimal Monto_Pagado { get; set; }

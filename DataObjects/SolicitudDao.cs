@@ -120,6 +120,7 @@ namespace DataObjects
             var1 = var1 + "       Fecha_Pagado, " + "\n";
             var1 = var1 + "       LoginCreado, " + "\n";
             var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       Descripcion, " + "\n";
             var1 = var1 + "       SolicitudTipoID, " + "\n";
             var1 = var1 + "       Monto, " + "\n";
             var1 = var1 + "       Monto_Pagado, " + "\n";
@@ -153,6 +154,7 @@ namespace DataObjects
 
                 solicitud.LoginCreado = row["LoginCreado"].ToString();
                 solicitud.Nota = row["Nota"].ToString();
+                solicitud.Descripcion = row["Descripcion"].ToString();
                 solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
                 solicitud.Ntdc = row["Ntdc"].ToString();
                 solicitud.Ndeposito = row["Ndeposito"].ToString();

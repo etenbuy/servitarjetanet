@@ -22,25 +22,28 @@
                 <td>
                 
                     <asp:Button CssClass="buttons" ID="btnBuscar" runat="server" Text="Buscar" 
-                        onclick="btnBuscar_Click" />
+                        onclick="btnBuscar_Click" ValidationGroup="Find" OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear este Pago?')) return false;" />
                 
                 </td>
                 
             </tr>
             <tr>
                 <th>
-                    Tarjetas Aseguradas:
+                    Tarjetas Afiliadas:
                 </th>
                 <td colspan="2">
                     <asp:DropDownList ID="ddlTarjetas" AutoPostBack="true" runat="server" 
                          Height="16px" 
                         Width="300px" onselectedindexchanged="ddlTarjetas_SelectedIndexChanged"></asp:DropDownList>
                 </td>
-             
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" Text="Requerido!" runat="server"
+                        ValidationGroup="Find" ErrorMessage="Requerido!" ControlToValidate="txtLoginCreado"></asp:RequiredFieldValidator>
+                </td>
             </tr>
-          <tr>
+          <tr>  
                 <th>
-                    Solicitud ID:
+                  <!--  Solicitud ID:-->
                 </th>
                 <td colspan="2">
                     <asp:TextBox ID="txtSolicitudID" Enabled="false" Visible="false" runat="server"></asp:TextBox>
@@ -49,8 +52,8 @@
             </tr>
             <tr>
                 <th>
-                    Nº
-                    Factura:
+                  <!--   Nº
+                    Factura:-->
                 </th>
                 <td colspan="2">
                     <asp:TextBox ID="txtFactura" Enabled="false" Visible="false" runat="server"></asp:TextBox>
@@ -59,7 +62,7 @@
             </tr>
             <tr>
                 <th>
-                    Monto Factura:
+                   <!--  Monto Factura:-->
                 </th>
                 <td colspan="2">
                     <asp:TextBox ID="txtMontoFactura" Enabled="false" Visible="false" runat="server"></asp:TextBox>
