@@ -177,21 +177,20 @@ namespace Web.Operaciones.Saldo
             gvSolicitudes.DataSource = controller.Solicitudes_TarjetaGet_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
             gvSolicitudes.DataBind();
 
-          /*  foreach (GridViewRow row in gvSolicitudes.Rows)
+            foreach (GridViewRow row in gvSolicitudes.Rows)
             {
-                if (row.Cells[6].Text == "+")
+                if (row.Cells[2].Text == "PAGO A CLIENTE")
                 {
-                    row.Cells[6].ForeColor = Color.Green;
+                    row.Cells[2].ForeColor = Color.Blue;
+                    row.Cells[2].Font.Bold = true;
                 }
-                if (row.Cells[6].Text == "EN PROCESO")
+                if (row.Cells[2].Text == "SOLICITUD RECHAZADA")
                 {
-                    row.Cells[6].ForeColor = Color.Orange;
+                    row.Cells[2].ForeColor = Color.Red;
+                    row.Cells[2].Font.Bold = true;
                 }
-                if (row.Cells[6].Text == "NO APROBADA")
-                {
-                    row.Cells[6].ForeColor = Color.Red;
-                }
-            }*/
+                
+            }
         }
 
         protected void txtCalFechaDesde_SelectionChanged(object sender, EventArgs e)

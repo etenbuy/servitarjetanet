@@ -130,14 +130,14 @@
         </table>
         </div>
          <div style="float:left">
-        Cantidad :<asp:Label ID="lblTotalClientes" Text="0" runat="server"></asp:Label>    
+        CLIENTES :<asp:Label ID="lblTotalClientes" Text="0" runat="server"></asp:Label>    
         <asp:GridView ID="gvClientes" CellPadding="0" CellSpacing="0" CssClass="Formulario"
         AllowSorting="true" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
        OnSorting="gvClientes_Sorting" AutoGenerateColumns="false"  ShowFooter="true"
          ondatabound="gvClientes_DataBound">
         <RowStyle HorizontalAlign="Center" />
         <Columns>
-            <asp:BoundField DataField="ClienteID" Visible="true" HeaderText="ClienteID" SortExpression="ClienteID"/>
+           
             <asp:BoundField DataField="descripcion" HeaderText="descripcion" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="descripcion" />
                 <asp:BoundField DataField="Email" Visible="true" HeaderText="Email"/>
@@ -157,14 +157,14 @@
         </div>
         
         <div style="float:right">
-        Cantidad :<asp:Label ID="lblTarjetas" Text="0" runat="server"></asp:Label>    
+        TARJETAS AFILIADAS :<asp:Label ID="lblTarjetas" Text="0" runat="server"></asp:Label>    
         <asp:GridView ID="gvTarjetas" CellPadding="0" CellSpacing="0" CssClass="Formulario"
         AllowSorting="true" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
         AutoGenerateColumns="false"  ShowFooter="true">
         <RowStyle HorizontalAlign="Center" />
         <Columns>
             <asp:BoundField DataField="ClienteID" Visible="true" HeaderText="ClienteID" SortExpression="ClienteID"/>
-            <asp:BoundField DataField="Numero" HeaderText="Numero" HeaderStyle-HorizontalAlign="Right"
+            <asp:BoundField DataField="Numero" HeaderText="Numero de Tarjeta" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Numero" />
              <asp:TemplateField>
                 <ItemTemplate>

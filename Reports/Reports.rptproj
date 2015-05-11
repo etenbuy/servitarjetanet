@@ -7,7 +7,12 @@
       <FullPath>DSServiTarjeta.rds</FullPath>
     </ProjectItem>
   </DataSources>
-  <Reports />
+  <Reports>
+    <ProjectItem>
+      <Name>EstadoCuenta.rdl</Name>
+      <FullPath>EstadoCuenta.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
   <Configurations>
     <Configuration>
       <Name>Debug</Name>

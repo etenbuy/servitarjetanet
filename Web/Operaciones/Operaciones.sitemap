@@ -2,8 +2,10 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode title="Operaciones" url="~/Operaciones/Default.aspx">
     <siteMapNode title="Saldo" url="~/Operaciones/Saldo/Consultar.aspx" roles="SALDOS" />
-    <siteMapNode title="Cargar Factura" url="~/Operaciones/Clientes/CrearSolicitud.aspx" roles="SERVICIOS"   />    
+    <siteMapNode title="Cargar Factura" url="~/Operaciones/Clientes/CrearSolicitud.aspx" roles="SERVICIOS"   />
+    <siteMapNode title="Estado de Cuenta" url="~/Operaciones/Clientes/EstadosCuenta.aspx" roles="SERVICIOS"   />
+    <siteMapNode title="Solicitud Tarjeta Adicional" url="~/Operaciones/Clientes/CrearTarjeta.aspx" roles="SERVICIOS"   />
     <siteMapNode title="Servicios" url="~/Operaciones/Clientes/Beneficios.aspx" roles="SERVICIOS"/>
-    <siteMapNode title="Contrato" url="~/Operaciones/Clientes/Contrato.aspx" roles="SERVICIOS"/>
+    <siteMapNode title="Oferta Publica" url="~/Operaciones/Clientes/Contrato.aspx" roles="SERVICIOS"/>
     </siteMapNode>
 </siteMap>

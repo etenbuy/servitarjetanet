@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DSServiTarjeta">
+      <rd:DataSourceID>37babdbd-d4bd-4420-a710-1811a784ba9a</rd:DataSourceID>
+      <DataSourceReference>DSServiTarjeta</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>1dad627b-8d1e-4121-9bd5-eff7b25e15d3</rd:ReportID>
+  <Width>5in</Width>
+  <Body>
+    <Height>0.74in</Height>
+    <ColumnSpacing>0.5in</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>18pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>EstadoCuenta</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.33in</Height>
+      </Textbox>
+      <Table Name="table1">
+        <Top>0.33in</Top>
+        <Style />
+        <Header>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <Style>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Value>Cantidadsolicitada</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <Style>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Value>Monto Pagadosolicitada</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.22in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.22in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Cantidadsolicitada">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>Cantidadsolicitada</rd:DefaultName>
+                      <Value>=Fields!Cantidadsolicitada.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.19in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Monto_Pagadosolicitada">
+                      <Style>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <rd:DefaultName>Monto_Pagadosolicitada</rd:DefaultName>
+                      <Value>=Fields!Monto_Pagadosolicitada.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Height>0.19in</Height>
+                      <Width>1in</Width>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.19in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <TableColumns>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1in</Width>
+          </TableColumn>
+        </TableColumns>
+        <DataSetName>DataSet1</DataSetName>
+      </Table>
+    </ReportItems>
+  </Body>
+  <Language>en-US</Language>
+  <LeftMargin>1in</LeftMargin>
+  <RightMargin>1in</RightMargin>
+  <TopMargin>1in</TopMargin>
+  <BottomMargin>1in</BottomMargin>
+  <PageWidth>8.5in</PageWidth>
+  <PageHeight>11in</PageHeight>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Cantidadsolicitada">
+          <DataField>Cantidadsolicitada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Monto_Pagadosolicitada">
+          <DataField>Monto_Pagadosolicitada</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DSServiTarjeta</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT Count(Monto_Pagado) as Cantidadsolicitada,
+            sum(Monto_Pagado) as Monto_Pagadosolicitada
+            FROM   Solicitud 
+            WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND StatusSolicitudID = 1
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            
+
+SELECT Count(Monto_Pagado) as Cantidadrechazada,
+            sum(Monto_Pagado) as Monto_Pagadorechazada
+            FROM   Solicitud 
+             WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND StatusSolicitudID = 3
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            
+            SELECT Count(Monto_Pagado) as Cantidadpagada,
+            sum(Monto_Pagado) as Monto_Pagadopagada
+            FROM   Solicitud 
+       WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND StatusSolicitudID = 4
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+
+SELECT top(1) Saldo             
+            FROM   Solicitud 
+         WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+           AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            ORDER BY FechaCreado DESC;
+            
+
+SELECT FechaCreado as Fecha,
+                 Descripcion,
+                 SolicitudID as Nro,
+                  Numero_Factura, 
+               Monto, 
+                Monto_Pagado, 
+                 StatusSolicitudID, 
+                 Saldo             
+            FROM   Solicitud 
+           WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            ORDER BY FechaCreado;</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <QueryParameters>
+          <QueryParameter Name="@Mail">
+            <Value>=Parameters!Mail.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@TDC">
+            <Value>=Parameters!TDC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!Year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <Timeout>0</Timeout>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Mail">
+      <DataType>String</DataType>
+      <Prompt>Mail</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TDC">
+      <DataType>String</DataType>
+      <Prompt>TDC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Month">
+      <DataType>String</DataType>
+      <Prompt>Month</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Year">
+      <DataType>String</DataType>
+      <Prompt>Year</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+</Report>

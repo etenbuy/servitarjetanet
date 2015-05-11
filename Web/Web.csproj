@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{943A2730-7C92-455F-9B30-5EDA8A5FC284}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -33,6 +33,15 @@
     <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\APLICACIONES\AjaxControlToolkit.Binary.NET35\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Web\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Web.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -121,12 +130,25 @@
     <Compile Include="Configuracion\Usuarios\EditarClave.aspx.designer.cs">
       <DependentUpon>EditarClave.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Operaciones\Clientes\Contrato.aspx.cs">
       <DependentUpon>Contrato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Operaciones\Clientes\Contrato.aspx.designer.cs">
       <DependentUpon>Contrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\Clientes\CrearTarjeta.aspx.cs">
+      <DependentUpon>CrearTarjeta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\Clientes\CrearTarjeta.aspx.designer.cs">
+      <DependentUpon>CrearTarjeta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operaciones\Saldo\Detalle.aspx.cs">
       <DependentUpon>Detalle.aspx</DependentUpon>
@@ -254,12 +276,12 @@
     <Compile Include="Operaciones\Clientes\Beneficios.aspx.designer.cs">
       <DependentUpon>Beneficios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Operaciones\Clientes\EstadosCuentas.aspx.cs">
-      <DependentUpon>EstadosCuentas.aspx</DependentUpon>
+    <Compile Include="Operaciones\Clientes\EstadosCuenta.aspx.cs">
+      <DependentUpon>EstadosCuenta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Operaciones\Clientes\EstadosCuentas.aspx.designer.cs">
-      <DependentUpon>EstadosCuentas.aspx</DependentUpon>
+    <Compile Include="Operaciones\Clientes\EstadosCuenta.aspx.designer.cs">
+      <DependentUpon>EstadosCuenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Operaciones\Clientes\CrearSolicitud.aspx.cs">
       <DependentUpon>CrearSolicitud.aspx</DependentUpon>
@@ -449,6 +471,7 @@
     <Content Include="Images\I.png" />
     <Content Include="Images\Logo.png" />
     <Content Include="Operaciones\Clientes\Contrato.aspx" />
+    <Content Include="Operaciones\Clientes\CrearTarjeta.aspx" />
     <Content Include="Operaciones\Saldo\Detalle.aspx" />
     <Content Include="Rembolso.aspx" />
     <Content Include="Seguridad.aspx" />
@@ -1535,7 +1558,7 @@
     <Content Include="JS\Update.js" />
     <Content Include="JS\Scroll.js" />
     <Content Include="Operaciones\Clientes\Beneficios.aspx" />
-    <Content Include="Operaciones\Clientes\EstadosCuentas.aspx" />
+    <Content Include="Operaciones\Clientes\EstadosCuenta.aspx" />
     <Content Include="Operaciones\Clientes\CrearSolicitud.aspx" />
     <Content Include="Operaciones\Clientes\CrearReferidos.aspx" />
     <Content Include="Operaciones\Clientes\Dividendos.aspx" />
@@ -1670,6 +1693,10 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
@@ -1712,6 +1739,9 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

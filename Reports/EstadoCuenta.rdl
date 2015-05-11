@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DSServiTarjeta">
+      <DataSourceReference>DSServiTarjeta</DataSourceReference>
+      <rd:DataSourceID>37babdbd-d4bd-4420-a710-1811a784ba9a</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Cantidadsolicitada">
+          <DataField>Cantidadsolicitada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Monto_Pagadosolicitada">
+          <DataField>Monto_Pagadosolicitada</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+
+        <Field Name="Cantidadrechazada">
+          <DataField>Cantidadrechazada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Monto_Pagadorechazada">
+          <DataField>Monto_Pagadorechazada</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+
+        <Field Name="Cantidadpagada">
+          <DataField>Cantidadpagada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Monto_Pagadopagada">
+          <DataField>Monto_Pagadopagada</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+
+        <Field Name="Saldo">
+          <DataField>Saldo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+
+        <Field Name="Saldo">
+          <DataField>Saldo</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+          <rd:TypeName>System.Varchar</rd:TypeName>
+        </Field>
+        <Field Name="Nro">
+          <DataField>Nro</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NroFactura">
+          <DataField>NroFactura</DataField>
+          <rd:TypeName>System.Varchar</rd:TypeName>
+        </Field>
+        <Field Name="Monto">
+          <DataField>Monto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+
+        <Field Name="Monto_Pagado">
+          <DataField>Monto_Pagado</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+          <rd:TypeName>System.Varchar</rd:TypeName>
+        </Field>
+        <Field Name="SaldoSolicitud">
+          <DataField>SaldoSolicitud</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        
+      </Fields>
+      <Query>
+        <DataSourceName>DSServiTarjeta</DataSourceName>
+        <CommandText>SELECT Count(Monto_Pagado) as Cantidadsolicitada,
+            sum(Monto_Pagado) as Monto_Pagadosolicitada
+            FROM   Solicitud 
+            WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND StatusSolicitudID = 1
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            
+
+SELECT Count(Monto_Pagado) as Cantidadrechazada,
+            sum(Monto_Pagado) as Monto_Pagadorechazada
+            FROM   Solicitud 
+             WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND StatusSolicitudID = 3
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            
+            SELECT Count(Monto_Pagado) as Cantidadpagada,
+            sum(Monto_Pagado) as Monto_Pagadopagada
+            FROM   Solicitud 
+       WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND StatusSolicitudID = 4
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+
+SELECT top(1) Saldo as Saldo      
+            FROM   Solicitud 
+         WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+           AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            ORDER BY FechaCreado DESC;
+            
+
+SELECT FechaCreado as Fecha,
+                 Descripcion as Descripcion,
+                 SolicitudID as Nro,
+                  Numero_Factura as NroFactura, 
+               Monto as Monto, 
+                Monto_Pagado as Monto_Pagado, 
+                 StatusSolicitudID as Status, 
+                 Saldo  as SaldoSolicitud           
+            FROM   Solicitud 
+           WHERE  LoginCreado =@Mail
+            AND  Numero_TDC =@TDC
+            AND  MONTH(FechaCreado) = @Month
+            AND YEAR(FechaCreado) = @Year
+            ORDER BY FechaCreado;</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Mail">
+            <Value>=Parameters!Mail.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@TDC">
+            <Value>=Parameters!TDC.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Month">
+            <Value>=Parameters!Month.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!Year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Image Name="logo">
+        <Source>Embedded</Source>
+        <Value>Logo</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.455in</Top>
+        <Left>0.42375in</Left>
+        <Height>1.16667in</Height>
+        <Width>1.61458in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+    </ReportItems>
+    <Height>5.09417in</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="Mail">
+      <DataType>String</DataType>
+      <Prompt>Mail</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TDC">
+      <DataType>String</DataType>
+      <Prompt>TDC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Month">
+      <DataType>String</DataType>
+      <Prompt>Month</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Year">
+      <DataType>String</DataType>
+      <Prompt>Year</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>7.73958in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>1dad627b-8d1e-4121-9bd5-eff7b25e15d3</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>
