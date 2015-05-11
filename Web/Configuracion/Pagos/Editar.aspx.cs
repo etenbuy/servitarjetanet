@@ -67,6 +67,26 @@ namespace Web.Configuracion.Pagos
 
 
         }
+
+        protected void gvSolicitudes_OnCheckedChanged(object sender, EventArgs e)
+        {
+
+            txtMontoPagado.Text = "0";
+            var rows = gvSolicitudes.Rows;
+            int count = gvSolicitudes.Rows.Count;
+            for (int i = 0; i < count; i++)
+            {
+                bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
+                if (isChecked)
+                {
+                    txtMontoPagado.Text = Convert.ToString(Convert.ToDecimal(txtMontoPagado.Text) + Convert.ToDecimal(rows[i].Cells[5].Text));
+                }
+            }
+
+            
+           
+        }
+
         protected void BindClientes()
         {
 
@@ -74,7 +94,7 @@ namespace Web.Configuracion.Pagos
             gvClientes.DataSource = controller.GetClientesTotalesByClient();
             gvClientes.DataBind();
 
-            lblTotalSolicitudes.Text = gvClientes.Rows.Count.ToString();
+            lblClientes.Text = gvClientes.Rows.Count.ToString();
 
 
         }
@@ -83,7 +103,7 @@ namespace Web.Configuracion.Pagos
 
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
 
-            gvSolicitudes.DataSource = controller.Solicitudes_TarjetaGet_ByClient(txtLoginCreado.Text, ddlTarjetas.SelectedItem.Text);
+            gvSolicitudes.DataSource = controller.Solicitudes_TarjetaPagadasGet_ByClient(txtLoginCreado.Text, ddlTarjetas.SelectedItem.Text);
             gvSolicitudes.DataBind();
            
         
@@ -161,6 +181,9 @@ namespace Web.Configuracion.Pagos
         {
             txtLoginCreado.Text = ((HiddenField)((LinkButton)sender).FindControl("hfLoginCreado")).Value.ToString();
             BuildTarjetas();
+            ddlTarjetas_SelectedIndexChanged(null, null);
+            
+           
           
         }
         private void BuildTarjetas()
@@ -211,6 +234,23 @@ namespace Web.Configuracion.Pagos
            // solicitud.Monto = decimal.Parse(txtMontoFactura.Text);
             solicitud.Numero_TDC = ddlTarjetas.SelectedItem.Text;
 
+            var rows = gvSolicitudes.Rows;
+            int count = gvSolicitudes.Rows.Count;
+            Solicitud solicitudUpdate = new Solicitud();
+
+            for (int i = 0; i < count; i++)
+            {
+                bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
+                if (isChecked)
+                {
+                    solicitudUpdate.SolicitudID = int.Parse(rows[i].Cells[0].Text);
+                    solicitudUpdate.StatusSolicitudID = 4;
+                    Controllers.ControllerResult resultupdate = controller.ActualizarStatusSolicitud(solicitudUpdate, UsuarioAutenticado.UserName);
+
+                }
+            }
+            
+
             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,"","");
 
            // Controllers.ControllerResult result = controller.ActualizarSolicitud(solicitud, UsuarioAutenticado.UserName);
@@ -226,8 +266,6 @@ namespace Web.Configuracion.Pagos
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-           
-
             BuildTarjetas();
 
         }

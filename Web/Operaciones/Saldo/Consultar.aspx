@@ -65,7 +65,7 @@
             >
         <RowStyle HorizontalAlign="Center" />
         <Columns>
-         <asp:CommandField  ShowSelectButton="True" HeaderText="Seleccionar" InsertText="Solicitud" />
+         <asp:CommandField  ShowSelectButton="True" HeaderText="Detalle" InsertText="Solicitud" />
          <asp:BoundField DataField="FechaCreado" HeaderText="Fecha" SortExpression="FechaCreado" dataformatstring="{0:MMMM d, yyyy}" htmlencode="false"/>
          <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion"  />
          <asp:BoundField DataField="SolicitudID" HeaderText="Nro" SortExpression="SolicitudID"/>

@@ -38,7 +38,7 @@ namespace Controllers
         }
 
 
-        public void SendMail(string Subject, string Client, string Note, int Tipo, decimal Monto, decimal Monto_Pagado, string filepath, string fullPathrecibo)
+        public void SendMail(string Subject, int solicitudid, string Client, string Note, int Tipo, decimal Monto, decimal Monto_Pagado, string filepath, string fullPathrecibo)
         {
             string tipo="";
             if (Tipo == 1)
@@ -72,7 +72,7 @@ namespace Controllers
             mail.From = new MailAddress("servicios@servitarjeta.com");
             mail.To.Add("sistemas@servitarjeta.com");
             mail.Subject = Subject;
-            mail.Body = "Cliente = " + Client + " Tipo: " + tipo + " Mensaje: " + Note + " Monto Factura: " + Monto + " Monto a Pagar: " + Monto_Pagado + "";
+            mail.Body = "Solicitud NRO = " + solicitudid + " Cliente = " + Client + " Tipo: " + tipo + " Mensaje: " + Note + " Monto Factura: " + Monto + " Monto a Pagar: " + Monto_Pagado + "";
 
             System.Net.Mail.Attachment attachment;
             System.Net.Mail.Attachment attachmentRecibo;

@@ -107,6 +107,89 @@ namespace DataObjects
         #endregion
 
         #region LECTURA
+        public static IList<Solicitud> GetSolicitudesTarjetaPagadasByClient(string LoginCreado, string tarjeta)
+        {
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT ClienteID, " + "\n";
+            var1 = var1 + "       FechaCreado, " + "\n";
+            var1 = var1 + "       Fecha_Pagado, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Nota, " + "\n";
+            var1 = var1 + "       Descripcion, " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado, " + "\n";
+            var1 = var1 + "       Monto_Factura, " + "\n";
+            var1 = var1 + "       Ntdc, " + "\n";
+            var1 = var1 + "       Ndeposito, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
+            var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       Saldo, " + "\n";
+            var1 = var1 + "       SolicitudID " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  StatusSolicitudID ='1' " + "\n";
+            var1 = var1 + "ORDER BY FechaCreado";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                Solicitud solicitud = new Solicitud();
+                solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                solicitud.FechaCreado = row["FechaCreado"].ToString().Substring(0, 10);
+                // solicitud.FechaCreado = DateTime.ParseExact(row["FechaCreado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                if (row["Fecha_Pagado"].ToString() != "")
+                {
+                    //solicitud.FechaPagado = DateTime.ParseExact(row["Fecha_Pagado"].ToString().Substring(0, 10), "dd/MM/yyyy", null);
+                    solicitud.FechaPagado = row["Fecha_Pagado"].ToString().Substring(0, 10);
+                }
+
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Nota = row["Nota"].ToString();
+                solicitud.Descripcion = row["Descripcion"].ToString();
+                solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                solicitud.Ntdc = row["Ntdc"].ToString();
+                solicitud.Ndeposito = row["Ndeposito"].ToString();
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
+
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
+                if (solicitud.SolicitudTipoID == 1)
+                {
+                    solicitud.Estado = "+";
+                }
+                if (solicitud.SolicitudTipoID == 2)
+                {
+                    solicitud.Estado = "-";
+                }
+                if (solicitud.SolicitudTipoID == 3)
+                {
+                    solicitud.Estado = "-";
+                }
+
+                solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
+
+
+                list.Add(solicitud);
+
+            }
+
+            return list;
+        }
+
 
         public static IList<Solicitud> GetSolicitudesTarjetaByClient(string LoginCreado,string tarjeta)
         {
@@ -175,6 +258,10 @@ namespace DataObjects
                 if (solicitud.SolicitudTipoID == 3)
                 {
                     solicitud.Estado = "-";
+                }
+                if (solicitud.SolicitudTipoID == 4)
+                {
+                    solicitud.Estado = "+";
                 }
 
                 solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
@@ -509,6 +596,22 @@ namespace DataObjects
             DaoResult result = Db.Insert(parameters, "Solicitud_UPDATE", false, false);
             return result;
         }
+        public static DaoResult ActualizarStatusSolicitud(Solicitud solicitud)
+        {
+            IList<SqlParameter> parameters = new List<SqlParameter>();
+
+            SqlParameter prn = new SqlParameter("@SolicitudID", SqlDbType.Int);
+            prn.Value = solicitud.SolicitudID;
+            parameters.Add(prn);
+
+            prn = new SqlParameter("@StatusSolicitudID", SqlDbType.Int);
+            prn.Value = solicitud.StatusSolicitudID;
+            parameters.Add(prn);
+
+            DaoResult result = Db.Insert(parameters, "Solicitud_Status_UPDATE", false, false);
+            return result;
+        }
+
 
         public static IList<Solicitud> GetSolicitudesByClientSolicitudID(int SolicitudID)
         {

@@ -22,7 +22,7 @@ namespace Controllers
             if (daoResult.ErrorCount == 0)
             {
                 MailController mail = new MailController();
-                mail.SendMail("Solicitud ServiTarjeta", resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto,solicitud.Monto_Pagado, filepath, fullPathrecibo);
+                mail.SendMail("Solicitud ServiTarjeta",solicitud.SolicitudID, resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto,solicitud.Monto_Pagado, filepath, fullPathrecibo);
                 resultado.Mensaje = "Correcto: La Solicitud se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;
             }
@@ -41,10 +41,15 @@ namespace Controllers
             return SolicitudDao.GetSolicitudesByClient(LoginCreado);
 
         }
-
-        public IList<Solicitud> Solicitudes_TarjetaGet_ByClient(string LoginCreado,string tarjeta)
+        public IList<Solicitud> Solicitudes_TarjetaGet_ByClient(string LoginCreado, string tarjeta)
         {
-            return SolicitudDao.GetSolicitudesTarjetaByClient(LoginCreado,tarjeta);
+            return SolicitudDao.GetSolicitudesTarjetaByClient(LoginCreado, tarjeta);
+
+        }
+
+        public IList<Solicitud> Solicitudes_TarjetaPagadasGet_ByClient(string LoginCreado,string tarjeta)
+        {
+            return SolicitudDao.GetSolicitudesTarjetaPagadasByClient(LoginCreado,tarjeta);
 
         }
         public IList<Solicitud> GetClientesTotalesByClient()
@@ -69,6 +74,27 @@ namespace Controllers
         {
             return SolicitudDao.GetSolicitudesByID(SolicitudID);
 
+        }
+
+        public ControllerResult ActualizarStatusSolicitud(Solicitud solicitud, string login)
+        {
+            ControllerResult resultado = new ControllerResult(login);
+
+
+            DaoResult daoResult = SolicitudDao.ActualizarStatusSolicitud(solicitud);
+
+            if (daoResult.ErrorCount == 0)
+            {
+                resultado.Mensaje = "Correcto: El Pago de registro satisfactoriamente.";
+                resultado.Resultado = Result.Successful;
+            }
+            else
+            {
+                resultado.Mensaje = daoResult.ErrorMessage;
+                resultado.Resultado = Result.Error;
+            }
+
+            return resultado;
         }
 
         public ControllerResult ActualizarSolicitud(Solicitud solicitud, string login)
