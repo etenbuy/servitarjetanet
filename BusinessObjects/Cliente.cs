@@ -38,5 +38,6 @@ namespace BusinessObjects
         public int PaisID { get; set; }
 
         public int RutaID { get; set; }
+
     }
 }

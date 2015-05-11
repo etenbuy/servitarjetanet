@@ -61,6 +61,7 @@ namespace Controllers
             {
                 resultado.Mensaje = "Correcto: El Cliente Nro. " + daoResult.Identity.ToString() + " se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;
+                resultado.MensajeExtra =daoResult.Identity.ToString();
             }
             else
             {
