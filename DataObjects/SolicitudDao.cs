@@ -269,6 +269,46 @@ namespace DataObjects
             
             return list;
         }
+        public static IList<Solicitud> GetClientesTotalesByClient()
+        {
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT  SUM(Solicitud.Monto) AS Monto, " + "\n";
+            var1 = var1 + "SUM(Solicitud.Monto_Pagado) AS Monto_Pagado, " + "\n";
+            var1 = var1 + " SUM(Solicitud.Monto_Factura) AS Monto_Factura, " + "\n";
+            var1 = var1 + "SUM(Solicitud.Saldo) AS Saldo," + "\n";
+            var1 = var1 + "Solicitud.StatusSolicitudID AS StatusSolicitudID, " + "\n";
+            var1 = var1 + "Cliente.ClienteID AS ClienteID,   " + "\n";
+            var1 = var1 + "Cliente.LoginCreado AS LoginCreado  " + "\n";
+            var1 = var1 + "FROM   Solicitud ";
+            var1 = var1 + "JOIN   Cliente ";
+            var1 = var1 + "ON	   Solicitud.ClienteID = Cliente.ClienteID ";
+            var1 = var1 + "WHERE Solicitud.StatusSolicitudID = 1 ";
+            var1 = var1 + "GROUP BY  Solicitud.StatusSolicitudID,Cliente.ClienteID,Cliente.LoginCreado";
+
+
+
+            DataTable dt = Db.GetDataTable(var1);
+           
+            foreach (DataRow row in dt.Rows)
+            {
+                Solicitud solicitud = new Solicitud();
+                    solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                    solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                    solicitud.Monto_Factura = decimal.Parse(row["Monto_Factura"].ToString());
+                    solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
+
+                    solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+                    solicitud.ClienteID = int.Parse(row["ClienteID"].ToString());
+                    solicitud.LoginCreado = row["LoginCreado"].ToString();
+               
+
+                list.Add(solicitud);
+            }
+            return list;
+        }
 
         public static Solicitud GetSolicitudesTotalesByClient(string LoginCreado)
         {

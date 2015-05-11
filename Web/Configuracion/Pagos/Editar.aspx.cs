@@ -24,7 +24,7 @@ namespace Web.Configuracion.Pagos
             if (!Page.IsPostBack)
             {
                 cargarTipo();
-                
+                BindClientes();
            
             }
         }
@@ -67,7 +67,17 @@ namespace Web.Configuracion.Pagos
 
 
         }
+        protected void BindClientes()
+        {
 
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+            gvClientes.DataSource = controller.GetClientesTotalesByClient();
+            gvClientes.DataBind();
+
+            lblTotalSolicitudes.Text = gvClientes.Rows.Count.ToString();
+
+
+        }
         protected void BindGrids()
         {           
 
@@ -147,6 +157,12 @@ namespace Web.Configuracion.Pagos
 
 
         }
+        protected void btnSeleccionarCliente_Click(object sender, EventArgs e)
+        {
+            txtLoginCreado.Text = ((HiddenField)((LinkButton)sender).FindControl("hfLoginCreado")).Value.ToString();
+            BuildTarjetas();
+          
+        }
         private void BuildTarjetas()
         {
 
@@ -214,8 +230,6 @@ namespace Web.Configuracion.Pagos
 
             BuildTarjetas();
 
-           
-            
         }
 
         protected void ddlTarjetas_SelectedIndexChanged(object sender, EventArgs e)

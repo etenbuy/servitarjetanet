@@ -8,7 +8,33 @@
     <h2>
         Actualizar Pagos</h2>
     <div>
+    
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
+    <div runat="server" style="float:left;">
+    <asp:GridView ID="gvClientes" CellPadding="0" CellSpacing="0" CssClass="Formulario"
+        AllowSorting="true" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
+      AutoGenerateColumns="false"  ShowFooter="true">
+        <RowStyle HorizontalAlign="Center" />
+        <Columns>
+            <asp:BoundField DataField="ClienteID" HeaderText="ClienteID" SortExpression="ClienteID"/>
+            <asp:BoundField DataField="LoginCreado" HeaderText="Cliente" HeaderStyle-HorizontalAlign="Right"
+                ItemStyle-HorizontalAlign="Right" SortExpression="LoginCreado" />
+                 <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Pagar" HeaderStyle-HorizontalAlign="Right"
+                ItemStyle-HorizontalAlign="Right" SortExpression="Monto_Pagado" />
+
+             <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:HiddenField ID="hfClienteID" Value='<%#Eval("ClienteID")%>' runat="server" />
+                    <asp:HiddenField ID="hfLoginCreado" Value='<%#Eval("LoginCreado")%>' runat="server" />
+                   <asp:LinkButton ID="lbtnCliente" Text="Seleccionar" runat="server" OnClick="btnSeleccionarCliente_Click"></asp:LinkButton>
+                    
+                </ItemTemplate>
+            </asp:TemplateField>
+            
+        </Columns>
+    </asp:GridView>
+    </div>
+    <div runat="server" style="float:right;">
         <table class="Formulario" cellpadding="0" cellspacing="0">
            
             <tr>
@@ -141,6 +167,7 @@
            
             
         </table>
+        </div>
         Cantidad :<asp:Label ID="lblTotalSolicitudes" Text="0" runat="server"></asp:Label>    
         <asp:GridView ID="gvSolicitudes" CellPadding="0" CellSpacing="0" CssClass="Formulario"
         AllowSorting="true" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
@@ -157,7 +184,7 @@
                 ItemStyle-HorizontalAlign="Right" SortExpression="FechaCreado" />
                 <asp:BoundField DataField="Monto" HeaderText="Monto Factura" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Monto" />
-            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Reembolsar" HeaderStyle-HorizontalAlign="Right"
+            <asp:BoundField DataField="Monto_Pagado" HeaderText="Monto a Pagar" HeaderStyle-HorizontalAlign="Right"
                 ItemStyle-HorizontalAlign="Right" SortExpression="Monto_Pagado" />
                 
              <asp:TemplateField>
@@ -170,6 +197,7 @@
             
         </Columns>
     </asp:GridView>
+    
     </div>
 
   

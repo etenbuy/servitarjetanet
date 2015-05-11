@@ -23,6 +23,15 @@ namespace Web.Configuracion.Pagos {
         protected global::System.Web.UI.WebControls.Label lblMensaje;
         
         /// <summary>
+        /// gvClientes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvClientes;
+        
+        /// <summary>
         /// txtLoginCreado control.
         /// </summary>
         /// <remarks>

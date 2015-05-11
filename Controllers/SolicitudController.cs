@@ -47,6 +47,12 @@ namespace Controllers
             return SolicitudDao.GetSolicitudesTarjetaByClient(LoginCreado,tarjeta);
 
         }
+        public IList<Solicitud> GetClientesTotalesByClient()
+        {
+            return SolicitudDao.GetClientesTotalesByClient();
+
+        }
+        
 
         public Solicitud SolicitudesTotales_Get_ByClient(string LoginCreado)
         {
