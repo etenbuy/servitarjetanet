@@ -277,6 +277,79 @@ namespace DataObjects
             return list;
         }
 
+        public static IList<Solicitud> GetSolicitudesEstadoCuentaTarjetaByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+
+                
+            IList<Solicitud> list = new List<Solicitud>();    
+       
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT FechaCreado as Fecha, " + "\n";
+            var1 = var1 + "        Descripcion, " + "\n";
+            var1 = var1 + "       SolicitudID as Nro, " + "\n";
+            var1 = var1 + "       Numero_Factura, " + "\n";
+            var1 = var1 + "       Monto, " + "\n";
+            var1 = var1 + "       Monto_Pagado,  " + "\n";
+            var1 = var1 + "       SolicitudTipoID, " + "\n";
+            var1 = var1 + "       StatusSolicitudID, " + "\n";
+            var1 = var1 + "       LoginCreado, " + "\n";
+            var1 = var1 + "       Saldo  " + "\n";          
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND  YEAR(FechaCreado) = " + ano + " " + "\n";
+            var1 = var1 + "ORDER BY FechaCreado";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                Solicitud solicitud = new Solicitud();
+                solicitud.FechaCreado = row["Fecha"].ToString().Substring(0, 10);
+
+                solicitud.LoginCreado = row["LoginCreado"].ToString();
+                solicitud.Descripcion = row["Descripcion"].ToString();
+
+   
+                solicitud.Numero_Factura = row["Numero_Factura"].ToString();
+
+
+                solicitud.SolicitudTipoID = int.Parse(row["SolicitudTipoID"].ToString());
+                solicitud.StatusSolicitudID = int.Parse(row["StatusSolicitudID"].ToString());
+
+                if (solicitud.SolicitudTipoID == 1)
+                {
+                    solicitud.Estado = "+";
+                }
+                if (solicitud.SolicitudTipoID == 2)
+                {
+                    solicitud.Estado = "-";
+                }
+                if (solicitud.SolicitudTipoID == 3)
+                {
+                    solicitud.Estado = "-";
+                }
+                if (solicitud.SolicitudTipoID == 4)
+                {
+                    solicitud.Estado = "+";
+                }
+
+                solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
+                solicitud.Monto = decimal.Parse(row["Monto"].ToString());
+                solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                solicitud.SolicitudID = int.Parse(row["Nro"].ToString());
+
+
+                list.Add(solicitud);
+
+            }
+
+            return list;
+        }
 
         public static IList<Solicitud> GetSolicitudesByClient(string LoginCreado)
         {

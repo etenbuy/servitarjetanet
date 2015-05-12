@@ -47,6 +47,12 @@ namespace Controllers
 
         }
 
+        public IList<Solicitud> Solicitudes_EstadoCuentaGet_ByClient(string LoginCreado, string tarjeta ,string mes,string ano)
+        {
+            return SolicitudDao.GetSolicitudesEstadoCuentaTarjetaByClient(LoginCreado, tarjeta,mes,ano);
+
+        }
+
         public IList<Solicitud> Solicitudes_TarjetaPagadasGet_ByClient(string LoginCreado,string tarjeta)
         {
             return SolicitudDao.GetSolicitudesTarjetaPagadasByClient(LoginCreado,tarjeta);

@@ -130,12 +130,6 @@
     <Compile Include="Configuracion\Usuarios\EditarClave.aspx.designer.cs">
       <DependentUpon>EditarClave.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CR.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CR.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Operaciones\Clientes\Contrato.aspx.cs">
       <DependentUpon>Contrato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1693,10 +1687,6 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CR.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CR.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
