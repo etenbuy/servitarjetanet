@@ -179,6 +179,8 @@ namespace Web.Operaciones.Saldo
 
             foreach (GridViewRow row in gvSolicitudes.Rows)
             {
+                
+
                 if (row.Cells[2].Text == "PAGO A CLIENTE")
                 {
                     row.Cells[2].ForeColor = Color.Blue;

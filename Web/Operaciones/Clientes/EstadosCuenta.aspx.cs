@@ -54,8 +54,20 @@ namespace Web.Operaciones.Clientes
           }
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
+            Cliente cliente = new Cliente();
+            Controllers.ClienteController controller = new Controllers.ClienteController();
+
+            cliente = controller.ObtenerCliente(UsuarioAutenticado.UserName);
             BuildSolicitudes();
             BuildSaldos();
+            lblCliente.Text = cliente.Descripcion;
+            lblCorreo.Text = UsuarioAutenticado.UserName;
+
+        }
+
+        protected void btnImprimir_Click(object sender, EventArgs e)
+        {
+            
 
         }
 

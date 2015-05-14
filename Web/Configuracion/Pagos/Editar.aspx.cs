@@ -240,14 +240,31 @@ namespace Web.Configuracion.Pagos
 
             for (int i = 0; i < count; i++)
             {
-                bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
-                if (isChecked)
+                if(ddlTarjetas.SelectedItem.Text == "Solicitud Rechazada")
                 {
-                    solicitudUpdate.SolicitudID = int.Parse(rows[i].Cells[0].Text);
-                    solicitudUpdate.StatusSolicitudID = 4;
-                    Controllers.ControllerResult resultupdate = controller.ActualizarStatusSolicitud(solicitudUpdate, UsuarioAutenticado.UserName);
+                    bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
+                    if (isChecked)
+                    {
+                        solicitudUpdate.SolicitudID = int.Parse(rows[i].Cells[0].Text);
+                        solicitudUpdate.StatusSolicitudID = 3;
+                        Controllers.ControllerResult resultupdate = controller.ActualizarStatusSolicitud(solicitudUpdate, UsuarioAutenticado.UserName);
+
+                    }
+                
+                }
+                if (ddlTarjetas.SelectedItem.Text == "Pago de Solicitud")
+                {
+                    bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
+                    if (isChecked)
+                    {
+                        solicitudUpdate.SolicitudID = int.Parse(rows[i].Cells[0].Text);
+                        solicitudUpdate.StatusSolicitudID = 4;
+                        Controllers.ControllerResult resultupdate = controller.ActualizarStatusSolicitud(solicitudUpdate, UsuarioAutenticado.UserName);
+
+                    }
 
                 }
+               
             }
             
 

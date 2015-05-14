@@ -6,7 +6,22 @@
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ChildContent" runat="server">
-    <div align="center">  
+    <div align="center"> 
+     <script type = "text/javascript">
+     function PrintPanel() {
+         var panel = document.getElementById("estadocuenta");
+         var printWindow = window.open('', '', 'height=969,width=1120');
+         printWindow.document.write('<html><head><title>Estado de Cuenta</title>');
+         printWindow.document.write('</head><body >');
+         printWindow.document.write(panel.innerHTML);
+         printWindow.document.write('</body></html>');
+         printWindow.document.close();
+         setTimeout(function() {
+             printWindow.print();
+         }, 500);
+         return false;
+     }
+ </script> 
     <div>
         <asp:Label ID="lblTarjeta" runat="server" Font-Size="Large" Text="Seleccione Mes y Año" ForeColor="#134e9d"></asp:Label>
         <br />
@@ -48,57 +63,69 @@
         <br />
         <asp:Button ID="btnEnviar" CssClass="buttons" OnClick="btnEnviar_Click" 
             runat="server" Text="BUSCAR" />
+        &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnImprimir" CssClass="buttons" OnClick="btnImprimir_Click" 
+        runat="server" Text="IMPRIMIR" OnClientClick = "return PrintPanel();" />
 	    <br />
-	    <div id="" style=" width:1120px; ">
-	    RESUMEN DE MOVIMIENTOS Nro de Tarjeta <%=ddlTarjetas.SelectedItem.Text%> Periodo <%=ddlMes.SelectedItem.Text%> <%=ddlAno.SelectedItem.Text%>
+	    <br />
+
+	    <div id="estadocuenta" style=" width:1120px; ">
+	    <div align="left">
+        <asp:HyperLink ID="HyperLinkLogo" runat="Server" ImageUrl="~/Images/logo.png" NavigateUrl=""></asp:HyperLink>
+        </div>
+        <br />
+        <h2 style="text-align:left;">Cliente: <asp:Label style="text-align:left; color:Black;" ID="lblCliente" runat="server" Text=""></asp:Label></h2> 
+	    <h2 style="text-align:left;">Correo: <asp:Label style="text-align:left;color:Black;" ID="lblCorreo" runat="server" Text=""></asp:Label></h2> 
+	    <br />
+	    <h2 style="text-align:left;">RESUMEN DE MOVIMIENTOS Nro de Tarjeta <%=ddlTarjetas.SelectedItem.Text%> Periodo <%=ddlMes.SelectedItem.Text%> <%=ddlAno.SelectedItem.Text%></h2>
         <div style="text-align:left; border-top-style:solid; border-top-width:3px;">
             <table border="0"> 
             <tr> 
-               <th>Concepto</th> 
-               <th>Cantidad</th> 
-               <th>Monto Total</th> 
+               <th style="width:550px;">Concepto</th> 
+               <th style="width:550px;">Cantidad</th> 
+               <th style="width:550px;">Monto Total</th> 
             </tr> 
             <tr> 
-               <td>Solicitudes Solicitadas:</td> 
-               <td><asp:Label ID="lblSolicitadasCantidad" runat="server" Text="0"></asp:Label></td> 
-               <td><asp:Label ID="lblSolicitadasMonto" runat="server" Text="0"></asp:Label></td> 
+               <td>Solicitudes Realizadas:</td> 
+               <td style="text-align:center;"><asp:Label ID="lblSolicitadasCantidad" runat="server" Text="0"></asp:Label></td> 
+               <td style="text-align:right;"><asp:Label ID="lblSolicitadasMonto" runat="server" Text="0"></asp:Label></td> 
             </tr> 
             <tr> 
                <td>Solicitudes Rechazadas:</td> 
-               <td><asp:Label ID="lblRechazadasCantidad" runat="server" Text="0"></asp:Label></td> 
-               <td><asp:Label ID="lblRechazadasMonto" runat="server" Text="0"></asp:Label></td> 
+               <td style="text-align:center;"><asp:Label ID="lblRechazadasCantidad" runat="server" Text="0"></asp:Label></td> 
+               <td style="text-align:right;"><asp:Label ID="lblRechazadasMonto" runat="server" Text="0"></asp:Label></td> 
             </tr> 
             <tr> 
                <td>Solicitudes Pagadas:</td> 
-               <td><asp:Label ID="lblPagadaCantidad" runat="server" Text="0"></asp:Label></td> 
-               <td><asp:Label ID="lblPagadaMonto" runat="server" Text="0"></asp:Label></td> 
+               <td style="text-align:center;"><asp:Label ID="lblPagadaCantidad" runat="server" Text="0"></asp:Label></td> 
+               <td style="text-align:right;"><asp:Label ID="lblPagadaMonto" runat="server" Text="0"></asp:Label></td> 
             </tr> 
             </table> 
             <br />
             
         </div>
         <br />
-        RESUMEN DE SALDO
+        <h2 style="text-align:left">RESUMEN DE SALDO</h2>
         <div style="text-align:left; border-top-style:solid; border-top-width:3px;">
             <br />
             <table border="0"> 
             <tr> 
-               <th>Saldo:</th> 
-               <th><asp:Label ID="lblSaldo" runat="server" Text="0"></asp:Label></th> 
+               <th style="width:550px; text-align:left;">Saldo:</th> 
+               <th style="width:560px; text-align:right;"><asp:Label ID="lblSaldo" runat="server" Text="0"></asp:Label></th> 
                
             </tr> 
-        
+            </table>
         </div>
         <br />
         <div style="text-align:left; border-top-style:solid; border-top-width:3px;">
             <br />
-        ESTADO DE CUENTA<br />
-        DETALLE DE MOVIMIENTOS<br />
+        <h2>ESTADO DE CUENTA</h2><br />
+       <h3 style="color:Black;"> DETALLE DE MOVIMIENTOS</h3><br />
         <br />
         </div>
         <asp:GridView ID="gvSolicitudes" DataKeyNames="SolicitudID"
         AllowSorting="false" runat="server" AutoGenerateColumns="false" 
-            HeaderStyle-Wrap="false" ShowFooter="FALSE" Width="1136px"
+            HeaderStyle-Wrap="false" ShowFooter="FALSE" Width="1120px"
            
             CellPadding="10" CellSpacing="10" Font-Bold="True" Font-Size="Medium" 
             >
