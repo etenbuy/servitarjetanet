@@ -55,6 +55,36 @@ namespace Web.Operaciones.Clientes
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
             BuildSolicitudes();
+            BuildSaldos();
+
+        }
+
+
+        private void BuildSaldos()
+        {
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+
+            Solicitud solicitudSaldo = new Solicitud();
+            Solicitud solicitudpagadas = new Solicitud();
+            Solicitud solicitudrechazada = new Solicitud();
+            Solicitud solicitudsolicitada = new Solicitud();
+
+            solicitudSaldo = controller.GetSolicitudesEstadoCuentaSaldoTotalByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text, ddlMes.SelectedItem.Text, ddlAno.SelectedItem.Text);
+            solicitudpagadas = controller.GetSolicitudesEstadoCuentaSaldoPagadoByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text, ddlMes.SelectedItem.Text, ddlAno.SelectedItem.Text);
+            solicitudrechazada = controller.GetSolicitudesEstadoCuentaSaldoRechazadoByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text, ddlMes.SelectedItem.Text, ddlAno.SelectedItem.Text);
+            solicitudsolicitada = controller.GetSolicitudesEstadoCuentaSaldoSolicitadoByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text, ddlMes.SelectedItem.Text, ddlAno.SelectedItem.Text);
+
+            lblSaldo.Text = solicitudSaldo.Saldo.ToString();
+
+            lblPagadaCantidad.Text = solicitudpagadas.Cantidadpagada.ToString();
+            lblPagadaMonto.Text = solicitudpagadas.Monto_Pagadopagada.ToString();
+
+            lblRechazadasMonto.Text = solicitudrechazada.Monto_Pagadorechazada.ToString();
+            lblRechazadasCantidad.Text =solicitudrechazada.Cantidadrechazada.ToString();
+
+            lblSolicitadasMonto.Text = solicitudsolicitada.Monto_Pagadosolicitada.ToString();
+            lblSolicitadasCantidad.Text = solicitudsolicitada.Cantidadsolicitada.ToString();
+
 
         }
 

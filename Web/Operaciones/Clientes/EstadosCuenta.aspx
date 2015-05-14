@@ -49,22 +49,45 @@
         <asp:Button ID="btnEnviar" CssClass="buttons" OnClick="btnEnviar_Click" 
             runat="server" Text="BUSCAR" />
 	    <br />
+	    <div id="" style=" width:1120px; ">
 	    RESUMEN DE MOVIMIENTOS Nro de Tarjeta <%=ddlTarjetas.SelectedItem.Text%> Periodo <%=ddlMes.SelectedItem.Text%> <%=ddlAno.SelectedItem.Text%>
         <div style="text-align:left; border-top-style:solid; border-top-width:3px;">
-            <br />
-            <br />
-            <br />
+            <table border="0"> 
+            <tr> 
+               <th>Concepto</th> 
+               <th>Cantidad</th> 
+               <th>Monto Total</th> 
+            </tr> 
+            <tr> 
+               <td>Solicitudes Solicitadas:</td> 
+               <td><asp:Label ID="lblSolicitadasCantidad" runat="server" Text="0"></asp:Label></td> 
+               <td><asp:Label ID="lblSolicitadasMonto" runat="server" Text="0"></asp:Label></td> 
+            </tr> 
+            <tr> 
+               <td>Solicitudes Rechazadas:</td> 
+               <td><asp:Label ID="lblRechazadasCantidad" runat="server" Text="0"></asp:Label></td> 
+               <td><asp:Label ID="lblRechazadasMonto" runat="server" Text="0"></asp:Label></td> 
+            </tr> 
+            <tr> 
+               <td>Solicitudes Pagadas:</td> 
+               <td><asp:Label ID="lblPagadaCantidad" runat="server" Text="0"></asp:Label></td> 
+               <td><asp:Label ID="lblPagadaMonto" runat="server" Text="0"></asp:Label></td> 
+            </tr> 
+            </table> 
             <br />
             
-        Saldo<br />
-        <br />
         </div>
         <br />
         RESUMEN DE SALDO
         <div style="text-align:left; border-top-style:solid; border-top-width:3px;">
             <br />
-        Saldo<br />
-        <br />
+            <table border="0"> 
+            <tr> 
+               <th>Saldo:</th> 
+               <th><asp:Label ID="lblSaldo" runat="server" Text="0"></asp:Label></th> 
+               
+            </tr> 
+        
         </div>
         <br />
         <div style="text-align:left; border-top-style:solid; border-top-width:3px;">
@@ -118,6 +141,7 @@
     
         <br />
         <br />
+        </div>
 	</div>
 
 </asp:Content>

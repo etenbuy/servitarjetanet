@@ -277,6 +277,147 @@ namespace DataObjects
             return list;
         }
 
+        public static Solicitud GetSolicitudesEstadoCuentaSaldoSolicitadoByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+
+
+
+            Solicitud solicitud = new Solicitud();
+
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT Count(Monto_Pagado) as Cantidadsolicitada," + "\n";
+            var1 = var1 + "sum(Monto_Pagado) as Monto_Pagadosolicitada" + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND StatusSolicitudID = 1";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                if (row["Monto_Pagadosolicitada"].ToString() == "")
+                {
+                    solicitud.Monto_Pagadosolicitada = 0;
+                }
+                else
+                {
+                    solicitud.Monto_Pagadosolicitada = decimal.Parse(row["Monto_Pagadosolicitada"].ToString());
+                }
+                solicitud.Cantidadsolicitada = int.Parse(row["Cantidadsolicitada"].ToString());
+               
+              
+
+            }
+
+            return solicitud;
+        }
+
+        public static Solicitud GetSolicitudesEstadoCuentaSaldoRechazadoByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+
+
+            Solicitud solicitud = new Solicitud();
+
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT Count(Monto_Pagado) as Cantidadrechazada," + "\n";
+            var1 = var1 + "sum(Monto_Pagado) as Monto_Pagadorechazada" + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND StatusSolicitudID = 3";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                if (row["Monto_Pagadorechazada"].ToString() == "")
+                {
+                    solicitud.Monto_Pagadorechazada = 0;
+                }
+                else
+                {
+                    solicitud.Monto_Pagadorechazada = decimal.Parse(row["Monto_Pagadorechazada"].ToString());
+                }
+                solicitud.Cantidadrechazada = int.Parse(row["Cantidadrechazada"].ToString());
+               
+              
+
+            }
+
+            return solicitud;
+        }
+        public static Solicitud GetSolicitudesEstadoCuentaSaldoPagadoByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+
+
+
+            Solicitud solicitud = new Solicitud();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT Count(Monto_Pagado) as Cantidadpagada," + "\n";
+            var1 = var1 + "sum(Monto_Pagado) as Monto_Pagadopagada" + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND  YEAR(FechaCreado) = " + ano + " " + "\n";
+            var1 = var1 + "AND StatusSolicitudID = 4";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                if (row["Monto_Pagadopagada"].ToString() == "")
+                {
+                    solicitud.Monto_Pagadopagada = 0;
+                }
+                else
+                {
+                    solicitud.Monto_Pagadopagada = decimal.Parse(row["Monto_Pagadopagada"].ToString());
+                }
+                solicitud.Cantidadpagada = int.Parse(row["Cantidadpagada"].ToString());
+               
+            }
+
+            return solicitud;
+        }
+        public static Solicitud GetSolicitudesEstadoCuentaSaldoTotalByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+
+
+            
+            Solicitud solicitud = new Solicitud();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT top(1) Saldo AS Saldo" + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND  YEAR(FechaCreado) = " + ano + " " + "\n";
+            var1 = var1 + "ORDER BY FechaCreado DESC";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                solicitud.Saldo = decimal.Parse(row["Saldo"].ToString());
+
+            }
+
+            return solicitud;
+        }
+
         public static IList<Solicitud> GetSolicitudesEstadoCuentaTarjetaByClient(string LoginCreado, string tarjeta, string mes, string ano)
         {
 

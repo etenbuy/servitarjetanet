@@ -35,6 +35,28 @@ namespace Controllers
             return resultado;
 
         }
+        public Solicitud GetSolicitudesEstadoCuentaSaldoSolicitadoByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+            return SolicitudDao.GetSolicitudesEstadoCuentaSaldoSolicitadoByClient(LoginCreado, tarjeta, mes, ano);
+
+        }
+
+        public Solicitud GetSolicitudesEstadoCuentaSaldoRechazadoByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+            return SolicitudDao.GetSolicitudesEstadoCuentaSaldoRechazadoByClient(LoginCreado, tarjeta, mes, ano);
+
+        }
+        public Solicitud GetSolicitudesEstadoCuentaSaldoPagadoByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+            return SolicitudDao.GetSolicitudesEstadoCuentaSaldoPagadoByClient(LoginCreado, tarjeta, mes, ano);
+
+        }
+
+        public Solicitud GetSolicitudesEstadoCuentaSaldoTotalByClient(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+            return SolicitudDao.GetSolicitudesEstadoCuentaSaldoTotalByClient(LoginCreado, tarjeta, mes, ano);
+
+        }
 
         public IList<Solicitud> Solicitudes_Get_ByClient(string LoginCreado)
         {
@@ -52,6 +74,7 @@ namespace Controllers
             return SolicitudDao.GetSolicitudesEstadoCuentaTarjetaByClient(LoginCreado, tarjeta,mes,ano);
 
         }
+     
 
         public IList<Solicitud> Solicitudes_TarjetaPagadasGet_ByClient(string LoginCreado,string tarjeta)
         {

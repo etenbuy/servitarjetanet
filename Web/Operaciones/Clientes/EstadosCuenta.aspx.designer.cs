@@ -77,6 +77,69 @@ namespace Web.Operaciones.Clientes {
         protected global::System.Web.UI.WebControls.Button btnEnviar;
         
         /// <summary>
+        /// lblSolicitadasCantidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSolicitadasCantidad;
+        
+        /// <summary>
+        /// lblSolicitadasMonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSolicitadasMonto;
+        
+        /// <summary>
+        /// lblRechazadasCantidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRechazadasCantidad;
+        
+        /// <summary>
+        /// lblRechazadasMonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRechazadasMonto;
+        
+        /// <summary>
+        /// lblPagadaCantidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPagadaCantidad;
+        
+        /// <summary>
+        /// lblPagadaMonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPagadaMonto;
+        
+        /// <summary>
+        /// lblSaldo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSaldo;
+        
+        /// <summary>
         /// gvSolicitudes control.
         /// </summary>
         /// <remarks>

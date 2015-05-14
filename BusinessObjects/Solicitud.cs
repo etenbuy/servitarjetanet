@@ -58,5 +58,14 @@ namespace BusinessObjects
 
         public string Numero_TDC { get; set; }
 
+
+        public int Cantidadpagada { get; set; }
+        public int Cantidadrechazada { get; set; }
+        public int Cantidadsolicitada { get; set; }
+        public decimal Monto_Pagadopagada { get; set; }
+        public decimal Monto_Pagadorechazada { get; set; }
+        public decimal Monto_Pagadosolicitada { get; set; }
+
+
     }
 }
