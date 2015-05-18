@@ -14,7 +14,12 @@ namespace Controllers
         {
             return ClienteDao.GetClientesID();
         }
+        public IList<Cliente> GetClientes()
+        {
 
+            return ClienteDao.GetClientes();
+
+        }
         public IList<Cliente> GetClientes(IList<int> clientesid)
         {
 

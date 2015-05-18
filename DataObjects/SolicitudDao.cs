@@ -98,6 +98,9 @@ namespace DataObjects
                     prn.Value = solicitud.Numero_TDC;
                     parameters.Add(prn);
 
+                    prn = new SqlParameter("@Descripcion", SqlDbType.VarChar, 500);
+                    prn.Value = solicitud.Descripcion;
+                    parameters.Add(prn);
                
             DaoResult result = Db.Insert(parameters, "Solicitud_INSERT", false,false);
             return result;
@@ -134,6 +137,7 @@ namespace DataObjects
             var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
             var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
             var1 = var1 + "AND  StatusSolicitudID ='1' " + "\n";
+            var1 = var1 + "AND  Descripcion ='Solicitud en Proceso' " + "\n";
             var1 = var1 + "ORDER BY FechaCreado";
 
 
@@ -587,6 +591,7 @@ namespace DataObjects
             var1 = var1 + "JOIN   Cliente ";
             var1 = var1 + "ON	   Solicitud.ClienteID = Cliente.ClienteID ";
             var1 = var1 + "WHERE Solicitud.StatusSolicitudID = 1 ";
+            var1 = var1 + "AND Solicitud.Descripcion = 'Solicitud en Proceso' ";
             var1 = var1 + "GROUP BY  Solicitud.StatusSolicitudID,Cliente.ClienteID,Cliente.LoginCreado";
 
 

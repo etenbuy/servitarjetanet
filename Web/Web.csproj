@@ -95,6 +95,13 @@
     <Compile Include="Configuracion\Clientes\Crear.aspx.designer.cs">
       <DependentUpon>Crear.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Configuracion\Clientes\CrearSolicitud.aspx.cs">
+      <DependentUpon>CrearSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Clientes\CrearSolicitud.aspx.designer.cs">
+      <DependentUpon>CrearSolicitud.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion\Clientes\Editar.aspx.cs">
       <DependentUpon>Editar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -447,6 +454,7 @@
   <ItemGroup>
     <Content Include="AjaxControlToolkit.dll" />
     <Content Include="Configuracion\Clientes\Crear.aspx" />
+    <Content Include="Configuracion\Clientes\CrearSolicitud.aspx" />
     <Content Include="Configuracion\Clientes\Editar.aspx" />
     <Content Include="Configuracion\Clientes\EditarClientes.aspx" />
     <Content Include="Configuracion\Pagos\Editar.aspx" />

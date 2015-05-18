@@ -65,6 +65,13 @@ namespace Web
                 this.LiteralError.Text = "Usuario o Password Incorrectos.";
 
             }
+           System.Web.Security.MembershipUser u = Membership.GetUser(usuario, false);
+           var timeSpan = u.LastPasswordChangedDate - u.CreationDate;
+
+         /*  if (timeSpan < 60)
+           {
+               Response.Redirect("~/Configuracion/Usuarios/EditarClave.aspx");
+           }*/
 
         }
 

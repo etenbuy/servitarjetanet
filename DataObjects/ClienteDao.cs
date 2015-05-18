@@ -235,6 +235,42 @@ namespace DataObjects
             return list;
         }
 
+        public static IList<Cliente> GetClientes()
+        {
+
+            IList<Cliente> list = new List<Cliente>();
+
+            
+
+                string var1 = string.Empty;
+                var1 = var1 + "SELECT ClienteID, " + "\n";
+                var1 = var1 + "       Descripcion, " + "\n";
+                var1 = var1 + "       Telefono, " + "\n";
+                var1 = var1 + "       Email, " + "\n";
+                var1 = var1 + "       RIF, " + "\n";
+                var1 = var1 + "       LoginCreado, " + "\n";
+                var1 = var1 + "       Direccion " + "\n";
+                var1 = var1 + "FROM   Cliente " + "\n";
+
+
+                DataTable dt = Db.GetDataTable(var1);
+
+                foreach (DataRow row in dt.Rows)
+                {
+
+                    Cliente cliente = new Cliente();
+                    cliente.ClienteID = int.Parse(row["ClienteID"].ToString());
+                    cliente.Descripcion = row["Descripcion"].ToString();
+                    cliente.LoginCreado = row["LoginCreado"].ToString();
+                    cliente.Email = row["Email"].ToString();
+
+                    list.Add(cliente);
+
+                }
+           
+            return list;
+        }
+
         public static Cliente ObtenerCliente(int clienteid)
         {
             IList<SqlParameter> parameters = new List<SqlParameter>();

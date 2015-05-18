@@ -181,12 +181,12 @@ namespace Web.Operaciones.Saldo
             {
                 
 
-                if (row.Cells[2].Text == "PAGO A CLIENTE")
+                if (row.Cells[2].Text.Contains("PAGO A CLIENTE"))
                 {
                     row.Cells[2].ForeColor = Color.Blue;
                     row.Cells[2].Font.Bold = true;
                 }
-                if (row.Cells[2].Text == "SOLICITUD RECHAZADA")
+                if (row.Cells[2].Text.Contains("SOLICITUD RECHAZADA"))
                 {
                     row.Cells[2].ForeColor = Color.Red;
                     row.Cells[2].Font.Bold = true;

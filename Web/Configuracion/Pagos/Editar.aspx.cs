@@ -240,25 +240,27 @@ namespace Web.Configuracion.Pagos
 
             for (int i = 0; i < count; i++)
             {
-                if(ddlTarjetas.SelectedItem.Text == "Solicitud Rechazada")
+                if (ddlTipo.SelectedItem.Text == "Solicitud Rechazada")
                 {
                     bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
                     if (isChecked)
                     {
                         solicitudUpdate.SolicitudID = int.Parse(rows[i].Cells[0].Text);
                         solicitudUpdate.StatusSolicitudID = 3;
+                        solicitudUpdate.Descripcion = solicitudUpdate.Descripcion + " " +  solicitudUpdate.SolicitudID;
                         Controllers.ControllerResult resultupdate = controller.ActualizarStatusSolicitud(solicitudUpdate, UsuarioAutenticado.UserName);
 
                     }
                 
                 }
-                if (ddlTarjetas.SelectedItem.Text == "Pago de Solicitud")
+                if (ddlTipo.SelectedItem.Text == "Pago de Solicitud")
                 {
                     bool isChecked = ((CheckBox)rows[i].FindControl("SelectCheckBox")).Checked;
                     if (isChecked)
                     {
                         solicitudUpdate.SolicitudID = int.Parse(rows[i].Cells[0].Text);
-                        solicitudUpdate.StatusSolicitudID = 4;
+                        solicitudUpdate.StatusSolicitudID = 2;
+                        solicitudUpdate.Descripcion = solicitudUpdate.Descripcion + " " + solicitudUpdate.SolicitudID;
                         Controllers.ControllerResult resultupdate = controller.ActualizarStatusSolicitud(solicitudUpdate, UsuarioAutenticado.UserName);
 
                     }
@@ -266,6 +268,16 @@ namespace Web.Configuracion.Pagos
                 }
                
             }
+           
+             if(solicitud.SolicitudTipoID == 2)
+            {
+                solicitud.Descripcion = "PAGO A CLIENTE Nro. " + solicitudUpdate.Descripcion; 
+            }
+             if(solicitud.SolicitudTipoID == 3)
+            {
+                solicitud.Descripcion = "SOLICITUD RECHAZADA Nro. " + solicitudUpdate.Descripcion; 
+            }
+            
             
 
             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,"","");
@@ -278,6 +290,8 @@ namespace Web.Configuracion.Pagos
             txtMontoFactura.Text = string.Empty;
             txtMontoPagado.Text = string.Empty;
             BindGrids();
+            builTotales();
+            BindClientes();
             Alert(result.Mensaje);
         }
 

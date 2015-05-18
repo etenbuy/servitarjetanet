@@ -127,7 +127,7 @@ namespace Web.Configuracion.Usuarios
             Alert(result);
 
             BindUser(trvUsuarios.SelectedValue.ToString());
-
+            Response.Redirect("~/Logout.aspx");
         }
 
 
