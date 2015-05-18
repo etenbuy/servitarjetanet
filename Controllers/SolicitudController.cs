@@ -19,10 +19,12 @@ namespace Controllers
 
             DaoResult daoResult = SolicitudDao.CrearSolicitud(solicitud, resultado.Login);
 
+            
+
             if (daoResult.ErrorCount == 0)
             {
                 MailController mail = new MailController();
-                mail.SendMail("Solicitud ServiTarjeta",solicitud.SolicitudID, resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto,solicitud.Monto_Pagado, filepath, fullPathrecibo);
+                mail.SendMail("Solicitud ServiTarjeta", daoResult.Identity, resultado.Login, solicitud.Nota, solicitud.StatusSolicitudID, solicitud.Monto, solicitud.Monto_Pagado, filepath, fullPathrecibo);
                 resultado.Mensaje = "Correcto: La Solicitud se ha creado satisfactoriamente.";
                 resultado.Resultado = Result.Successful;
             }

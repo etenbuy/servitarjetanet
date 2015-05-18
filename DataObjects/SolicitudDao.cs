@@ -102,7 +102,7 @@ namespace DataObjects
                     prn.Value = solicitud.Descripcion;
                     parameters.Add(prn);
                
-            DaoResult result = Db.Insert(parameters, "Solicitud_INSERT", false,false);
+            DaoResult result = Db.Insert(parameters, "Solicitud_INSERT", true,false);
             return result;
         }
 
