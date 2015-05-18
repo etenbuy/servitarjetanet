@@ -9,6 +9,7 @@
     <siteMapNode title="Clientes" roles="CONFIGURACION_CLIENTES" >
       <siteMapNode title="Crear" url="~/Configuracion/Clientes/Crear.aspx" roles="CONFIGURACION_CLIENTES" />
       <siteMapNode title="Editar" url="~/Configuracion/Clientes/Editar.aspx" roles="CONFIGURACION_CLIENTES" />
+      <siteMapNode title="Crear Solicitud" url="~/Configuracion/Clientes/CrearSolicitud.aspx" roles="CONFIGURACION_CLIENTES_SOLICITUD" />
     </siteMapNode>
     <siteMapNode title="Pagos" roles="CONFIGURACION_CLIENTES" >
       <siteMapNode title="Aprobar" url="~/Configuracion/Pagos/Editar.aspx" roles="CONFIGURACION_CLIENTES" />

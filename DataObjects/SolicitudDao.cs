@@ -194,6 +194,40 @@ namespace DataObjects
             return list;
         }
 
+        public static IList<Solicitud> Solicitudes_Mes_Ano(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT SolicitudID, " + "\n";
+            var1 = var1 + "       Saldo  " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND  YEAR(FechaCreado) = " + ano + " " + "\n";
+            var1 = var1 + "ORDER BY FechaCreado";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+
+            foreach (DataRow row in dt.Rows)
+            {
+
+                Solicitud solicitud = new Solicitud();
+              
+                solicitud.SolicitudID = int.Parse(row["SolicitudID"].ToString());
+
+
+                list.Add(solicitud);
+
+            }
+
+            return list;
+        }
+
 
         public static IList<Solicitud> GetSolicitudesTarjetaByClient(string LoginCreado,string tarjeta)
         {

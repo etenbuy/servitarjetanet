@@ -58,6 +58,8 @@ namespace Controllers
 
         }
 
+        
+
         public IList<Solicitud> Solicitudes_Get_ByClient(string LoginCreado)
         {
             return SolicitudDao.GetSolicitudesByClient(LoginCreado);
@@ -79,6 +81,12 @@ namespace Controllers
         public IList<Solicitud> Solicitudes_TarjetaPagadasGet_ByClient(string LoginCreado,string tarjeta)
         {
             return SolicitudDao.GetSolicitudesTarjetaPagadasByClient(LoginCreado,tarjeta);
+
+        }
+
+        public IList<Solicitud> Solicitudes_Mes_Ano(string LoginCreado, string tarjeta, string mes, string ano)
+        {
+            return SolicitudDao.Solicitudes_Mes_Ano(LoginCreado, tarjeta, mes, ano);
 
         }
         public IList<Solicitud> GetClientesTotalesByClient()

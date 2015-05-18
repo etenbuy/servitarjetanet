@@ -160,8 +160,9 @@
 
             <tr>
                 <td colspan="4">
-                    <asp:Button CssClass="buttons" ID="btnCrear" runat="server" Text="PAGAR" OnClick="btnGuardar_Click"
+                    <asp:Button CssClass="buttons" ID="btnCrear" runat="server" Text="ENVIAR" OnClick="btnGuardar_Click"
                         ValidationGroup="Submit" 
+                        
                         OnClientClick="if (!Page_ClientValidate('Submit')) return false; if (!confirm('¿Esta seguro de crear este Pago?')) return false;" />
                     
                 </td>
@@ -169,6 +170,45 @@
            
             
         </table>
+        </div>
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Seleccione mes y Año o por Rango de solicitudes"></asp:Label>
+        <div runat="server">
+        
+           <asp:Label ID="Label1" runat="server" Text="Mes: "></asp:Label>
+        <asp:DropDownList ID="ddlMes" runat="server" AutoPostBack="true" Height="16px" Width="109px" 
+                onselectedindexchanged="ddlMes_SelectedIndexChanged">
+        <asp:ListItem Text="01" Value="01" />
+        <asp:ListItem Text="02" Value="02" />
+        <asp:ListItem Text="03" Value="03" />
+        <asp:ListItem Text="04" Value="04" />
+        <asp:ListItem Text="05" Value="05" />
+        <asp:ListItem Text="06" Value="06" />
+        <asp:ListItem Text="07" Value="07" />
+        <asp:ListItem Text="08" Value="08" />
+        <asp:ListItem Text="09" Value="09" />
+        <asp:ListItem Text="10" Value="10" />
+        <asp:ListItem Text="11" Value="11" />
+        <asp:ListItem Text="12" Value="12" />
+        </asp:DropDownList>
+&nbsp;<asp:Label ID="Label2" runat="server" Text="Año: "></asp:Label>
+&nbsp;<asp:DropDownList ID="ddlAno" AutoPostBack="true" runat="server" Height="18px" Width="116px" 
+                onselectedindexchanged="ddlAno_SelectedIndexChanged1">
+        <asp:ListItem Text="2014" Value="2014" />
+        <asp:ListItem Text="2015" Value="2015" />
+        <asp:ListItem Text="2016" Value="2016" />
+        <asp:ListItem Text="2017" Value="2017" />
+        <asp:ListItem Text="2018" Value="2018" />
+        <asp:ListItem Text="2019" Value="2019" />
+        <asp:ListItem Text="2020" Value="2020" />
+        <asp:ListItem Text="2021" Value="2021" />
+        <asp:ListItem Text="2022" Value="2022" />
+        <asp:ListItem Text="2023" Value="2023" />
+        <asp:ListItem Text="2024" Value="2024" />
+        <asp:ListItem Text="2025" Value="2025" />
+        </asp:DropDownList>
+        
         </div>
         <div runat="server" style="float:right;">
          Cantidad Solicitudes Por pagar:<asp:Label ID="lblTotalSolicitudes" Text="0" runat="server"></asp:Label>   
@@ -213,7 +253,7 @@
         
         <asp:TemplateField HeaderText="Seleccionar">
             <ItemTemplate>
-                <asp:CheckBox ID="SelectCheckBox" HeaderText="Seleccionar" runat="server" AutoPostBack="true" OnCheckedChanged="gvSolicitudes_OnCheckedChanged"/>
+                <asp:CheckBox id="SelectCheckBox" HeaderText="Seleccionar" runat="server" AutoPostBack="true" OnCheckedChanged="gvSolicitudes_OnCheckedChanged"/>
             </ItemTemplate>
         </asp:TemplateField>
          

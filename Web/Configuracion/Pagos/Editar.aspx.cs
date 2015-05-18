@@ -306,5 +306,47 @@ namespace Web.Configuracion.Pagos
             BindGrids();
             builTotales();
         }
+        protected void CheckGridMesAno()
+        {
+
+            Controllers.SolicitudController controller = new Controllers.SolicitudController();
+            IList<Solicitud> solicitudes = new List<Solicitud>();
+            solicitudes = controller.Solicitudes_Mes_Ano(txtLoginCreado.Text, ddlTarjetas.SelectedItem.Text, ddlMes.SelectedItem.Text, ddlAno.SelectedItem.Text);
+
+            
+            var rows = gvSolicitudes.Rows;
+            int count = gvSolicitudes.Rows.Count;
+            Solicitud solicitudUpdate = new Solicitud();
+
+          
+
+            foreach(Solicitud solicitud in solicitudes)
+            {
+               
+            for (int i = 0; i < count; i++)
+            {
+                  CheckBox ChkBox = ((CheckBox)rows[i].FindControl("SelectCheckBox"));
+
+                  if (rows[i].Cells[0].Text == solicitud.SolicitudID.ToString())
+                  {
+                      ChkBox.Checked = true;
+                  }
+                 
+                }
+            }
+           
+
+        }
+        protected void ddlMes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CheckGridMesAno();
+        }
+
+       
+
+        protected void ddlAno_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            CheckGridMesAno();
+        }
     }
 }

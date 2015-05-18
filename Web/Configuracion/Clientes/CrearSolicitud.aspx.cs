@@ -75,7 +75,7 @@ namespace Web.Configuracion.Clientes
 
             Solicitud solicitud = new Solicitud();
 
-            Solicitud solicitudID = controller.Get_IDClient(ddlCliente.Text);
+            Solicitud solicitudID = controller.Get_IDClient(ddlCliente.SelectedItem.Text);
 
             solicitud.StatusSolicitudID = 1;
 
@@ -125,7 +125,7 @@ namespace Web.Configuracion.Clientes
              }
 
 
-             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, ddlCliente.Text, fullPath, fullPathrecibo);
+             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, ddlCliente.SelectedItem.Text, fullPath, fullPathrecibo);
 
 
              if (result.Resultado == Controllers.Result.Successful)
