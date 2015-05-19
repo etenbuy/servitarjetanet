@@ -52,11 +52,11 @@ namespace Web.Configuracion.Pagos
             Controllers.SolicitudController controller = new Controllers.SolicitudController();
             Solicitud solicitud = new Solicitud();
             // solicitud = controller.SolicitudesTotales_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
-            solicitud = controller.SolicitudesTotalesTarjeta_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text);
+            solicitud = controller.SolicitudesTotalesTarjetaMesAno_Get_ByClient(UsuarioAutenticado.UserName, ddlTarjetas.SelectedItem.Text, ddlMes.SelectedItem.Text, ddlAno.SelectedItem.Text);
 
-            if (solicitud.Saldo != null)
+            if (solicitud.Monto_Pagado != 0)
             {
-                txtMontoPagado.Text = string.Format("{0:###,###,###,###.00}", solicitud.Saldo);
+                txtMontoPagado.Text = string.Format("{0:###,###,###,###.00}", solicitud.Monto_Pagado);
             }
             else
             {
@@ -318,7 +318,7 @@ namespace Web.Configuracion.Pagos
             int count = gvSolicitudes.Rows.Count;
             Solicitud solicitudUpdate = new Solicitud();
 
-          
+            string solicitudesID="";
 
             foreach(Solicitud solicitud in solicitudes)
             {
@@ -326,11 +326,15 @@ namespace Web.Configuracion.Pagos
             for (int i = 0; i < count; i++)
             {
                   CheckBox ChkBox = ((CheckBox)rows[i].FindControl("SelectCheckBox"));
-
-                  if (rows[i].Cells[0].Text == solicitud.SolicitudID.ToString())
+                  solicitudesID = solicitudesID + " " + solicitud.SolicitudID.ToString();
+                  if (solicitudesID.Contains(solicitud.SolicitudID.ToString()))
                   {
-                      ChkBox.Checked = true;
+
+                       if (rows[i].Cells[0].Text == solicitud.SolicitudID.ToString())
+                      { ChkBox.Checked = true; }
+                      
                   }
+                   else { ChkBox.Checked = false; }
                  
                 }
             }
@@ -339,14 +343,18 @@ namespace Web.Configuracion.Pagos
         }
         protected void ddlMes_SelectedIndexChanged(object sender, EventArgs e)
         {
+            BindGrids();
             CheckGridMesAno();
+            builTotales();
         }
 
        
 
         protected void ddlAno_SelectedIndexChanged1(object sender, EventArgs e)
         {
+            BindGrids();
             CheckGridMesAno();
+            builTotales();
         }
     }
 }

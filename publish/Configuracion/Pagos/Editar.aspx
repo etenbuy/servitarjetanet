@@ -11,7 +11,7 @@
      
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
     <div runat="server" style="float:left;">
-    <asp:GridView ID="gvClientes" CellPadding="0" CellSpacing="0" CssClass="Formulario"
+    <asp:GridView ID="gvClientes" CellPadding="0" CellSpacing="0" CssClass=""
         AllowSorting="true" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
       AutoGenerateColumns="false"  ShowFooter="true">
         <RowStyle HorizontalAlign="Center" />
@@ -36,7 +36,7 @@
     </div>
     <div runat="server" style="float:left;">
      Cantidad Clientes pendientes por pagar:<asp:Label ID="lblClientes" Text="0" runat="server"></asp:Label>   
-        <table class="Formulario" cellpadding="0" cellspacing="0">
+        <table class="Formulario" cellpadding="0" cellspacing="0" style="margin-left:50px; margin-right:50px;">
            
             <tr>
                 <th>
@@ -212,7 +212,7 @@
         </div>
         <div runat="server" style="float:right;">
          Cantidad Solicitudes Por pagar:<asp:Label ID="lblTotalSolicitudes" Text="0" runat="server"></asp:Label>   
-        <asp:GridView ID="gvSolicitudes" CellPadding="0" CssClass="Formulario"
+        <asp:GridView ID="gvSolicitudes" CellPadding="0" CssClass=""
         AllowSorting="True" HeaderStyle-Wrap="false" runat="server" Font-Size="10px"
        OnSorting="gvSolicitudes_Sorting" AutoGenerateColumns="False"  ShowFooter="True"
          ondatabound="gvSolicitudes_DataBound">

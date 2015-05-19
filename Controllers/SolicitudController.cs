@@ -103,9 +103,15 @@ namespace Controllers
             return SolicitudDao.GetSolicitudesTotalesByClient(LoginCreado);
 
         }
-        public Solicitud SolicitudesTotalesTarjeta_Get_ByClient(string LoginCreado,string Tarjeta)
+        public Solicitud SolicitudesTotalesTarjetaMesAno_Get_ByClient(string LoginCreado, string Tarjeta, string mes, string ano)
         {
-            return SolicitudDao.GetSolicitudesTotalesTarjetaByClient(LoginCreado,Tarjeta);
+            return SolicitudDao.GetSolicitudesTotalesTarjetaMesAnoByClient(LoginCreado,Tarjeta,mes,ano);
+
+        }
+
+        public Solicitud SolicitudesTotalesTarjeta_Get_ByClient(string LoginCreado, string Tarjeta)
+        {
+            return SolicitudDao.GetSolicitudesTotalesTarjetaByClient(LoginCreado, Tarjeta);
 
         }
        

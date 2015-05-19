@@ -691,6 +691,43 @@ namespace DataObjects
             return solicitud;
         }
 
+        public static Solicitud GetSolicitudesTotalesTarjetaMesAnoByClient(string LoginCreado, string Tarjeta,string mes, string ano)
+        {
+
+
+            IList<Solicitud> list = new List<Solicitud>();
+
+            string var1 = string.Empty;
+            var1 = var1 + "SELECT sum(Monto_Pagado)as Monto_Pagado " + "\n";
+            var1 = var1 + "FROM   Solicitud " + "\n";
+            var1 = var1 + "WHERE  LoginCreado ='" + LoginCreado + "' " + "\n";
+            var1 = var1 + "AND  Numero_TDC ='" + Tarjeta + "' " + "\n";
+            var1 = var1 + "AND  MONTH(FechaCreado) = " + mes + " " + "\n";
+            var1 = var1 + "AND  YEAR(FechaCreado) = " + ano + " " + "\n";
+            var1 = var1 + "AND StatusSolicitudID = 1";
+
+
+            DataTable dt = Db.GetDataTable(var1);
+            Solicitud solicitud = new Solicitud();
+            foreach (DataRow row in dt.Rows)
+            {
+                if (row["Monto_Pagado"].ToString() != "")
+                {
+
+                    solicitud.Monto_Pagado = decimal.Parse(row["Monto_Pagado"].ToString());
+                }
+                else
+                {
+                    solicitud.Monto_Factura = 0;
+                    solicitud.Monto = 0;
+                    solicitud.Monto_Pagado = 0;
+                    solicitud.Saldo = 0;
+                }
+
+            }
+            return solicitud;
+        }
+
         public static Solicitud GetSolicitudesTotalesTarjetaByClient(string LoginCreado, string Tarjeta)
         {
 
