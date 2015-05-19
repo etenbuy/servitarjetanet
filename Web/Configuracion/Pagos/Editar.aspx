@@ -9,6 +9,7 @@
         Actualizar Pagos</h2>
     <div>
      
+     
     <asp:Label ID="lblMensaje" ForeColor="#FE7000" runat="server" Text=""></asp:Label>
     <div runat="server" style="float:left;">
     <asp:GridView ID="gvClientes" CellPadding="0" CellSpacing="0" CssClass=""

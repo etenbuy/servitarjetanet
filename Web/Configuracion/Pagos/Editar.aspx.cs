@@ -277,10 +277,10 @@ namespace Web.Configuracion.Pagos
             {
                 solicitud.Descripcion = "SOLICITUD RECHAZADA Nro. " + solicitudUpdate.Descripcion; 
             }
-            
-            
 
-            Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, UsuarioAutenticado.UserName,"","");
+
+
+             Controllers.ControllerResult result = controller.CrearSolicitud(solicitud, solicitud.LoginCreado, "", "");
 
            // Controllers.ControllerResult result = controller.ActualizarSolicitud(solicitud, UsuarioAutenticado.UserName);
 
@@ -304,7 +304,8 @@ namespace Web.Configuracion.Pagos
         protected void ddlTarjetas_SelectedIndexChanged(object sender, EventArgs e)
         {
             BindGrids();
-            builTotales();
+            gvSolicitudes_OnCheckedChanged(null, null);
+            //builTotales();
         }
         protected void CheckGridMesAno()
         {
@@ -345,7 +346,7 @@ namespace Web.Configuracion.Pagos
         {
             BindGrids();
             CheckGridMesAno();
-            builTotales();
+            gvSolicitudes_OnCheckedChanged(null, null);
         }
 
        
@@ -354,7 +355,8 @@ namespace Web.Configuracion.Pagos
         {
             BindGrids();
             CheckGridMesAno();
-            builTotales();
+            gvSolicitudes_OnCheckedChanged(null,null);
+            //builTotales();
         }
     }
 }
