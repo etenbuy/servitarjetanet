@@ -12,7 +12,7 @@
       <siteMapNode title="Crear Solicitud" url="~/Configuracion/Clientes/CrearSolicitud.aspx" roles="CONFIGURACION_CLIENTES_SOLICITUD" />
     </siteMapNode>
     <siteMapNode title="Pagos" roles="CONFIGURACION_CLIENTES" >
-      <siteMapNode title="Aprobar" url="~/Configuracion/Pagos/Editar.aspx" roles="CONFIGURACION_CLIENTES" />
+      <siteMapNode title="Aprobar" url="~/Configuracion/Pagos/Editar.aspx" roles="CONFIGURACION_CLIENTES_PAGOS" />
     </siteMapNode>
   <!--  <siteMapNode title="Dividendos" roles="CONFIGURACION_DIVIDENDOS" >
       <siteMapNode title="Crear" url="~/Configuracion/Dividendos/Crear.aspx" roles="CONFIGURACION_DIVIDENDOS" />
